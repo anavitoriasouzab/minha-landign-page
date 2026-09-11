@@ -1,0 +1,29 @@
+:root {
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Manrope', Inter, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', Menlo, monospace;
+
+  /* Scale — verbatim from source */
+  --text-display-xl: clamp(2.75rem, 5vw, 4.5rem);
+  --text-display-lg: clamp(2rem, 3.5vw, 3rem);
+  --text-heading: 1.5rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-caption: 0.75rem;
+
+  --leading-display-xl: 1.05;
+  --leading-display-lg: 1.1;
+  --leading-heading: 1.25;
+  --leading-body: 1.6;
+  --leading-small: 1.5;
+  --leading-caption: 1.4;
+
+  --tracking-display: -0.01em;
+  --tracking-body: 0;
+  --tracking-caption: 0.04em;
+  --tracking-eyebrow: 0.12em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+}

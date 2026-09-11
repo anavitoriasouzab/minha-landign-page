@@ -1,0 +1,6 @@
+:root {
+  --radius-sm: 6px;   /* inputs, tags, small controls */
+  --radius-md: 14px;  /* buttons, badges, compact cards */
+  --radius-lg: 28px;  /* cards and images — the signature curve */
+  --radius-pill: 999px;
+}

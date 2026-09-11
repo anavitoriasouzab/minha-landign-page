@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ana Vitória · Landing pages e front-end</title>
+<meta name="description" content="Landing pages claras e cuidadosas, do design ao código. Ana Vitória, UX/UI e front-end em Manaus.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0D0A0B">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><script src="./ds-base.js"></script><style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#080707!important}
+a{color:#D9A6A0;text-decoration:none}
+a:hover{color:#B08A4E}
+::selection{background:#7A2438;color:#FAF6F4}
+:root{--accent-brown:#3A2420;--accent-bordeaux:#4B2A27;--accent-nude:#C8A19B;--accent-gold:#A9824B;--accent-caramel:#B8794B;--accent-glow:rgba(75,42,39,.16)}
+::selection{background:#5A392A;color:#FAF6F4}
+section[id]{scroll-margin-top:92px}
+.site-header{position:sticky;top:0;z-index:60;box-sizing:border-box;height:76px;margin-bottom:-76px;padding:12px 24px 0;pointer-events:none}
+.site-header .nav-shell{pointer-events:auto;position:relative;box-sizing:border-box;max-width:1240px;height:60px;margin:0 auto;padding:0 8px 0 10px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;border-radius:999px;border:1px solid transparent;background:transparent;transition:max-width 480ms cubic-bezier(.16,1,.3,1),background 300ms ease,border-color 300ms ease,box-shadow 300ms ease}
+.site-header[data-scrolled] .nav-shell{max-width:1080px;background:rgba(18,13,12,.74);border-color:rgba(200,161,155,.14);backdrop-filter:saturate(140%) blur(18px);-webkit-backdrop-filter:saturate(140%) blur(18px);box-shadow:0 18px 40px rgba(0,0,0,.35),inset 0 1px 0 rgba(250,246,244,.05)}
+.site-header .nav-brand{justify-self:start;display:inline-flex;align-items:center;gap:11px;min-width:0;color:#FAF6F4}
+.site-header .nav-brand:hover{color:#FAF6F4}
+.site-header .nav-mark{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border-radius:11px;background:#2A1B17;border:1px solid rgba(217,166,160,.24);box-shadow:0 0 16px rgba(126,76,45,.18);transition:transform 380ms cubic-bezier(.16,1,.3,1)}
+.site-header .nav-brand:hover .nav-mark{transform:rotate(-8deg)}
+.site-header .nav-name{font-family:var(--font-display);font-size:23px;letter-spacing:-.02em;white-space:nowrap}
+.site-header .nav-links{position:relative;display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:rgba(250,246,244,.03);border:1px solid rgba(200,161,155,.1)}
+.site-header .nav-links a{position:relative;z-index:1;padding:9px 16px;border-radius:999px;font-size:14px;color:#CDBDBF;white-space:nowrap;transition:color 180ms ease}
+.site-header .nav-links a:hover,.site-header .nav-links a[aria-current]{color:#FAF6F4}
+.site-header .nav-links a:focus-visible{outline:none;color:#FAF6F4;box-shadow:0 0 0 2px rgba(217,166,160,.4)}
+.site-header .nav-indicator{position:absolute;top:4px;bottom:4px;left:0;width:0;box-sizing:border-box;border-radius:999px;background:linear-gradient(110deg,rgba(90,57,42,.92),rgba(106,67,43,.6));border:1px solid rgba(200,161,155,.2);opacity:0;pointer-events:none;transition:transform 420ms cubic-bezier(.16,1,.3,1),width 420ms cubic-bezier(.16,1,.3,1),opacity 200ms ease}
+.site-header .nav-cta{justify-self:end;display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;background:linear-gradient(110deg,#4B3025,#6A432B);border:1px solid rgba(200,161,155,.24);color:#FAF6F4;font-size:13px;font-weight:500;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(250,246,244,.1),0 10px 24px rgba(0,0,0,.28);transition:background 220ms ease,transform 220ms ease}
+.site-header .nav-cta:hover,.site-header .nav-cta:focus-visible{color:#FAF6F4;background:linear-gradient(110deg,#6A432B,#A9824B);transform:translateY(-1px)}
+#inicio{background:#080707!important}
+#inicio>div[aria-hidden="true"]{background:radial-gradient(ellipse 48% 58% at 74% 30%,rgba(126,76,45,.22),transparent 68%),radial-gradient(ellipse 42% 48% at 8% 84%,rgba(58,36,32,.24),transparent 70%),radial-gradient(ellipse 30% 34% at 92% 76%,rgba(169,130,75,.1),transparent 72%)!important}
+#inicio h1 em{background:linear-gradient(105deg,#D9B08A,#B8794B 55%,#A9824B);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+#inicio [data-hero-copy]>div:first-child{border-color:rgba(200,161,155,.28)!important;background:linear-gradient(105deg,rgba(58,36,32,.42),rgba(169,130,75,.06))!important;color:#E4CBC8!important}
+#inicio [data-hero-copy]>div:first-child span{background:var(--accent-gold)!important;box-shadow:0 0 14px rgba(176,138,78,.5)}
+#inicio [data-hero-art]>div:first-child{background:radial-gradient(circle,rgba(184,121,75,.2),rgba(75,42,39,.14) 48%,transparent 72%)!important}
+#inicio [data-hero-art]>div:nth-child(2){border-color:rgba(217,166,160,.2)!important}
+#inicio [data-hero-art] img{filter:saturate(1.02) contrast(1.05)!important}
+#inicio [data-float]{border-color:rgba(200,161,155,.2)!important;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 28px rgba(100,37,54,.1)!important}
+#inicio [data-float]>span:first-child{background:rgba(176,138,78,.16)!important;color:#D8AE6C!important}
+#inicio a[href="#projetos"],#inicio a[data-whatsapp]{background:linear-gradient(110deg,rgba(58,36,32,.82),rgba(91,58,39,.62))!important;border:1px solid rgba(200,161,155,.24)!important;backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(250,246,244,.1),0 10px 26px rgba(0,0,0,.3)!important}
+#inicio a[href="#projetos"]:hover,#inicio a[data-whatsapp]:hover{background:linear-gradient(110deg,rgba(126,76,45,.7),rgba(169,130,75,.34))!important;border-color:rgba(217,184,137,.52)!important;box-shadow:inset 0 1px 0 rgba(250,246,244,.16),0 12px 30px rgba(126,76,45,.18)!important}
+#inicio a[href="#projetos"]{background:linear-gradient(110deg,#4B3025,#6A432B)!important;box-shadow:0 10px 26px rgba(0,0,0,.3)!important}
+#inicio a[href="#projetos"]:hover{background:linear-gradient(110deg,#6A432B,#A9824B)!important}
+#servicos [data-reveal]:first-child{align-items:flex-start!important}
+#servicos [data-reveal]:first-child>p{margin-top:8px!important}
+#servicos article{position:relative;min-height:0!important;padding:30px!important;background:linear-gradient(160deg,#1B1413,#120F0F)!important;border-color:rgba(200,161,155,.15)!important;box-shadow:0 18px 42px rgba(0,0,0,.28)!important;transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease!important}
+#servicos article:nth-child(2){background:linear-gradient(160deg,#302019,#171110)!important;border-color:rgba(200,161,155,.15)!important;box-shadow:0 18px 42px rgba(0,0,0,.28)!important}
+#servicos article:hover{transform:translateY(-5px)!important;border-color:rgba(169,130,75,.42)!important;box-shadow:0 26px 52px rgba(0,0,0,.42)!important}
+#servicos article>span:first-child{display:block;color:#A9824B!important;font-size:24px;line-height:1}
+#servicos article>span:nth-child(2){display:none}
+#servicos article>span:first-child::after{content:"";display:block;width:34px;height:2px;margin-top:14px;background:linear-gradient(90deg,#A9824B,#C8A19B);opacity:.9}
+#servicos article>h3{margin:24px 0 10px!important;font-size:27px!important}
+#servicos article>p{color:#C8B8B3!important}
+#projetos>a{background:#141010!important;border-color:rgba(200,161,155,.13)!important}
+#projetos>[href*="laisconsuelobiomed"]{border:1px solid transparent!important;background:linear-gradient(#181114,#181114) padding-box,linear-gradient(160deg,rgba(224,168,110,.72),rgba(231,169,160,.42),transparent 78%) border-box!important;box-shadow:0 18px 42px -18px rgba(224,168,110,.18)!important}
+#projetos>[href*="barbearia-study"]{border:1px solid transparent!important;background:linear-gradient(#181414,#181414) padding-box,linear-gradient(160deg,rgba(197,155,89,.72),rgba(197,155,89,.3),transparent 78%) border-box!important;box-shadow:0 18px 42px -18px rgba(197,155,89,.16)!important}
+#projetos>[href*="cetapcursos"]{border:1px solid transparent!important;background:linear-gradient(#14171D,#14171D) padding-box,linear-gradient(160deg,rgba(90,124,199,.72),rgba(90,124,199,.28),transparent 78%) border-box!important;box-shadow:0 18px 42px -18px rgba(90,124,199,.16)!important}
+#projetos>[href*="laisconsuelobiomed"]:hover{transform:translateY(-4px)!important;box-shadow:0 18px 50px -12px rgba(224,168,110,.4)!important}
+#projetos>[href*="barbearia-study"]:hover{transform:translateY(-4px)!important;box-shadow:0 18px 50px -12px rgba(197,155,89,.4)!important}
+#projetos>[href*="cetapcursos"]:hover{transform:translateY(-4px)!important;box-shadow:0 18px 50px -12px rgba(90,124,199,.4)!important}
+#projetos>[href*="laisconsuelobiomed"]>div:first-child>span,#projetos>[href*="barbearia-study"]>div:first-child>span,#projetos>[href*="cetapcursos"]>div:first-child>span{backdrop-filter:none!important;color:#1B1412!important;font-weight:500}
+#projetos>[href*="laisconsuelobiomed"]>div:first-child>span{background:#E0A86E!important}
+#projetos>[href*="barbearia-study"]>div:first-child>span{background:#C59B59!important}
+#projetos>[href*="cetapcursos"]>div:first-child>span{background:#5A7CC7!important;color:#0D111A!important}
+#projetos>div[data-g3]>a:nth-child(1)>div:first-child>span{background:#E0A86E!important;color:#1B1412!important}
+#projetos>div[data-g3]>a:nth-child(2)>div:first-child>span{background:#C59B59!important;color:#1B1412!important}
+#projetos>div[data-g3]>a:nth-child(3)>div:first-child>span{background:#5A7CC7!important;color:#0D111A!important}
+#projetos>[href*="laisconsuelobiomed"]>div:last-child>div>span,#projetos>[href*="barbearia-study"]>div:last-child>div>span,#projetos>[href*="cetapcursos"]>div:last-child>div>span{color:#B08A4E!important}
+#projetos>div[data-g3]>a{border-width:2px!important;transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease!important}
+#projetos>div[data-g3]>a:nth-child(1){border-color:rgba(224,168,110,.68)!important;background:#181114!important;box-shadow:0 18px 42px -18px rgba(224,168,110,.25),0 0 0 1px rgba(231,169,160,.1)!important}
+#projetos>div[data-g3]>a:nth-child(2){border-color:rgba(197,155,89,.7)!important;background:#181414!important;box-shadow:0 18px 42px -18px rgba(197,155,89,.24),0 0 0 1px rgba(197,155,89,.08)!important}
+#projetos>div[data-g3]>a:nth-child(3){border-color:rgba(90,124,199,.72)!important;background:#11151E!important;box-shadow:0 18px 42px -18px rgba(90,124,199,.24),0 0 0 1px rgba(90,124,199,.08)!important}
+#projetos>div[data-g3]>a:nth-child(1)>div:first-child::after,#projetos>div[data-g3]>a:nth-child(2)>div:first-child::after,#projetos>div[data-g3]>a:nth-child(3)>div:first-child::after{content:"";position:absolute;inset:0;pointer-events:none}
+#projetos>div[data-g3]>a:nth-child(1)>div:first-child::after{background:radial-gradient(circle at 78% 22%,rgba(224,168,110,.22),transparent 58%),linear-gradient(180deg,rgba(75,39,30,.06),rgba(17,12,13,.42))}
+#projetos>div[data-g3]>a:nth-child(2)>div:first-child::after{background:radial-gradient(circle at 28% 65%,rgba(197,155,89,.19),transparent 56%),linear-gradient(180deg,rgba(25,20,15,.03),rgba(10,9,8,.44))}
+#projetos>div[data-g3]>a:nth-child(3)>div:first-child::after{background:radial-gradient(circle at 76% 22%,rgba(90,124,199,.25),transparent 58%),linear-gradient(180deg,rgba(22,38,72,.06),rgba(8,12,20,.4))}
+#projetos>div[data-g3]>a:nth-child(1):hover{transform:translateY(-4px)!important;box-shadow:0 22px 54px -12px rgba(224,168,110,.52)!important}
+#projetos>div[data-g3]>a:nth-child(2):hover{transform:translateY(-4px)!important;box-shadow:0 22px 54px -12px rgba(197,155,89,.5)!important}
+#projetos>div[data-g3]>a:nth-child(3):hover{transform:translateY(-4px)!important;box-shadow:0 22px 54px -12px rgba(90,124,199,.5)!important}
+#projetos>div[data-g3]>a:nth-child(1)>div:first-child>span,#projetos>div[data-g3]>a:nth-child(2)>div:first-child>span,#projetos>div[data-g3]>a:nth-child(3)>div:first-child>span{z-index:1}
+#processo>div{position:relative;background:radial-gradient(circle at 12% 10%,rgba(184,121,75,.13),transparent 27%),radial-gradient(circle at 88% 88%,rgba(169,130,75,.08),transparent 30%),linear-gradient(135deg,#3B2820 0%,#211716 43%,#100E0D 100%)!important;border-color:rgba(200,161,155,.2)!important;box-shadow:0 28px 72px rgba(0,0,0,.46),0 0 42px rgba(126,76,45,.12)!important}
+#processo>div::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background-image:linear-gradient(rgba(200,161,155,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(200,161,155,.055) 1px,transparent 1px);background-size:38px 38px;background-position:4px 4px;mask-image:radial-gradient(ellipse at 24% 34%,rgba(0,0,0,.76),transparent 78%);opacity:.72;mix-blend-mode:screen;z-index:0}
+#processo>div::after{content:"";position:absolute;inset:-1px;padding:3px;border-radius:inherit;pointer-events:none;background:conic-gradient(from var(--frame-angle),transparent 0deg,transparent 238deg,rgba(184,121,75,.3) 270deg,#E2BD86 310deg,rgba(184,121,75,.3) 342deg,transparent 360deg);mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:1;filter:drop-shadow(0 0 12px rgba(184,121,75,.52));animation:frameOrbit 7s linear infinite;z-index:2}
+#processo>div>*{position:relative;z-index:1}
+#processo h2 em{background:linear-gradient(105deg,#D9B08A,#A9824B);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+#processo [data-process-rail]>div:hover{background:linear-gradient(135deg,rgba(126,76,45,.1),rgba(169,130,75,.04))!important}
+#contato{position:relative}
+#contato>div{position:relative;background-color:#241714!important;background-image:radial-gradient(ellipse 58% 90% at 18% 28%,rgba(137,60,30,.26),transparent 68%),radial-gradient(ellipse 45% 70% at 82% 70%,rgba(70,37,25,.36),transparent 72%),linear-gradient(115deg,#3A241D 0%,#45291E 32%,#241714 70%,#100D0D 100%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E")!important;background-blend-mode:screen,screen,normal,soft-light!important;background-size:auto,auto,auto,180px 180px!important;border-color:rgba(168,126,91,.24)!important;box-shadow:0 30px 70px rgba(0,0,0,.64)!important}
+#contato>div::before{content:"";position:absolute;top:-24%;left:4%;width:430px;height:430px;border-radius:50%;pointer-events:none;background-image:radial-gradient(circle,rgba(190,83,27,.42) 0,rgba(151,68,28,.16) 28%,transparent 68%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");background-size:100% 100%,180px 180px;mix-blend-mode:screen;opacity:.66;filter:blur(28px);animation:contactGradientFirst 18s ease-in-out infinite;z-index:0}
+#contato>div::after{content:"";position:absolute;right:-10%;bottom:-34%;width:470px;height:470px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(184,126,24,.34) 0,rgba(137,76,23,.12) 30%,transparent 68%);mix-blend-mode:screen;opacity:.58;filter:blur(34px);animation:contactGradientSecond 15s ease-in-out infinite;z-index:0}
+#contato>div>div[aria-hidden="true"]{display:block!important;right:28%!important;top:34%!important;width:300px!important;height:300px!important;background:radial-gradient(circle,rgba(153,88,48,.42) 0,rgba(184,121,75,.18) 34%,transparent 68%)!important;filter:blur(24px)!important;mix-blend-mode:screen;opacity:.72;animation:contactGradientThird 22s ease-in-out infinite!important;z-index:0!important}
+#contato [data-cta]{z-index:1}
+#contato [data-cta]>div:last-child{gap:16px!important}
+#contato [data-cta]>div:last-child>a{position:relative;background:rgba(13,10,11,.27)!important;border-color:rgba(250,246,244,.22)!important;backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(250,246,244,.1),0 12px 26px rgba(0,0,0,.16)!important;transition:transform 220ms ease,background 220ms ease,border-color 220ms ease,box-shadow 220ms ease!important}
+#contato [data-cta]>div:last-child>a:hover{background:rgba(13,10,11,.42)!important;border-color:rgba(217,176,138,.56)!important;transform:translateY(-4px)!important;box-shadow:inset 0 1px 0 rgba(250,246,244,.16),0 18px 36px rgba(0,0,0,.3)!important}
+#contato [data-cta]>div:first-child>div:first-child{color:#E1BFA7!important}
+#contato [data-cta]>div:first-child h2 em{color:#E6C08C!important}
+#contato [data-cta]>div:first-child>a{background:#F3E7DB!important;color:#2A1A17!important;box-shadow:0 14px 32px rgba(0,0,0,.24)!important}
+#contato [data-cta]>div:first-child>a:hover{background:#E6C08C!important;transform:translateY(-3px)!important;box-shadow:0 20px 40px rgba(0,0,0,.34)!important}
+#inicio a[href="#projetos"]{color:#FAF6F4!important}
+#inicio [data-hero-art]>div:first-child{background:radial-gradient(circle,rgba(184,121,75,.2),rgba(75,42,39,.1) 48%,transparent 72%)!important}
+#inicio [data-hero-art]>div:last-child{box-shadow:0 34px 80px rgba(0,0,0,.6),20px 20px 0 rgba(75,42,39,.24)!important}
+#sobre>div>div:first-child>div:first-child{background:rgba(75,42,39,.34)!important}
+#sobre .skills{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;max-width:560px}
+#sobre .skills li{display:grid;align-content:start;gap:3px;padding:13px 0;border-top:1px solid rgba(200,161,155,.14)}
+#sobre .skill-nome{font-family:var(--font-display);font-size:20px;line-height:1.15;color:#EFE3DF}
+#sobre .skill-desc{font-size:13px;line-height:1.5;color:#A89A9D}
+#faq>[data-g2]{grid-template-columns:1fr!important;gap:12px!important;max-width:760px;margin:0 auto}
+#faq>[data-g2]>div{display:contents}
+#faq [data-g2] p{max-width:none!important;padding-right:clamp(0px,6vw,64px)}
+.site-footer{position:relative;overflow:hidden;border-top:1px solid rgba(200,161,155,.12);background:radial-gradient(ellipse 50% 60% at 12% 0%,rgba(91,58,43,.2),transparent 70%),linear-gradient(180deg,#120E0D 0%,#0B0909 100%)}
+.site-footer .foot-glow{position:absolute;right:6%;bottom:-160px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(184,121,75,.16),rgba(75,42,39,.08) 40%,transparent 70%);filter:blur(10px);pointer-events:none}
+.site-footer .foot-label{margin-bottom:22px;font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#D9A6A0}
+.site-footer .foot-nav{display:grid;justify-items:start;gap:12px}
+.site-footer .foot-link{position:relative;font-family:var(--font-display);font-size:24px;line-height:1.1;color:#E8DAD6;transition:color 180ms ease,transform 180ms ease}
+.site-footer .foot-link::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:#A9824B;transform:scaleX(0);transform-origin:left;transition:transform 200ms ease}
+.site-footer .foot-link:hover,.site-footer .foot-link:focus-visible{color:#FAF6F4;transform:translateX(4px)}
+.site-footer .foot-link:hover::after,.site-footer .foot-link:focus-visible::after{transform:scaleX(1)}
+.site-footer .foot-status{display:inline-flex;align-items:center;gap:10px;padding:9px 16px 9px 13px;border-radius:999px;border:1px solid rgba(200,161,155,.22);background:linear-gradient(105deg,rgba(58,36,32,.42),rgba(169,130,75,.06));font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#E4CBC8}
+.site-footer .foot-dot{position:relative;width:7px;height:7px;border-radius:50%;background:#A9824B}
+.site-footer .foot-dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:#A9824B;animation:footPulse 2.4s ease-out infinite}
+.site-footer .foot-social{display:flex;gap:12px}
+.site-footer .foot-social a{display:grid;place-items:center;width:52px;height:52px;border-radius:18px;background:rgba(255,255,255,.02);border:1px solid rgba(200,161,155,.16);color:#F3E7DB;transition:transform 180ms ease,background 180ms ease,border-color 180ms ease,color 180ms ease}
+.site-footer .foot-social a:hover,.site-footer .foot-social a:focus-visible{transform:translateY(-3px);background:rgba(75,42,39,.4);border-color:rgba(169,130,75,.5);color:#FAF6F4}
+.site-footer .foot-clock{margin-top:22px;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;color:#A08D91}
+.site-footer .foot-wordmark{margin:72px 0 -.14em;font-family:var(--font-display);font-size:clamp(4.5rem,16vw,14rem);line-height:.85;letter-spacing:-.03em;text-align:center;white-space:nowrap;background:linear-gradient(180deg,rgba(217,166,160,.3) 0%,rgba(122,56,48,.12) 55%,rgba(18,14,13,0) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none;pointer-events:none}
+.site-footer .foot-bottom{position:relative;max-width:1180px;margin:0 auto;padding:20px 24px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(200,161,155,.1);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:#9C878C}
+.site-footer .foot-top{color:#C8A19B;transition:color 180ms ease}
+.site-footer .foot-top:hover,.site-footer .foot-top:focus-visible{color:#FAF6F4}
+@keyframes footPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+@keyframes contactOrb{0%,100%{transform:translate(0,0) scale(1);opacity:.7}35%{transform:translate(-120px,105px) scale(.82);opacity:.48}70%{transform:translate(-210px,35px) scale(1.08);opacity:.62}}
+@keyframes contactOrbTwo{0%,100%{transform:translate(-30px,20px) scale(.8);opacity:.28}45%{transform:translate(140px,80px) scale(1.12);opacity:.48}75%{transform:translate(70px,-55px) scale(.9);opacity:.32}}
+@keyframes contactGradientFirst{0%,100%{transform:translate(-12%,-8%) scale(.72)}30%{transform:translate(68%,20%) scale(1.16)}58%{transform:translate(42%,82%) scale(.82)}82%{transform:translate(-8%,48%) scale(1.08)}}
+@keyframes contactGradientSecond{0%,100%{transform:translate(8%,8%) scale(.72)}35%{transform:translate(-58%,-38%) scale(1.18)}68%{transform:translate(-12%,-78%) scale(.8)}86%{transform:translate(36%,-48%) scale(1.06)}}
+@keyframes contactGradientThird{0%,100%{transform:translate(0,0) scale(.7)}30%{transform:translate(-82%,-42%) scale(1.18)}62%{transform:translate(62%,-70%) scale(.78)}84%{transform:translate(36%,28%) scale(1.1)}}
+section[aria-label="Princípios"]{position:relative;overflow:hidden;background:radial-gradient(ellipse 60% 80% at 10% 10%,rgba(91,58,43,.22),transparent 62%),linear-gradient(145deg,#211616,#120F0F 72%)!important;border-top-color:rgba(200,161,155,.08)!important;border-bottom-color:rgba(200,161,155,.08)!important}
+section[aria-label="Princípios"]>div{padding-top:88px!important;padding-bottom:76px!important}
+section[aria-label="Princípios"] [data-reveal]:first-child{align-items:center!important;margin-bottom:36px!important}
+section[aria-label="Princípios"] [data-reveal]:first-child>div:first-child{flex:1}
+section[aria-label="Princípios"] [data-reveal]:first-child>div:last-child{flex:0 0 auto}
+section[aria-label="Princípios"] h2 em{background:linear-gradient(105deg,#D9B08A,#C88F7D);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+section[aria-label="Princípios"] [data-rail]{position:relative;margin-right:-24px;padding:0 24px 18px;mask-image:linear-gradient(90deg,#000 0%,#000 88%,transparent 100%)}
+section[aria-label="Princípios"] blockquote{position:relative;flex:0 0 clamp(360px,38vw,480px)!important;min-height:0;box-sizing:border-box;padding:30px 36px 26px!important;border-radius:24px!important;background:linear-gradient(145deg,rgba(39,25,26,.86),rgba(20,14,15,.9))!important;border-color:rgba(200,161,155,.15)!important;box-shadow:0 18px 50px rgba(0,0,0,.18);transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease}
+section[aria-label="Princípios"] blockquote:hover{transform:translateY(-4px);border-color:rgba(200,161,155,.3)!important;box-shadow:0 26px 58px rgba(0,0,0,.34)}
+section[aria-label="Princípios"] blockquote>div:first-child{font-size:44px!important;color:#D9A6A0!important}
+section[aria-label="Princípios"] blockquote p{margin-top:16px!important;font-size:clamp(1.2rem,1.7vw,1.45rem)!important;line-height:1.3!important}
+section[aria-label="Princípios"] blockquote footer{margin-top:16px!important;color:#B49B99!important}
+section[aria-label="Princípios"] .quote-dots{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:24px}
+section[aria-label="Princípios"] .quote-dots span{display:block;width:7px;height:7px;border-radius:50%;background:#604C4D}
+section[aria-label="Princípios"] .quote-dots span:first-child{width:28px;border-radius:999px;background:#D9A6A0}
+section[aria-label="Princípios"] button{width:56px!important;height:56px!important;border-color:rgba(200,161,155,.2)!important;color:#C8A19B!important}
+section[aria-label="Princípios"] button:last-child{border-color:#D9A6A0!important;color:#D9A6A0!important}
+.faixa{position:relative;overflow:hidden;padding:20px 0;border-top:1px solid rgba(200,161,155,.14);border-bottom:1px solid rgba(200,161,155,.14);background:linear-gradient(90deg,#100D0D,#171211 50%,#100D0D)}
+.faixa::before,.faixa::after{content:"";position:absolute;top:0;bottom:0;width:11%;z-index:2;pointer-events:none}
+.faixa::before{left:0;display:none;background:linear-gradient(90deg,#100D0D,transparent)}
+.faixa::after{right:0;background:linear-gradient(270deg,#100D0D,transparent)}
+.faixa-label{position:absolute;left:0;top:0;bottom:0;z-index:3;display:flex;align-items:center;padding:0 28px 0 24px;background:#110E0E;border-right:1px solid rgba(200,161,155,.16);font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#C8A19B;pointer-events:none}
+.faixa-label::after{content:"";position:absolute;left:100%;top:0;bottom:0;width:56px;margin-left:1px;background:linear-gradient(90deg,#110E0E,rgba(17,14,14,0))}
+.faixa-track{display:flex;width:max-content;animation:marquee 52s linear infinite}
+.faixa:hover .faixa-track,.faixa:focus-within .faixa-track{animation-play-state:paused}
+.faixa-group{display:flex;align-items:center;gap:34px;padding-right:34px;white-space:nowrap}
+.faixa-sep{flex:0 0 auto;width:34px;height:1px;background:rgba(200,161,155,.32)}
+.faixa-item{--c:#A9824B;display:inline-flex;align-items:center;gap:16px;color:inherit;outline:none}
+.faixa-item.p-lais{--c:#E0A86E}
+.faixa-item.p-barba{--c:#C59B59}
+.faixa-item.p-cetap{--c:#5A7CC7}
+.faixa-thumb{flex:0 0 auto;width:96px;height:62px;border-radius:14px;overflow:hidden;border:1px solid rgba(200,161,155,.2);background:#1B1413;transition:border-color 240ms ease,transform 240ms ease,box-shadow 240ms ease}
+.faixa-thumb img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.03);transition:transform 500ms cubic-bezier(.16,1,.3,1)}
+.p-lais .faixa-thumb img{object-position:top}
+.p-barba .faixa-thumb img{object-position:34% center}
+.faixa-txt{display:grid;gap:5px}
+.faixa-tag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.faixa-name{font-family:var(--font-display);font-size:27px;line-height:1.05;color:#EAD9D3;transition:color 240ms ease}
+.faixa-item:hover .faixa-thumb,.faixa-item:focus-visible .faixa-thumb{border-color:var(--c);transform:translateY(-2px)}
+.faixa-item:focus-visible .faixa-thumb{box-shadow:0 0 0 2px rgba(217,166,160,.4)}
+.faixa-item:hover img,.faixa-item:focus-visible img{transform:scale(1.07)}
+.faixa-item:hover .faixa-name,.faixa-item:focus-visible .faixa-name{color:#FAF6F4}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes halo{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:.85;transform:scale(1.04)}}
+@property --frame-angle{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes frameOrbit{to{--frame-angle:360deg}}
+[data-rail]{scrollbar-width:none}
+[data-rail]::-webkit-scrollbar{display:none}
+[data-process-rail]{position:relative;display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr));overflow:visible!important;border-top:0!important;padding-top:28px}
+[data-process-rail]::before{content:"";position:absolute;top:42px;left:24px;right:24px;height:1px;background:linear-gradient(90deg,rgba(169,130,75,.28),rgba(200,161,155,.5),rgba(169,130,75,.28));z-index:0}
+[data-process-rail]>div{position:relative;z-index:1;min-width:0!important;min-height:190px!important;padding:0 24px 38px!important;border-right:0!important;border-left:0!important}
+[data-process-rail]>div>span:first-child{position:relative;display:block;width:auto;height:auto;margin:0 0 26px;padding-top:28px;border:0;border-radius:0;background:transparent;color:#D9B08A!important;font-family:var(--font-mono);font-size:10px!important;letter-spacing:.04em!important;z-index:2}
+[data-process-rail]>div>span:first-child::before{content:"";position:absolute;top:10px;left:0;width:8px;height:8px;border:1px solid #B8794B;border-radius:50%;background:#B8794B;box-shadow:0 0 0 5px rgba(169,130,75,.12)}
+[data-process-rail]>div>span:first-child::after{display:none}
+[data-process-rail] h3{margin:0 0 8px!important;font-size:clamp(1.25rem,1.8vw,1.55rem)!important;line-height:1.05!important}
+[data-process-rail] p{min-height:4.95em!important;margin-bottom:0!important}
+[data-reveal]{animation:rise .85s cubic-bezier(.16,1,.3,1) both;animation-timeline:view();animation-range:entry 0% cover 20%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+@media (max-width:960px){
+[data-hero]{grid-template-columns:1fr!important;gap:56px!important;padding-top:124px!important}
+[data-hero-copy]{order:1}[data-hero-art]{order:2}
+[data-g3]{grid-template-columns:1fr!important}
+[data-g2]{grid-template-columns:1fr!important}
+[data-float]{display:none!important}
+[data-cta]{grid-template-columns:1fr!important}
+[data-process-rail]{grid-template-columns:repeat(2,minmax(0,1fr))!important;overflow:visible!important}
+[data-process-rail]::before{left:8%;right:8%}
+[data-process-rail]>div{flex:initial!important;padding-left:22px!important;padding-right:22px!important}
+.site-header .nav-links,.site-header .nav-cta{display:none}
+.site-header .nav-shell{grid-template-columns:1fr}
+[data-footer-grid]{grid-template-columns:1fr 1fr!important}
+[data-footer-grid]>div:first-child{grid-column:1/-1}
+}
+@media (max-width:600px){
+.site-header{padding:10px 16px 0}
+.site-header .nav-name{font-size:21px}
+[data-process-rail]{display:grid!important;grid-template-columns:1fr!important;overflow:visible!important;padding:8px 24px 30px!important}
+[data-process-rail]::before{display:none}
+[data-process-rail]>div{min-height:0!important;padding:0 0 26px 30px!important}
+[data-process-rail]>div:not(:last-child)::after{content:"";position:absolute;left:4.5px;top:16px;bottom:1.5px;width:1px;background:linear-gradient(180deg,rgba(184,121,75,.55),rgba(200,161,155,.18))}
+[data-process-rail]>div>span:first-child{margin:0 0 6px!important;padding-top:0!important}
+[data-process-rail]>div>span:first-child::before{top:2.5px;left:-30px}
+[data-process-rail] h3{margin-bottom:6px!important}
+[data-process-rail] p{min-height:0!important}
+#processo>div>div:first-child{padding:40px 24px 28px!important}
+[data-footer-grid]{grid-template-columns:1fr!important;gap:44px!important}
+.site-footer .foot-wordmark{margin-top:56px}
+#inicio [data-hero-copy]>div:last-child{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))}
+#inicio [data-hero-copy]>div:last-child>div{padding:18px 0 0 14px!important}
+#inicio [data-hero-copy]>div:last-child>div:first-child{padding-left:0!important}
+#inicio [data-hero-copy]>div:last-child>div>div:first-child{font-size:21px!important}
+#servicos article{min-height:0!important;padding:24px!important}
+#servicos article>h3{margin:18px 0 8px!important;font-size:24px!important}
+section[aria-label="Princípios"]>div{padding-top:72px!important;padding-bottom:64px!important}
+section[aria-label="Princípios"] blockquote{flex:0 0 86%!important;min-height:0;padding:24px 22px 22px!important}
+section[aria-label="Princípios"] blockquote>div:first-child{font-size:38px!important}
+section[aria-label="Princípios"] blockquote p{margin-top:14px!important;font-size:1.2rem!important}
+section[aria-label="Princípios"] blockquote footer{margin-top:14px!important}
+[style*="font-size:9px"]{font-size:10.5px!important}
+.faixa-label{display:none}
+.faixa::before{display:block}
+.faixa-group{gap:22px;padding-right:22px}
+.faixa-item{gap:12px}
+.faixa-thumb{width:76px;height:50px;border-radius:12px}
+.faixa-name{font-size:22px}
+.site-footer>div:nth-child(2){padding-top:64px!important}
+.site-footer .foot-nav{grid-template-columns:1fr 1fr;gap:0 16px}
+.site-footer .foot-link{padding:9px 0;font-size:22px}
+.site-footer .foot-link::after{bottom:6px}
+.site-footer .foot-top{display:inline-block;padding:13px 0}
+section[aria-label="Princípios"] button{width:44px!important;height:44px!important;font-size:15px!important}
+#sobre [data-g2]>div:first-child{width:72%;max-width:280px}
+#sobre .skills{column-gap:18px}
+#sobre .skill-nome{font-size:18px}
+}
+</style></helmet>
+<div style="font-family:var(--font-body);background:#0D0A0B;color:#FAF6F4;overflow-x:hidden">
+<div ref="{{ progressRef }}" aria-hidden="true" style="position:fixed;top:0;left:0;z-index:100;height:2px;width:0%;background:linear-gradient(90deg,#7A2438,#B08A4E);pointer-events:none"></div>
+
+<header ref="{{ headerRef }}" class="site-header">
+<div class="nav-shell">
+<a href="#inicio" class="nav-brand" aria-label="Ana Vitória, voltar ao início">
+<span class="nav-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="100%" height="100%"><path d="M8.5 23.5L14.5 8.5l6 15" fill="none" stroke="#E8C3B6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.5" cy="22.5" r="2.1" fill="#C9A26A"/></svg></span>
+<span class="nav-name">Ana Vitória</span>
+</a>
+<nav ref="{{ navRef }}" aria-label="Menu principal" class="nav-links">
+<span class="nav-indicator" aria-hidden="true"></span>
+<a href="#servicos">O que faço</a>
+<a href="#projetos">Projetos</a>
+<a href="#processo">Como trabalho</a>
+<a href="#sobre">Sobre mim</a>
+<a href="#faq">Dúvidas</a>
+</nav>
+<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" class="nav-cta">Me conte seu projeto</a>
+</div>
+</header>
+
+<section id="inicio" style="position:relative;isolation:isolate;overflow:hidden;background:#0D0A0B">
+<canvas ref="{{ canvasRef }}" aria-hidden="true" style="position:absolute;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;opacity:0.42"></canvas>
+<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 55% at 72% 34%,rgba(122,36,56,0.42),transparent 70%),radial-gradient(ellipse 45% 45% at 6% 92%,rgba(118,85,68,0.32),transparent 70%)"></div>
+<div data-hero style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:148px 24px 104px;display:grid;grid-template-columns:1.06fr 0.94fr;gap:clamp(44px,6vw,88px);align-items:center">
+<div data-hero-copy style="animation:rise 1s cubic-bezier(.16,1,.3,1) .08s both">
+<div style="display:inline-flex;align-items:center;gap:9px;padding:8px 16px 8px 12px;border-radius:999px;border:1px solid rgba(217,166,160,0.28);background:rgba(217,166,160,0.07);font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#E4CBC8">
+<span style="width:6px;height:6px;border-radius:999px;background:#B08A4E"></span>UX/UI &amp; front-end
+</div>
+<h1 style="margin:26px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(3rem,6.2vw,5.2rem);line-height:1.0;letter-spacing:-0.015em;text-wrap:pretty">Sites que transmitem <em style="color:#D9A6A0">confiança</em> antes da primeira palavra.</h1>
+<p style="margin:26px 0 0;max-width:50ch;font-size:17px;line-height:1.7;color:#D3C1C2">Sou Ana Vitória, estudante de tecnologia e crio landing pages para pequenos negócios. Páginas claras e bem cuidadas, feitas para aproximar você das pessoas certas.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:34px">
+<a href="#projetos" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;background:#7A2438;color:#FAF6F4;font-size:15px;font-weight:500;text-decoration:none;transition:background 200ms cubic-bezier(.4,0,.2,1),transform 200ms,box-shadow 200ms" style-hover="background:#5E1B2B;transform:translateY(-2px);box-shadow:0 16px 38px rgba(122,36,56,0.5)">Ver projetos</a>
+<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" data-whatsapp style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;border:1px solid rgba(217,166,160,0.34);color:#FAF6F4;font-size:15px;font-weight:500;text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:rgba(217,166,160,0.1);border-color:#D9A6A0;transform:translateY(-2px)">Falar comigo</a>
+</div>
+<div style="display:flex;gap:0;flex-wrap:wrap;margin-top:44px;border-top:1px solid rgba(217,166,160,0.18)">
+<div style="padding:20px 28px 0 0"><div style="font-family:var(--font-display);font-size:27px;line-height:1">Estratégia</div><div style="margin-top:6px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#A08D91">antes do layout</div></div>
+<div style="padding:20px 28px 0;border-left:1px solid rgba(217,166,160,0.18)"><div style="font-family:var(--font-display);font-size:27px;line-height:1">Design</div><div style="margin-top:6px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#A08D91">com intenção</div></div>
+<div style="padding:20px 0 0 28px;border-left:1px solid rgba(217,166,160,0.18)"><div style="font-family:var(--font-display);font-size:27px;line-height:1">Código</div><div style="margin-top:6px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#A08D91">html · css · js</div></div>
+</div>
+</div>
+<div data-hero-art style="position:relative;animation:rise 1s cubic-bezier(.16,1,.3,1) .26s both">
+<div aria-hidden="true" style="position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:104%;aspect-ratio:1;border-radius:999px;background:radial-gradient(circle,rgba(176,138,78,0.32),rgba(122,36,56,0.18) 52%,transparent 72%);animation:halo 7s ease-in-out infinite;z-index:0"></div>
+<div aria-hidden="true" style="position:absolute;left:-6%;top:8%;width:118%;aspect-ratio:1;border:1px solid rgba(217,166,160,0.16);border-radius:999px;z-index:0"></div>
+<div style="position:relative;z-index:1;border-radius:28px 28px 28px 6px;overflow:hidden;aspect-ratio:4/5;border:1px solid rgba(217,166,160,0.26);box-shadow:0 34px 80px rgba(0,0,0,0.6),20px 20px 0 rgba(122,36,56,0.34)">
+<img src="assets/photos/ana-hero-4x5.jpg" alt="Ana Vitória, designer de interfaces e desenvolvedora front-end" style="width:100%;height:100%;object-fit:cover;filter:saturate(0.88) contrast(1.05)">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,10,11,0.78),rgba(13,10,11,0.05) 52%)"></div>
+<div style="position:absolute;left:22px;right:22px;bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#E4CBC8"><span>Manaus · AM</span><span style="color:#B08A4E">disponível para projetos</span></div>
+</div>
+<div data-float style="position:absolute;z-index:2;left:-44px;top:16%;display:flex;align-items:center;gap:12px;padding:13px 17px;border-radius:14px;background:rgba(20,14,16,0.72);backdrop-filter:saturate(140%) blur(14px);border:1px solid rgba(217,166,160,0.22);box-shadow:0 18px 40px rgba(0,0,0,0.45);animation:drift 6s ease-in-out infinite">
+<span style="display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:rgba(176,138,78,0.16);color:#B08A4E;font-size:15px">✦</span>
+<span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#A08D91;line-height:1.6">design com<br><span style="color:#FAF6F4">estratégia</span></span>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-label="Projetos em destaque" class="faixa">
+<div class="faixa-label" aria-hidden="true">projetos em destaque</div>
+<div class="faixa-track">
+<div class="faixa-group">
+<a class="faixa-item p-lais" href="https://laisconsuelobiomed.com.br/" target="_blank" rel="noreferrer"><span class="faixa-thumb"><img src="assets/projects/laisconsuelo-desktop.png" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">estética</span><span class="faixa-name">Laís Consuelo Biomed</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-barba" href="https://anavitoriasouzab.github.io/barbearia-study/" target="_blank" rel="noreferrer"><span class="faixa-thumb"><img src="assets/barba%20brava.jpg" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">barbearia</span><span class="faixa-name">Barbearia Barba Brava</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-cetap" href="https://cetapcursos.com.br/" target="_blank" rel="noreferrer"><span class="faixa-thumb"><img src="assets/cetap.jpg" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">educação</span><span class="faixa-name">Polo educacional CETAP</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-lais" href="https://laisconsuelobiomed.com.br/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/projects/laisconsuelo-desktop.png" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">estética</span><span class="faixa-name">Laís Consuelo Biomed</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-barba" href="https://anavitoriasouzab.github.io/barbearia-study/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/barba%20brava.jpg" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">barbearia</span><span class="faixa-name">Barbearia Barba Brava</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-cetap" href="https://cetapcursos.com.br/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/cetap.jpg" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">educação</span><span class="faixa-name">Polo educacional CETAP</span></span></a><span class="faixa-sep"></span>
+</div>
+<div class="faixa-group" aria-hidden="true">
+<a class="faixa-item p-lais" href="https://laisconsuelobiomed.com.br/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/projects/laisconsuelo-desktop.png" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">estética</span><span class="faixa-name">Laís Consuelo Biomed</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-barba" href="https://anavitoriasouzab.github.io/barbearia-study/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/barba%20brava.jpg" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">barbearia</span><span class="faixa-name">Barbearia Barba Brava</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-cetap" href="https://cetapcursos.com.br/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/cetap.jpg" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">educação</span><span class="faixa-name">Polo educacional CETAP</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-lais" href="https://laisconsuelobiomed.com.br/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/projects/laisconsuelo-desktop.png" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">estética</span><span class="faixa-name">Laís Consuelo Biomed</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-barba" href="https://anavitoriasouzab.github.io/barbearia-study/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/barba%20brava.jpg" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">barbearia</span><span class="faixa-name">Barbearia Barba Brava</span></span></a><span class="faixa-sep"></span>
+<a class="faixa-item p-cetap" href="https://cetapcursos.com.br/" target="_blank" rel="noreferrer" tabindex="-1"><span class="faixa-thumb"><img src="assets/cetap.jpg" alt="" width="96" height="62"></span><span class="faixa-txt"><span class="faixa-tag">educação</span><span class="faixa-name">Polo educacional CETAP</span></span></a><span class="faixa-sep"></span>
+</div>
+</div></section>
+
+<section id="servicos" style="max-width:1180px;margin:0 auto;padding:112px 24px 0">
+<div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:52px">
+<div>
+<div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#D9A6A0">serviços</div>
+<h2 style="margin:14px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(2.4rem,4.6vw,3.5rem);line-height:1.04;letter-spacing:-0.01em">O que eu <em style="color:#D9A6A0">faço.</em></h2>
+</div>
+<p style="margin:0;max-width:42ch;font-size:15px;line-height:1.7;color:#C0AEB2">Eu não aplico a mesma solução em todo projeto: primeiro entendo o negócio, depois crio uma experiência digital coerente com seus objetivos.</p>
+</div>
+<div data-g3 data-reveal style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px">
+<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(165deg,#1A1215,#221719);border:1px solid rgba(217,166,160,0.14);transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-2px);border-color:rgba(176,138,78,0.45);box-shadow:0 22px 52px rgba(0,0,0,0.5)">
+<span aria-hidden="true">▱</span>
+<h3 style="margin:auto 0 12px;font-family:var(--font-display);font-weight:400;font-size:30px;line-height:1.05">Landing pages</h3>
+<p style="margin:0;font-size:14px;line-height:1.7;color:#C0AEB2">Páginas para apresentar seu serviço com clareza, gerar confiança e facilitar o próximo passo do cliente.</p></article>
+<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(160deg,#7A2438,#4A1A26);border:1px solid rgba(217,166,160,0.3);box-shadow:0 26px 60px rgba(122,36,56,0.34);transition:transform 200ms cubic-bezier(.4,0,.2,1),box-shadow 200ms" style-hover="transform:translateY(-2px);box-shadow:0 30px 70px rgba(122,36,56,0.5)">
+<span aria-hidden="true">◷</span>
+<h3 style="margin:auto 0 12px;font-family:var(--font-display);font-weight:400;font-size:30px;line-height:1.05">UI/UX &amp; direção</h3>
+<p style="margin:0;font-size:14px;line-height:1.7;color:#F3DCD9">Organizo conteúdo, fluxo e navegação para que cada pessoa encontre o que precisa e entenda o valor do negócio.</p></article>
+<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(165deg,#1A1215,#221719);border:1px solid rgba(217,166,160,0.14);transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-2px);border-color:rgba(176,138,78,0.45);box-shadow:0 22px 52px rgba(0,0,0,0.5)">
+<span aria-hidden="true">&lt;/&gt;</span>
+<h3 style="margin:auto 0 12px;font-family:var(--font-display);font-weight:400;font-size:30px;line-height:1.05">Front-end</h3>
+<p style="margin:0;font-size:14px;line-height:1.7;color:#C0AEB2">Construção de interfaces em HTML e CSS, com atenção à responsividade, aos detalhes e ao aprendizado contínuo de JavaScript.</p></article>
+</div>
+</section>
+
+<section id="projetos" style="max-width:1180px;margin:0 auto;padding:112px 24px 0">
+<div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:44px">
+<div>
+<div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#D9A6A0">portfólio · 2026</div>
+<h2 style="margin:14px 0 0;max-width:20ch;font-family:var(--font-display);font-weight:400;font-size:clamp(2.4rem,4.6vw,3.5rem);line-height:1.04;letter-spacing:-0.01em">Principais projetos, cada um com <em style="color:#D9A6A0">identidade própria.</em></h2>
+</div>
+<div style="display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap">
+<p style="margin:0;max-width:32ch;font-size:15px;line-height:1.7;color:#C0AEB2">Contextos diferentes, direções visuais diferentes. A estética muda para que cada negócio seja reconhecido.</p>
+</div>
+</div>
+<div data-g3 style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px">
+<a href="https://laisconsuelobiomed.com.br/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:#181114;border:1px solid rgba(217,166,160,0.14);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:rgba(176,138,78,0.45);box-shadow:0 24px 56px rgba(0,0,0,0.55)">
+<div style="position:relative;height:262px;overflow:hidden;background:#241A1C"><img src="assets/projects/laisconsuelo-desktop.png" alt="Landing page da Laís Consuelo" style="width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:rgba(13,10,11,0.66);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#E4CBC8">estética</span></div>
+<div style="padding:24px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Laís Consuelo Biomed</h3><span style="color:#B08A4E;font-size:16px">↗</span></div>
+<p style="margin:10px 0 0;font-family:var(--font-mono);font-size:11px;line-height:1.6;color:#A08D91">Suave e acolhedor · Biomedicina estética · Manaus</p>
+</div>
+</a>
+<a href="https://anavitoriasouzab.github.io/barbearia-study/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:#181114;border:1px solid rgba(217,166,160,0.14);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:rgba(176,138,78,0.45);box-shadow:0 24px 56px rgba(0,0,0,0.55)">
+<div style="position:relative;height:262px;overflow:hidden;background:#241A17"><img src="assets/barba%20brava.jpg" alt="Landing page da Barbearia Barba Brava" style="width:100%;height:100%;object-fit:cover;object-position:34% center;filter:saturate(.82) contrast(1.04);transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,10,11,.65),rgba(13,10,11,.04) 62%)"></div><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:rgba(13,10,11,0.62);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#E4CBC8">barbearia</span></div>
+<div style="padding:24px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Barbearia Barba Brava</h3><span style="color:#B08A4E;font-size:16px">↗</span></div>
+<p style="margin:10px 0 0;font-family:var(--font-mono);font-size:11px;line-height:1.6;color:#A08D91">Preto e dourado · Direção forte e masculina</p>
+</div>
+</a>
+<a href="https://cetapcursos.com.br/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:#181114;border:1px solid rgba(217,166,160,0.14);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:rgba(176,138,78,0.45);box-shadow:0 24px 56px rgba(0,0,0,0.55)">
+<div style="position:relative;height:262px;overflow:hidden;background:#241A17"><img src="assets/cetap.jpg" alt="Landing page do Polo educacional CETAP" style="width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.84) contrast(1.03);transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,10,11,.62),rgba(13,10,11,.04) 62%)"></div><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:rgba(13,10,11,0.62);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#E4CBC8">educação</span></div>
+<div style="padding:24px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Polo educacional CETAP</h3><span style="color:#B08A4E;font-size:16px">↗</span></div>
+<p style="margin:10px 0 0;font-family:var(--font-mono);font-size:11px;line-height:1.6;color:#A08D91">Site institucional · Tapauá/Manaus</p>
+</div>
+</a>
+</div>
+</section>
+
+<section id="processo" style="max-width:1180px;margin:104px auto 0;padding:0 24px">
+<div data-reveal style="overflow:hidden;border-radius:30px;background:linear-gradient(155deg,#231813,#171013);border:1px solid rgba(217,166,160,0.16);box-shadow:0 24px 64px rgba(0,0,0,0.22)">
+<div style="padding:54px 40px 44px">
+<div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#D9A6A0">processo</div>
+<h2 style="margin:14px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(2.2rem,4.2vw,3.1rem);line-height:1.04">Como eu <em style="color:#D9A6A0">trabalho.</em></h2>
+<p style="margin:16px 0 0;max-width:48ch;font-size:15px;line-height:1.7;color:#C0AEB2">Cada etapa organiza a ideia até ela ganhar forma na tela.</p>
+</div>
+<div data-process-rail data-rail style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-top:1px solid rgba(217,166,160,0.13)">
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid rgba(217,166,160,0.13);transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;color:#B08A4E">01</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Briefing</h3><p style="margin:0;font-size:13px;line-height:1.65;color:#B29CA1">Entendo o negócio e o desafio.</p></div>
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid rgba(217,166,160,0.13);transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;color:#B08A4E">02</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Arquitetura</h3><p style="margin:0;font-size:13px;line-height:1.65;color:#B29CA1">Organizo conteúdo e caminhos.</p></div>
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid rgba(217,166,160,0.13);transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;color:#B08A4E">03</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Wireframe</h3><p style="margin:0;font-size:13px;line-height:1.65;color:#B29CA1">Defino a estrutura da página.</p></div>
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid rgba(217,166,160,0.13);transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;color:#B08A4E">04</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Direção</h3><p style="margin:0;font-size:13px;line-height:1.65;color:#B29CA1">Dou ritmo e personalidade.</p></div>
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid rgba(217,166,160,0.13);transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;color:#B08A4E">05</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Implementação</h3><p style="margin:0;font-size:13px;line-height:1.65;color:#B29CA1">Transformo a solução em código.</p></div>
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;color:#B08A4E">06</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Revisão</h3><p style="margin:0;font-size:13px;line-height:1.65;color:#B29CA1">Ajusto até ficar claro e consistente.</p></div>
+</div>
+</div></section>
+
+<section aria-label="Princípios" style="margin-top:112px;background:linear-gradient(165deg,#191114,#2A1D18);border-top:1px solid rgba(217,166,160,0.12);border-bottom:1px solid rgba(217,166,160,0.12)">
+<div style="max-width:1180px;margin:0 auto;padding:92px 24px">
+<div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:38px">
+<div>
+<div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#D9A6A0">princípios</div>
+<h2 style="margin:14px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(2.2rem,4.2vw,3.1rem);line-height:1.04">No que eu <em style="color:#D9A6A0">acredito.</em></h2>
+</div>
+<div style="display:flex;gap:10px">
+<button type="button" aria-label="Anterior" onClick="{{ prevQuote }}" style="display:grid;place-items:center;width:48px;height:48px;border-radius:999px;border:1px solid rgba(217,166,160,0.32);background:transparent;color:#FAF6F4;font-size:17px;cursor:pointer;transition:background 200ms,border-color 200ms,transform 120ms" style-hover="background:rgba(217,166,160,0.12);border-color:#D9A6A0" style-active="transform:scale(0.94)">←</button>
+<button type="button" aria-label="Próximo" onClick="{{ nextQuote }}" style="display:grid;place-items:center;width:48px;height:48px;border-radius:999px;border:1px solid rgba(217,166,160,0.32);background:transparent;color:#FAF6F4;font-size:17px;cursor:pointer;transition:background 200ms,border-color 200ms,transform 120ms" style-hover="background:rgba(217,166,160,0.12);border-color:#D9A6A0" style-active="transform:scale(0.94)">→</button>
+</div>
+</div>
+<div data-rail ref="{{ quoteRail }}" style="display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:10px">
+<blockquote style="flex:0 0 clamp(290px,42vw,520px);scroll-snap-align:start;margin:0;padding:38px;border-radius:28px;background:rgba(13,10,11,0.5);border:1px solid rgba(217,166,160,0.16)">
+<div style="font-family:var(--font-display);font-size:54px;line-height:0.4;color:#D9A6A0">“</div>
+<p style="margin:28px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(1.4rem,2.3vw,1.9rem);line-height:1.25;text-wrap:pretty">Projetos com intenção, clareza e uma experiência que realmente respeita quem está do outro lado.</p>
+<footer style="margin-top:26px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#A08D91">como eu começo · escuta</footer>
+</blockquote>
+<blockquote style="flex:0 0 clamp(290px,42vw,520px);scroll-snap-align:start;margin:0;padding:38px;border-radius:28px;background:rgba(13,10,11,0.5);border:1px solid rgba(217,166,160,0.16)">
+<div style="font-family:var(--font-display);font-size:54px;line-height:0.4;color:#D9A6A0">“</div>
+<p style="margin:28px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(1.4rem,2.3vw,1.9rem);line-height:1.25;text-wrap:pretty">Antes de desenhar qualquer tela, eu pergunto o que precisa ficar claro para o cliente decidir.</p>
+<footer style="margin-top:26px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#A08D91">como eu penso · briefing</footer>
+</blockquote>
+<blockquote style="flex:0 0 clamp(290px,42vw,520px);scroll-snap-align:start;margin:0;padding:38px;border-radius:28px;background:rgba(13,10,11,0.5);border:1px solid rgba(217,166,160,0.16)">
+<div style="font-family:var(--font-display);font-size:54px;line-height:0.4;color:#D9A6A0">“</div>
+<p style="margin:28px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(1.4rem,2.3vw,1.9rem);line-height:1.25;text-wrap:pretty">Cada negócio pede uma estética própria. O que se repete é o cuidado, não o layout.</p>
+<footer style="margin-top:26px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#A08D91">como eu dirijo · estética</footer>
+</blockquote>
+</div>
+<div class="quote-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+</div></section>
+
+<section id="sobre" style="max-width:1180px;margin:0 auto;padding:112px 24px 0">
+<div data-g2 data-reveal style="display:grid;grid-template-columns:0.82fr 1.18fr;gap:clamp(40px,6vw,84px);align-items:center">
+<div style="position:relative">
+<div aria-hidden="true" style="position:absolute;left:-28px;bottom:-28px;width:130px;height:130px;border-radius:999px;background:rgba(122,36,56,0.5);z-index:0"></div>
+<div style="position:relative;z-index:1;border-radius:28px;overflow:hidden;aspect-ratio:1/1.05;border:1px solid rgba(217,166,160,0.22);box-shadow:0 28px 64px rgba(0,0,0,0.55)">
+<img src="assets/photos/ana-sobre.jpg" alt="Ana Vitória em retrato profissional, com a mão no queixo" style="width:100%;height:100%;object-fit:cover;object-position:center 18%;filter:saturate(0.86)">
+</div>
+</div>
+<div>
+<div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#D9A6A0">sobre mim</div>
+<h2 style="margin:14px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(2.4rem,4.6vw,3.5rem);line-height:1.04;text-wrap:pretty">Meu olhar transforma ideias em <em style="color:#D9A6A0">experiências.</em></h2>
+<p style="margin:22px 0 0;max-width:56ch;font-size:16px;line-height:1.8;color:#D3C1C2">Estou cursando Análise e Desenvolvimento de Sistemas, com foco em front-end, e compartilho essa jornada no <a href="https://instagram.com/anav.souzab" target="_blank" rel="noreferrer" style="color:#D9A6A0;text-decoration:underline;text-decoration-color:rgba(217,166,160,0.45);text-underline-offset:4px">Instagram</a>. Moro em Manaus e atendo negócios de qualquer lugar, tudo online: você fala direto comigo, do primeiro briefing até a página no ar.</p>
+<div style="margin-top:30px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#A08D91">com o que eu trabalho</div>
+<ul class="skills">
+<li><span class="skill-nome">Figma</span><span class="skill-desc">layout e protótipo antes do código</span></li>
+<li><span class="skill-nome">HTML e CSS</span><span class="skill-desc">estrutura e visual da página</span></li>
+<li><span class="skill-nome">JavaScript</span><span class="skill-desc">interações, ainda estudando</span></li>
+<li><span class="skill-nome">Textos para interface</span><span class="skill-desc">títulos e botões fáceis de entender</span></li>
+<li><span class="skill-nome">Responsividade</span><span class="skill-desc">funciona bem no celular</span></li>
+<li><span class="skill-nome">IA generativa</span><span class="skill-desc">apoio em textos e imagens, sempre com revisão</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="faq" style="max-width:1180px;margin:0 auto;padding:112px 24px 0">
+<div data-reveal style="text-align:center;margin-bottom:52px">
+<div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#D9A6A0">dúvidas</div>
+<h2 style="margin:14px auto 0;max-width:22ch;font-family:var(--font-display);font-weight:400;font-size:clamp(2.2rem,4.4vw,3.3rem);line-height:1.04;letter-spacing:-0.01em">Antes de <em style="color:#D9A6A0">começarmos.</em></h2>
+<p style="margin:16px auto 26px;max-width:52ch;font-size:15px;line-height:1.7;color:#C0AEB2">As perguntas que mais aparecem na primeira conversa. Se a sua não estiver aqui, é só me chamar.</p>
+<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Tenho%20uma%20d%C3%BAvida%20sobre%20como%20voc%C3%AA%20trabalha." target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:999px;border:1px solid rgba(217,166,160,0.34);color:#FAF6F4;font-size:14px;font-weight:500;text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:rgba(217,166,160,0.1);border-color:#D9A6A0;transform:translateY(-2px)">Tenho outra dúvida</a>
+</div>
+<div data-g2 data-reveal style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start">
+<div style="display:grid;gap:12px">
+<div style="border-radius:20px;background:linear-gradient(160deg,#1A1215,#211619);border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
+<button type="button" onClick="{{ t1 }}" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:#FAF6F4;font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">O que você precisa de mim para começar?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:#D8AE6C;font-family:var(--font-mono);font-size:15px;line-height:1">{{ s1 }}</span></button>
+<sc-if value="{{ o1 }}" hint-placeholder-val="{{ true }}"><p style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:#CBB9BD">Uma conversa sobre o negócio, as fotos que você já tem e o contato que quer receber. O resto da estrutura eu monto e trago pronta para você revisar.</p></sc-if>
+</div>
+<div style="border-radius:20px;background:linear-gradient(160deg,#1A1215,#211619);border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
+<button type="button" onClick="{{ t4 }}" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:#FAF6F4;font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">Quanto custa?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:#D8AE6C;font-family:var(--font-mono);font-size:15px;line-height:1">{{ s4 }}</span></button>
+<sc-if value="{{ o4 }}" hint-placeholder-val="{{ true }}"><p style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:#CBB9BD">Depende do tamanho da página e do que ela precisa ter. Por isso eu passo o valor depois de uma conversa rápida sobre o seu projeto, com o orçamento certo para o que você precisa.</p></sc-if>
+</div>
+<div style="border-radius:20px;background:linear-gradient(160deg,#1A1215,#211619);border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
+<button type="button" onClick="{{ t2 }}" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:#FAF6F4;font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">Em quanto tempo a página fica no ar?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:#D8AE6C;font-family:var(--font-mono);font-size:15px;line-height:1">{{ s2 }}</span></button>
+<sc-if value="{{ o2 }}" hint-placeholder-val="{{ true }}"><p style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:#CBB9BD">Depende do escopo e do material que você já tem em mãos. Uma página enxuta pode ficar pronta em poucos dias, e eu combino a data com você já no briefing, antes de começar.</p></sc-if>
+</div>
+</div>
+<div style="display:grid;gap:12px">
+<div style="border-radius:20px;background:linear-gradient(160deg,#1A1215,#211619);border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
+<button type="button" onClick="{{ t3 }}" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:#FAF6F4;font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">A página funciona bem no celular?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:#D8AE6C;font-family:var(--font-mono);font-size:15px;line-height:1">{{ s3 }}</span></button>
+<sc-if value="{{ o3 }}" hint-placeholder-val="{{ true }}"><p style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:#CBB9BD">Sim, e é por onde eu começo. Hoje a maioria das pessoas acessa sites pelo celular, então testo cada seção no celular antes de fechar a versão para computador.</p></sc-if>
+</div>
+<div style="border-radius:20px;background:linear-gradient(160deg,#1A1215,#211619);border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
+<button type="button" onClick="{{ t6 }}" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:#FAF6F4;font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">Preciso ter domínio e hospedagem?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:#D8AE6C;font-family:var(--font-mono);font-size:15px;line-height:1">{{ s6 }}</span></button>
+<sc-if value="{{ o6 }}" hint-placeholder-val="{{ true }}"><p style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:#CBB9BD">Não. Na landing page, eu cuido do domínio e da hospedagem para você. Em sites maiores, isso entra na conversa e a gente combina junto.</p></sc-if>
+</div>
+<div style="border-radius:20px;background:linear-gradient(160deg,#1A1215,#211619);border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
+<button type="button" onClick="{{ t7 }}" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:#FAF6F4;font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">Como funciona o pagamento?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:#D8AE6C;font-family:var(--font-mono);font-size:15px;line-height:1">{{ s7 }}</span></button>
+<sc-if value="{{ o7 }}" hint-placeholder-val="{{ true }}"><p style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:#CBB9BD">Você pode pagar por Pix ou cartão, que pode ser parcelado. No Pix, são 50% para começar e 50% na entrega.</p></sc-if>
+</div>
+<div style="border-radius:20px;background:linear-gradient(160deg,#1A1215,#211619);border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
+<button type="button" onClick="{{ t5 }}" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:#FAF6F4;font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">E se eu precisar mudar algo depois?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:#D8AE6C;font-family:var(--font-mono);font-size:15px;line-height:1">{{ s5 }}</span></button>
+<sc-if value="{{ o5 }}" hint-placeholder-val="{{ true }}"><p style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:#CBB9BD">Depois da entrega, eu acompanho a página por 7 dias. Se quiser continuar com esse cuidado, tem o acompanhamento mensal por R$ 100, para manter tudo em ordem. Se preferir, também faço ajustes avulsos, com valor combinado.</p></sc-if>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contato" style="max-width:1180px;margin:0 auto;padding:112px 24px">
+<div data-reveal style="position:relative;overflow:hidden;border-radius:28px;background:linear-gradient(150deg,#7A2438,#3A171F 72%);border:1px solid rgba(217,166,160,0.22);box-shadow:0 30px 70px rgba(0,0,0,0.5)">
+<div aria-hidden="true" style="position:absolute;right:-90px;top:-90px;width:320px;height:320px;border-radius:999px;background:radial-gradient(circle,rgba(232,174,72,.22),rgba(176,138,78,.08) 38%,transparent 70%);filter:blur(8px);animation:contactOrb 16s ease-in-out infinite"></div>
+<div data-cta style="position:relative;display:grid;grid-template-columns:1.1fr 0.9fr;gap:clamp(36px,5vw,72px);align-items:center;padding:clamp(40px,5vw,64px)">
+<div>
+<div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#F1CFCB">contato</div>
+<h2 style="margin:14px 0 18px;font-family:var(--font-display);font-weight:400;font-size:clamp(2.3rem,4.4vw,3.4rem);line-height:1.04;text-wrap:pretty">Vamos criar uma página com a <em style="color:#F0C9A8">sua cara?</em></h2>
+<p style="margin:0 0 30px;max-width:46ch;font-size:16px;line-height:1.8;color:#F3DCD9">Me conte o que o seu negócio precisa. A gente conversa pelo WhatsApp e, a partir disso, eu te passo prazo e orçamento.</p>
+<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;background:#FAF6F4;color:#23181B;font-size:15px;font-weight:500;text-decoration:none;transition:background 200ms,transform 200ms,box-shadow 200ms" style-hover="background:#F0C9A8;transform:translateY(-2px);box-shadow:0 16px 38px rgba(0,0,0,0.35)">Conversar pelo WhatsApp</a>
+</div>
+<div style="display:grid;gap:14px">
+<a href="https://instagram.com/anav.souzab" target="_blank" rel="noreferrer" style="display:block;padding:24px;border-radius:20px;background:rgba(13,10,11,0.3);border:1px solid rgba(250,246,244,0.2);color:#FAF6F4;text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:rgba(13,10,11,0.45);border-color:rgba(250,246,244,0.4);transform:translateY(-2px)">
+<small style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#F1CFCB">Bastidores no Instagram</small>
+<div style="margin-top:8px;font-family:var(--font-display);font-size:clamp(21px,2.6vw,28px);line-height:1.1;overflow-wrap:anywhere">@anav.souzab</div>
+</a>
+<a href="mailto:ana.dev2026@gmail.com" style="display:block;padding:24px;border-radius:20px;background:rgba(13,10,11,0.3);border:1px solid rgba(250,246,244,0.2);color:#FAF6F4;text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:rgba(13,10,11,0.45);border-color:rgba(250,246,244,0.4);transform:translateY(-2px)">
+<small style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#F1CFCB">Prefere e-mail?</small>
+<div style="margin-top:8px;font-size:16px;overflow-wrap:anywhere">ana.dev2026@gmail.com</div>
+</a>
+</div>
+</div>
+</div></section>
+
+<footer class="site-footer">
+<div aria-hidden="true" class="foot-glow"></div>
+<div style="position:relative;max-width:1180px;margin:0 auto;padding:80px 24px 0">
+<div data-footer-grid style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px">
+<div>
+<a href="#inicio" style="display:inline-flex;align-items:center;gap:12px;color:#FAF6F4;text-decoration:none">
+<span aria-hidden="true" style="display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:#2A1B17;border:1px solid rgba(217,166,160,0.24);box-shadow:0 0 16px rgba(126,76,45,.18)"><svg viewBox="0 0 32 32" width="100%" height="100%"><path d="M8.5 23.5L14.5 8.5l6 15" fill="none" stroke="#E8C3B6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.5" cy="22.5" r="2.1" fill="#C9A26A"/></svg></span>
+<span style="font-family:var(--font-display);font-size:28px;letter-spacing:-0.02em">Ana Vitória</span>
+</a>
+<p style="margin:20px 0 26px;max-width:34ch;font-size:15px;line-height:1.7;color:#C9B6B8">Projetos digitais pensados para ser claros, confiáveis e memoráveis.</p>
+<div class="foot-status"><span class="foot-dot" aria-hidden="true"></span>Disponível para novos projetos</div>
+</div>
+<nav aria-label="Menu do rodapé">
+<div class="foot-label">navegação</div>
+<div class="foot-nav">
+<a href="#servicos" class="foot-link">O que faço</a>
+<a href="#projetos" class="foot-link">Projetos</a>
+<a href="#processo" class="foot-link">Como trabalho</a>
+<a href="#sobre" class="foot-link">Sobre mim</a>
+<a href="#faq" class="foot-link">Dúvidas</a>
+</div>
+</nav>
+<div>
+<div class="foot-label">contato</div>
+<p style="margin:0 0 22px;max-width:28ch;font-size:15px;line-height:1.7;color:#C9B6B8">Me conte sobre o seu projeto. Respondo pelo WhatsApp, e-mail ou Instagram.</p>
+<div class="foot-social">
+<a href="https://instagram.com/anav.souzab" target="_blank" rel="noreferrer" aria-label="Instagram">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="4.5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.7" stroke="currentColor" stroke-width="1.7"/><circle cx="17.1" cy="6.9" r="1.2" fill="currentColor"/></svg>
+</a>
+<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" aria-label="WhatsApp">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.8 19.2l1.1-3.6a7.8 7.8 0 1 1 2.9 2.7l-4 .9Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.3 8.6c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.6 1.4c.1.2 0 .4-.1.6l-.4.5c.4.8 1.1 1.5 1.9 1.9l.5-.4c.2-.1.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.5c0 .3-.1.5-.5.7-.6.3-1.6.4-3-.4-1.5-.8-2.6-2-3.3-3.3-.5-1.1-.2-2 .2-2.4Z" fill="currentColor"/></svg>
+</a>
+<a href="mailto:ana.dev2026@gmail.com" aria-label="E-mail">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 7.5A2.5 2.5 0 0 1 7 5h10a2.5 2.5 0 0 1 2.5 2.5v9A2.5 2.5 0 0 1 17 19H7a2.5 2.5 0 0 1-2.5-2.5v-9Z" stroke="currentColor" stroke-width="1.7"/><path d="m5.5 8 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+</div>
+<div class="foot-clock">Aqui em Manaus são {{ clock }}</div>
+</div>
+</div>
+<div aria-hidden="true" class="foot-wordmark">Ana Vitória</div>
+</div>
+<div class="foot-bottom">
+<span>© 2026 Ana Vitória · Feito com intenção</span>
+<a href="#inicio" class="foot-top">Voltar ao topo</a>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroConstellation&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;}}">
+class Component extends DCLogic {
+  static canvasConfig = {
+    desktopSpacing: 90,
+    mobileSpacing: 76,
+    interactionRadius: 175,
+    connectionRadius: 98
+  };
+
+  canvas = React.createRef();
+  progress = React.createRef();
+  quotes = React.createRef();
+  header = React.createRef();
+  nav = React.createRef();
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const header = this.header.current;
+      if (header) header.toggleAttribute('data-scrolled', window.scrollY > 24);
+      const bar = this.progress.current;
+      if (!bar) return;
+      const limit = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (limit > 0 ? (window.scrollY / limit) * 100 : 0) + '%';
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+    this._clock = setInterval(() => this.setState({ clock: Component.manausTime() }), 30000);
+    this.setupNav();
+    if (this.props.heroConstellation !== false) {
+      let tries = 0;
+      const boot = () => {
+        if (this._dead || this._started) return;
+        if (this.canvas.current && this.canvas.current.getBoundingClientRect().height > 0) {
+          this._started = true;
+          this.startCanvas();
+          return;
+        }
+        if (tries++ < 200) requestAnimationFrame(boot);
+      };
+      boot();
+    }
+  }
+
+  startCanvas() {
+    const canvas = this.canvas.current;
+    if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const hero = canvas.parentElement;
+    const ctx = canvas.getContext('2d');
+    const pointer = { x: -1000, y: -1000 };
+    const { desktopSpacing, mobileSpacing, interactionRadius, connectionRadius } = Component.canvasConfig;
+    let nodes = [], width = 0, height = 0;
+    const resize = () => {
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      const bounds = hero.getBoundingClientRect();
+      width = bounds.width; height = bounds.height;
+      canvas.width = width * ratio; canvas.height = height * ratio;
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      nodes = [];
+      const spacing = window.innerWidth < 760 ? mobileSpacing : desktopSpacing;
+      for (let x = spacing / 2; x < width + spacing; x += spacing)
+        for (let y = spacing / 2; y < height + spacing; y += spacing)
+          nodes.push({ x, y, hx: x, hy: y, vx: 0, vy: 0, pulse: Math.random() * Math.PI * 2 });
+    };
+    this._onResize = resize;
+    this._onMove = (e) => { const b = hero.getBoundingClientRect(); pointer.x = e.clientX - b.left; pointer.y = e.clientY - b.top; };
+    this._onLeave = () => { pointer.x = -1000; pointer.y = -1000; };
+    window.addEventListener('resize', this._onResize);
+    window.addEventListener('mousemove', this._onMove);
+    hero.addEventListener('mouseleave', this._onLeave);
+    resize();
+    if (window.ResizeObserver) {
+      this._ro = new ResizeObserver(() => resize());
+      this._ro.observe(hero);
+    }
+    const draw = () => {
+      if (this._dead) return;
+      const live = hero.getBoundingClientRect();
+      if (canvas.width === 0 || Math.abs(live.height - height) > 2 || Math.abs(live.width - width) > 2) resize();
+      ctx.clearRect(0, 0, width, height);
+      for (const n of nodes) {
+        const dx = pointer.x - n.x, dy = pointer.y - n.y, d = Math.hypot(dx, dy);
+        if (d < 175 && d > 0) { const f = (1 - d / 175) * 1.6; n.vx -= dx / d * f; n.vy -= dy / d * f; }
+        n.vx += (n.hx - n.x) * 0.025; n.vy += (n.hy - n.y) * 0.025;
+        n.vx *= 0.88; n.vy *= 0.88; n.x += n.vx; n.y += n.vy; n.pulse += 0.022;
+      }
+      ctx.lineWidth = 0.7;
+      for (let i = 0; i < nodes.length; i++)
+        for (let j = i + 1; j < nodes.length; j++) {
+          const a = nodes[i], b = nodes[j], d = Math.hypot(a.x - b.x, a.y - b.y);
+          if (d < 98) {
+            ctx.strokeStyle = 'rgba(217,166,160,' + ((1 - d / 98) * 0.18) + ')';
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+          }
+        }
+      for (const n of nodes) {
+        const active = Math.hypot(pointer.x - n.x, pointer.y - n.y) < 175;
+        ctx.fillStyle = active ? 'rgba(176,138,78,0.9)' : 'rgba(217,166,160,' + (0.2 + Math.sin(n.pulse) * 0.06) + ')';
+        ctx.beginPath(); ctx.arc(n.x, n.y, active ? 2.6 : 1.4, 0, Math.PI * 2); ctx.fill();
+      }
+      this._raf = requestAnimationFrame(draw);
+    };
+    this._raf = requestAnimationFrame(draw);
+  }
+
+  setupNav() {
+    const nav = this.nav.current;
+    if (!nav) return;
+    const links = [...nav.querySelectorAll('a[href^="#"]')];
+    const indicator = nav.querySelector('.nav-indicator');
+
+    const place = (link) => {
+      if (!indicator) return;
+      if (!link) { indicator.style.opacity = '0'; return; }
+      indicator.style.opacity = '1';
+      indicator.style.width = link.offsetWidth + 'px';
+      indicator.style.transform = 'translateX(' + link.offsetLeft + 'px)';
+    };
+    this._placeActive = () => place(this._activeLink);
+    const setActive = (id) => {
+      this._activeLink = null;
+      for (const a of links) {
+        if (a.getAttribute('href') === '#' + id) { a.setAttribute('aria-current', 'location'); this._activeLink = a; }
+        else a.removeAttribute('aria-current');
+      }
+      this._placeActive();
+    };
+    this._onNavOver = (e) => { const a = e.target.closest('a'); if (a && nav.contains(a)) place(a); };
+    this._onNavLeave = () => this._placeActive();
+    nav.addEventListener('mouseover', this._onNavOver);
+    nav.addEventListener('mouseleave', this._onNavLeave);
+
+    if (window.IntersectionObserver) {
+      this._spy = new IntersectionObserver((entries) => {
+        for (const entry of entries) if (entry.isIntersecting) setActive(entry.target.id);
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      document.querySelectorAll('section[id]').forEach((s) => this._spy.observe(s));
+    }
+    if (document.fonts) document.fonts.ready.then(() => this._placeActive && this._placeActive());
+
+    this._onNavResize = () => this._placeActive();
+    window.addEventListener('resize', this._onNavResize);
+  }
+
+  componentWillUnmount() {
+    this._dead = true;
+    cancelAnimationFrame(this._raf);
+    clearInterval(this._clock);
+    if (this._spy) this._spy.disconnect();
+    window.removeEventListener('resize', this._onNavResize);
+    const nav = this.nav.current;
+    if (nav) {
+      nav.removeEventListener('mouseover', this._onNavOver);
+      nav.removeEventListener('mouseleave', this._onNavLeave);
+    }    if (this._ro) this._ro.disconnect();
+    window.removeEventListener('scroll', this._onScroll);
+    window.removeEventListener('resize', this._onResize);
+    window.removeEventListener('mousemove', this._onMove);
+    const hero = this.canvas.current?.parentElement;
+    if (hero) hero.removeEventListener('mouseleave', this._onLeave);
+  }
+
+  slide(ref, dir) {
+    const el = ref.current;
+    if (!el) return;
+    const card = el.firstElementChild;
+    const step = card ? card.getBoundingClientRect().width + 20 : el.clientWidth * 0.8;
+    el.scrollBy({ left: dir * step, behavior: 'smooth' });
+  }
+
+  static manausTime() {
+    return new Intl.DateTimeFormat('pt-BR', { timeZone: 'America/Manaus', hour: '2-digit', minute: '2-digit' }).format(new Date());
+  }
+
+  state = { faq: 1, clock: Component.manausTime() };
+
+  faqVals() {
+    const out = {};
+    for (let i = 0; i < 8; i++) {
+      const open = this.state.faq === i;
+      out['o' + i] = open;
+      out['s' + i] = open ? '−' : '+';
+      out['t' + i] = () => this.setState((s) => ({ faq: s.faq === i ? -1 : i }));
+    }
+    return out;
+  }
+
+  renderVals() {
+    return {
+      ...this.faqVals(),
+      clock: this.state.clock,
+      headerRef: this.header,
+      navRef: this.nav,
+      canvasRef: this.canvas,
+      progressRef: this.progress,
+      quoteRail: this.quotes,
+      prevQuote: () => this.slide(this.quotes, -1),
+      nextQuote: () => this.slide(this.quotes, 1)
+    };
+  }
+}
+</script>
+</body>
+</html>

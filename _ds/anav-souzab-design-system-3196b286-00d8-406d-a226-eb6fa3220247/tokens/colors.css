@@ -1,0 +1,53 @@
+:root {
+  /* Base palette — the six brand colors, verbatim from design-tokens.json */
+  --color-ink: #23181B;        /* warm near-black, violet undertone */
+  --color-base: #FAF6F4;       /* porcelain white, rosy undertone */
+  --color-primary: #7A2438;    /* deep bordeaux — the brand color */
+  --color-secondary: #D9A6A0;  /* dusty nude rose */
+  --color-neutral: #E4DAD5;    /* warm greige */
+  --color-accent: #B08A4E;     /* antique gold */
+
+  /* Derived tints — for washes, hovers and disabled states. Mixed from the six. */
+  --color-primary-dark: #5E1B2B;
+  --color-primary-tint: #F3E6E9;
+  --color-secondary-tint: #F5E7E5;
+  --color-neutral-tint: #F1EAE6;
+  --color-accent-tint: #F5EDDF;
+
+  /* Semantic — text */
+  --text-primary: var(--color-ink);
+  --text-secondary: #6B5A5E;
+  --text-muted: #9A8A8D;
+  --text-brand: var(--color-primary);
+  --text-on-dark: var(--color-base);
+  --text-on-brand: var(--color-base);
+  --text-disabled: var(--text-muted);
+
+  /* Semantic — surfaces */
+  --surface-page: var(--color-base);
+  --surface-card: #FFFFFF;
+  --surface-sunken: var(--color-neutral-tint);
+  --surface-wash: var(--color-secondary-tint);
+  --surface-inverse: var(--color-ink);
+  --surface-brand: var(--color-primary);
+  --surface-disabled: var(--color-neutral);
+
+  /* Semantic — lines */
+  --border-subtle: var(--color-neutral);
+  --border-strong: #CFC0BA;
+  --border-inverse: rgba(250, 246, 244, 0.22);
+  --border-focus: var(--color-primary);
+
+  /* Semantic — interaction */
+  --action-primary: var(--color-primary);
+  --action-primary-hover: var(--color-primary-dark);
+  --action-ghost-hover: var(--color-neutral-tint);
+  --link: var(--color-primary);
+  --link-hover: var(--color-primary-dark);
+
+  /* Status — derived in-family; the brand defines no dedicated status palette */
+  --status-positive: #4E6B4F;
+  --status-warning: var(--color-accent);
+  --status-critical: var(--color-primary);
+  --status-info: var(--text-secondary);
+}

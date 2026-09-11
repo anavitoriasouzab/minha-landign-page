@@ -1,0 +1,3 @@
+/* Webfonts — all three families are Google Fonts, loaded from the Google CDN
+   exactly as the source design-tokens.css did. No local binaries were provided. */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');

@@ -1,0 +1,25 @@
+:root {
+  /* Shadows — warm, low-contrast, tinted with ink rather than pure black */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(35, 24, 27, 0.05);
+  --shadow-sm: 0 2px 8px rgba(35, 24, 27, 0.06);
+  --shadow-md: 0 8px 24px rgba(35, 24, 27, 0.07);
+  --shadow-lg: 0 20px 48px rgba(35, 24, 27, 0.10);
+  --shadow-inset-line: inset 0 0 0 1px var(--border-subtle);
+  --ring-focus: 0 0 0 3px rgba(122, 36, 56, 0.22);
+
+  /* Motion — quiet, no bounce */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --duration-fast: 120ms; /* @kind other */
+  --duration-base: 200ms; /* @kind other */
+  --duration-slow: 420ms; /* @kind other */
+  --transition-base: all var(--duration-base) var(--ease-standard);
+
+  /* Transparency & blur */
+  --scrim: rgba(35, 24, 27, 0.44);
+  --blur-veil: saturate(140%) blur(14px); /* @kind other */
+  --veil-light: rgba(250, 246, 244, 0.72);
+  --veil-dark: rgba(35, 24, 27, 0.60);
+  --protect-bottom: linear-gradient(to top, rgba(35,24,27,0.72), rgba(35,24,27,0)); /* @kind other */
+}

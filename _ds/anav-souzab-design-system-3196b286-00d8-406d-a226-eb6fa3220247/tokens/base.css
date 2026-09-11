@@ -1,0 +1,18 @@
+body {
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}
+h1, h2, .display { font-family: var(--font-display); font-weight: var(--weight-regular); letter-spacing: var(--tracking-display); }
+h1 { font-size: var(--text-display-xl); line-height: var(--leading-display-xl); }
+h2 { font-size: var(--text-display-lg); line-height: var(--leading-display-lg); }
+h3 { font-family: var(--font-body); font-size: var(--text-heading); line-height: var(--leading-heading); font-weight: var(--weight-bold); }
+.mono, code, .tag { font-family: var(--font-mono); }
+.eyebrow { font-family: var(--font-mono); font-size: var(--text-caption); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--text-brand); }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; transition: color var(--duration-fast) var(--ease-standard); }
+a:hover { color: var(--link-hover); }
+::selection { background: var(--color-secondary); color: var(--color-ink); }

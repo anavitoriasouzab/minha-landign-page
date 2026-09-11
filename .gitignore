@@ -1,0 +1,7 @@
+# Fotos originais da sessao (pesadas, o site usa as versoes reduzidas em assets/photos)
+assets/RF4_*.jpg
+
+# Arquivos do sistema
+Thumbs.db
+desktop.ini
+.DS_Store
