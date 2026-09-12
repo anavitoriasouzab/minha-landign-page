@@ -5,10 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ana Vitória · Landing pages e front-end</title>
 <meta name="description" content="Landing pages claras e cuidadosas, do design ao código. Ana Vitória, UX/UI e front-end em Manaus.">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="favicon-180.png">
 <meta name="theme-color" content="#0D0A0B">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -27,7 +29,7 @@ section[id]{scroll-margin-top:92px}
 .site-header[data-scrolled] .nav-shell{max-width:1080px;background:rgba(18,13,12,.74);border-color:rgba(200,161,155,.14);backdrop-filter:saturate(140%) blur(18px);-webkit-backdrop-filter:saturate(140%) blur(18px);box-shadow:0 18px 40px rgba(0,0,0,.35),inset 0 1px 0 rgba(250,246,244,.05)}
 .site-header .nav-brand{justify-self:start;display:inline-flex;align-items:center;gap:11px;min-width:0;color:#FAF6F4}
 .site-header .nav-brand:hover{color:#FAF6F4}
-.site-header .nav-mark{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border-radius:11px;background:#2A1B17;border:1px solid rgba(217,166,160,.24);box-shadow:0 0 16px rgba(126,76,45,.18);transition:transform 380ms cubic-bezier(.16,1,.3,1)}
+.site-header .nav-mark{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border-radius:11px;background:#23181B;border:1px solid rgba(217,166,160,.24);box-shadow:0 0 16px rgba(126,76,45,.18);transition:transform 380ms cubic-bezier(.16,1,.3,1)}
 .site-header .nav-brand:hover .nav-mark{transform:rotate(-8deg)}
 .site-header .nav-name{font-family:var(--font-display);font-size:23px;letter-spacing:-.02em;white-space:nowrap}
 .site-header .nav-links{position:relative;display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:rgba(250,246,244,.03);border:1px solid rgba(200,161,155,.1)}
@@ -118,26 +120,39 @@ section[id]{scroll-margin-top:92px}
 #faq>[data-g2]{grid-template-columns:1fr!important;gap:12px!important;max-width:760px;margin:0 auto}
 #faq>[data-g2]>div{display:contents}
 #faq [data-g2] p{max-width:none!important;padding-right:clamp(0px,6vw,64px)}
-.site-footer{position:relative;overflow:hidden;border-top:1px solid rgba(200,161,155,.12);background:radial-gradient(ellipse 50% 60% at 12% 0%,rgba(91,58,43,.2),transparent 70%),linear-gradient(180deg,#120E0D 0%,#0B0909 100%)}
-.site-footer .foot-glow{position:absolute;right:6%;bottom:-160px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(184,121,75,.16),rgba(75,42,39,.08) 40%,transparent 70%);filter:blur(10px);pointer-events:none}
-.site-footer .foot-label{margin-bottom:22px;font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#D9A6A0}
-.site-footer .foot-nav{display:grid;justify-items:start;gap:12px}
-.site-footer .foot-link{position:relative;font-family:var(--font-display);font-size:24px;line-height:1.1;color:#E8DAD6;transition:color 180ms ease,transform 180ms ease}
-.site-footer .foot-link::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:#A9824B;transform:scaleX(0);transform-origin:left;transition:transform 200ms ease}
-.site-footer .foot-link:hover,.site-footer .foot-link:focus-visible{color:#FAF6F4;transform:translateX(4px)}
-.site-footer .foot-link:hover::after,.site-footer .foot-link:focus-visible::after{transform:scaleX(1)}
-.site-footer .foot-status{display:inline-flex;align-items:center;gap:10px;padding:9px 16px 9px 13px;border-radius:999px;border:1px solid rgba(200,161,155,.22);background:linear-gradient(105deg,rgba(58,36,32,.42),rgba(169,130,75,.06));font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#E4CBC8}
-.site-footer .foot-dot{position:relative;width:7px;height:7px;border-radius:50%;background:#A9824B}
-.site-footer .foot-dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:#A9824B;animation:footPulse 2.4s ease-out infinite}
-.site-footer .foot-social{display:flex;gap:12px}
-.site-footer .foot-social a{display:grid;place-items:center;width:52px;height:52px;border-radius:18px;background:rgba(255,255,255,.02);border:1px solid rgba(200,161,155,.16);color:#F3E7DB;transition:transform 180ms ease,background 180ms ease,border-color 180ms ease,color 180ms ease}
-.site-footer .foot-social a:hover,.site-footer .foot-social a:focus-visible{transform:translateY(-3px);background:rgba(75,42,39,.4);border-color:rgba(169,130,75,.5);color:#FAF6F4}
-.site-footer .foot-clock{margin-top:22px;font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;color:#A08D91}
-.site-footer .foot-wordmark{margin:72px 0 -.14em;font-family:var(--font-display);font-size:clamp(4.5rem,16vw,14rem);line-height:.85;letter-spacing:-.03em;text-align:center;white-space:nowrap;background:linear-gradient(180deg,rgba(217,166,160,.3) 0%,rgba(122,56,48,.12) 55%,rgba(18,14,13,0) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none;pointer-events:none}
-.site-footer .foot-bottom{position:relative;max-width:1180px;margin:0 auto;padding:20px 24px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(200,161,155,.1);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:#9C878C}
-.site-footer .foot-top{color:#C8A19B;transition:color 180ms ease}
-.site-footer .foot-top:hover,.site-footer .foot-top:focus-visible{color:#FAF6F4}
-@keyframes footPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+.site-footer{position:relative;overflow:hidden;margin:0 24px 24px;border-radius:28px;border:1px solid rgba(217,166,160,.14);background:#0F0B0C;color:#B9A5A8}
+.site-footer .foot-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(125% 125% at 50% 10%,rgba(15,11,12,.4) 50%,rgba(122,36,56,.32) 100%);pointer-events:none}
+.site-footer .foot-canvas{position:absolute;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;opacity:.42}
+.site-footer .foot-inner{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:64px 32px 0}
+.site-footer .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:48px;padding-bottom:48px}
+.site-footer .foot-brand{display:inline-flex;align-items:center;gap:12px;color:#FAF6F4}
+.site-footer .foot-brand:hover{color:#FAF6F4}
+.site-footer .foot-logo{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:#23181B;border:1px solid rgba(217,166,160,.24)}
+.site-footer .foot-name{font-family:var(--font-display);font-size:26px;letter-spacing:-.02em}
+.site-footer .foot-tagline{margin:16px 0 0;max-width:32ch;font-size:15px;line-height:1.7;color:#A99598}
+.site-footer .foot-title{margin:0 0 20px;font-family:var(--font-display);font-size:20px;line-height:1.2;color:#FAF6F4}
+.site-footer .foot-list{margin:0;padding:0;list-style:none;display:grid;gap:12px;font-size:15px}
+.site-footer .foot-list a,.site-footer .foot-social a{color:#C9B6B8;transition:color 180ms ease}
+.site-footer .foot-list a:hover,.site-footer .foot-list a:focus-visible,.site-footer .foot-social a:hover,.site-footer .foot-social a:focus-visible{color:#F0C9A8}
+.site-footer .foot-contact li{display:flex;align-items:center;gap:12px;min-width:0}
+.site-footer .foot-contact svg{flex:0 0 auto;color:#D9A6A0}
+.site-footer .foot-contact a{overflow-wrap:anywhere}
+.site-footer .foot-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;flex-wrap:wrap;padding:24px 0 28px;border-top:1px solid rgba(200,161,155,.12);font-size:13px;color:#8F7B7F}
+.site-footer .foot-bottom p{margin:0}
+.site-footer .foot-social{display:flex;gap:20px}
+.site-footer .foot-social a{display:grid;place-items:center}
+.site-footer .foot-mark{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 32px 20px}
+.site-footer .foot-mark svg{display:block;width:78%;height:auto;margin:0 auto;overflow:visible}
+.site-footer .foot-mark text{font-family:"Great Vibes",cursive;font-weight:400;font-size:150px;fill:transparent;stroke-width:2.4;stroke-linejoin:round}
+.site-footer .foot-mark .fm-cut{fill:#000;stroke:none}
+.site-footer .fm-base{stroke:rgba(217,166,160,.22);opacity:0;transition:opacity 300ms ease}
+.site-footer .fm-draw{stroke:rgba(217,166,160,.5);stroke-dasharray:3000;stroke-dashoffset:3000;transition:stroke-dashoffset 4s ease-in-out}
+.site-footer .fm-reveal{opacity:0;transition:opacity 200ms ease}
+.site-footer .foot-mark.is-drawn .fm-draw{stroke-dashoffset:0}
+.site-footer .foot-mark.no-anim .fm-draw{transition:none}
+.site-footer .foot-mark.is-hover .fm-base{opacity:.7}
+.site-footer .foot-mark.is-hover .fm-reveal{opacity:1}
+@media (prefers-reduced-motion:reduce){.site-footer .fm-draw{transition:none;stroke-dashoffset:0}}
 @keyframes contactOrb{0%,100%{transform:translate(0,0) scale(1);opacity:.7}35%{transform:translate(-120px,105px) scale(.82);opacity:.48}70%{transform:translate(-210px,35px) scale(1.08);opacity:.62}}
 @keyframes contactOrbTwo{0%,100%{transform:translate(-30px,20px) scale(.8);opacity:.28}45%{transform:translate(140px,80px) scale(1.12);opacity:.48}75%{transform:translate(70px,-55px) scale(.9);opacity:.32}}
 @keyframes contactGradientFirst{0%,100%{transform:translate(-12%,-8%) scale(.72)}30%{transform:translate(68%,20%) scale(1.16)}58%{transform:translate(42%,82%) scale(.82)}82%{transform:translate(-8%,48%) scale(1.08)}}
@@ -149,7 +164,7 @@ section[aria-label="Princípios"] [data-reveal]:first-child{align-items:center!i
 section[aria-label="Princípios"] [data-reveal]:first-child>div:first-child{flex:1}
 section[aria-label="Princípios"] [data-reveal]:first-child>div:last-child{flex:0 0 auto}
 section[aria-label="Princípios"] h2 em{background:linear-gradient(105deg,#D9B08A,#C88F7D);-webkit-background-clip:text;background-clip:text;color:transparent!important}
-section[aria-label="Princípios"] [data-rail]{position:relative;margin-right:-24px;padding:0 24px 18px;mask-image:linear-gradient(90deg,#000 0%,#000 88%,transparent 100%)}
+section[aria-label="Princípios"] [data-rail]{position:relative;margin:-12px -24px -30px 0;padding:12px 24px 48px;mask-image:linear-gradient(90deg,#000 0%,#000 88%,transparent 100%)}
 section[aria-label="Princípios"] blockquote{position:relative;flex:0 0 clamp(360px,38vw,480px)!important;min-height:0;box-sizing:border-box;padding:30px 36px 26px!important;border-radius:24px!important;background:linear-gradient(145deg,rgba(39,25,26,.86),rgba(20,14,15,.9))!important;border-color:rgba(200,161,155,.15)!important;box-shadow:0 18px 50px rgba(0,0,0,.18);transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease}
 section[aria-label="Princípios"] blockquote:hover{transform:translateY(-4px);border-color:rgba(200,161,155,.3)!important;box-shadow:0 26px 58px rgba(0,0,0,.34)}
 section[aria-label="Princípios"] blockquote>div:first-child{font-size:44px!important;color:#D9A6A0!important}
@@ -215,8 +230,8 @@ section[aria-label="Princípios"] button:last-child{border-color:#D9A6A0!importa
 [data-process-rail]>div{flex:initial!important;padding-left:22px!important;padding-right:22px!important}
 .site-header .nav-links,.site-header .nav-cta{display:none}
 .site-header .nav-shell{grid-template-columns:1fr}
-[data-footer-grid]{grid-template-columns:1fr 1fr!important}
-[data-footer-grid]>div:first-child{grid-column:1/-1}
+.site-footer .foot-grid{grid-template-columns:1fr 1fr}
+.site-footer .foot-grid>div:first-child{grid-column:1/-1}
 }
 @media (max-width:600px){
 .site-header{padding:10px 16px 0}
@@ -230,8 +245,6 @@ section[aria-label="Princípios"] button:last-child{border-color:#D9A6A0!importa
 [data-process-rail] h3{margin-bottom:6px!important}
 [data-process-rail] p{min-height:0!important}
 #processo>div>div:first-child{padding:40px 24px 28px!important}
-[data-footer-grid]{grid-template-columns:1fr!important;gap:44px!important}
-.site-footer .foot-wordmark{margin-top:56px}
 #inicio [data-hero-copy]>div:last-child{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))}
 #inicio [data-hero-copy]>div:last-child>div{padding:18px 0 0 14px!important}
 #inicio [data-hero-copy]>div:last-child>div:first-child{padding-left:0!important}
@@ -250,11 +263,18 @@ section[aria-label="Princípios"] blockquote footer{margin-top:14px!important}
 .faixa-item{gap:12px}
 .faixa-thumb{width:76px;height:50px;border-radius:12px}
 .faixa-name{font-size:22px}
-.site-footer>div:nth-child(2){padding-top:64px!important}
-.site-footer .foot-nav{grid-template-columns:1fr 1fr;gap:0 16px}
-.site-footer .foot-link{padding:9px 0;font-size:22px}
-.site-footer .foot-link::after{bottom:6px}
-.site-footer .foot-top{display:inline-block;padding:13px 0}
+.site-footer{margin:0 16px 16px;border-radius:22px}
+.site-footer .foot-inner{padding:48px 22px 0}
+.site-footer .foot-grid{grid-template-columns:1fr;gap:36px;padding-bottom:36px}
+.site-footer .foot-title{margin-bottom:12px}
+.site-footer .foot-list{gap:4px}
+.site-footer .foot-list a{display:inline-block;padding:6px 0}
+.site-footer .foot-bottom{flex-direction:column;align-items:flex-start;gap:8px}
+.site-footer .foot-social{gap:8px;margin-left:-10px}
+.site-footer .foot-social a{width:44px;height:44px}
+.site-footer .foot-mark{padding:0 22px 18px}
+.site-footer .foot-mark svg{width:100%}
+.site-footer .foot-mark text{stroke-width:4}
 section[aria-label="Princípios"] button{width:44px!important;height:44px!important;font-size:15px!important}
 #sobre [data-g2]>div:first-child{width:72%;max-width:280px}
 #sobre .skills{column-gap:18px}
@@ -267,7 +287,7 @@ section[aria-label="Princípios"] button{width:44px!important;height:44px!import
 <header ref="{{ headerRef }}" class="site-header">
 <div class="nav-shell">
 <a href="#inicio" class="nav-brand" aria-label="Ana Vitória, voltar ao início">
-<span class="nav-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="100%" height="100%"><path d="M8.5 23.5L14.5 8.5l6 15" fill="none" stroke="#E8C3B6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.5" cy="22.5" r="2.1" fill="#C9A26A"/></svg></span>
+<span class="nav-mark" aria-hidden="true"><svg viewBox="41 30 78 64" width="27" height="22"><path d="M41,94 L76.5,30 L81.5,30 L101,94 L89,94 L79,46 L48.5,94 Z" fill="#D9A6A0"/><circle cx="113" cy="88" r="6.8" fill="#B08A4E"/></svg></span>
 <span class="nav-name">Ana Vitória</span>
 </a>
 <nav ref="{{ navRef }}" aria-label="Menu principal" class="nav-links">
@@ -539,50 +559,52 @@ section[aria-label="Princípios"] button{width:44px!important;height:44px!import
 </div></section>
 
 <footer class="site-footer">
-<div aria-hidden="true" class="foot-glow"></div>
-<div style="position:relative;max-width:1180px;margin:0 auto;padding:80px 24px 0">
-<div data-footer-grid style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px">
+<div aria-hidden="true" class="foot-bg"></div>
+<canvas ref="{{ footerCanvasRef }}" aria-hidden="true" class="foot-canvas"></canvas>
+<div class="foot-inner">
+<div class="foot-grid">
 <div>
-<a href="#inicio" style="display:inline-flex;align-items:center;gap:12px;color:#FAF6F4;text-decoration:none">
-<span aria-hidden="true" style="display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:#2A1B17;border:1px solid rgba(217,166,160,0.24);box-shadow:0 0 16px rgba(126,76,45,.18)"><svg viewBox="0 0 32 32" width="100%" height="100%"><path d="M8.5 23.5L14.5 8.5l6 15" fill="none" stroke="#E8C3B6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.5" cy="22.5" r="2.1" fill="#C9A26A"/></svg></span>
-<span style="font-family:var(--font-display);font-size:28px;letter-spacing:-0.02em">Ana Vitória</span>
+<a href="#inicio" class="foot-brand">
+<span aria-hidden="true" class="foot-logo"><svg viewBox="41 30 78 64" width="26" height="21"><path d="M41,94 L76.5,30 L81.5,30 L101,94 L89,94 L79,46 L48.5,94 Z" fill="#D9A6A0"/><circle cx="113" cy="88" r="6.8" fill="#B08A4E"/></svg></span>
+<span class="foot-name">Ana Vitória</span>
 </a>
-<p style="margin:20px 0 26px;max-width:34ch;font-size:15px;line-height:1.7;color:#C9B6B8">Projetos digitais pensados para ser claros, confiáveis e memoráveis.</p>
-<div class="foot-status"><span class="foot-dot" aria-hidden="true"></span>Disponível para novos projetos</div>
+<p class="foot-tagline">Landing pages claras e cuidadosas, do design ao código.</p>
 </div>
-<nav aria-label="Menu do rodapé">
-<div class="foot-label">navegação</div>
-<div class="foot-nav">
-<a href="#servicos" class="foot-link">O que faço</a>
-<a href="#projetos" class="foot-link">Projetos</a>
-<a href="#processo" class="foot-link">Como trabalho</a>
-<a href="#sobre" class="foot-link">Sobre mim</a>
-<a href="#faq" class="foot-link">Dúvidas</a>
-</div>
+<nav aria-label="Trabalho">
+<p class="foot-title">Trabalho</p>
+<ul class="foot-list">
+<li><a href="#servicos">O que faço</a></li>
+<li><a href="#projetos">Projetos</a></li>
+<li><a href="#processo">Como trabalho</a></li>
+</ul>
+</nav>
+<nav aria-label="Conheça">
+<p class="foot-title">Conheça</p>
+<ul class="foot-list">
+<li><a href="#sobre">Sobre mim</a></li>
+<li><a href="#faq">Dúvidas</a></li>
+<li><a href="#inicio">Voltar ao topo</a></li>
+</ul>
 </nav>
 <div>
-<div class="foot-label">contato</div>
-<p style="margin:0 0 22px;max-width:28ch;font-size:15px;line-height:1.7;color:#C9B6B8">Me conte sobre o seu projeto. Respondo pelo WhatsApp, e-mail ou Instagram.</p>
-<div class="foot-social">
-<a href="https://instagram.com/anav.souzab" target="_blank" rel="noreferrer" aria-label="Instagram">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4.5" y="4.5" width="15" height="15" rx="4.5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.7" stroke="currentColor" stroke-width="1.7"/><circle cx="17.1" cy="6.9" r="1.2" fill="currentColor"/></svg>
-</a>
-<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" aria-label="WhatsApp">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.8 19.2l1.1-3.6a7.8 7.8 0 1 1 2.9 2.7l-4 .9Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.3 8.6c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.6 1.4c.1.2 0 .4-.1.6l-.4.5c.4.8 1.1 1.5 1.9 1.9l.5-.4c.2-.1.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.5c0 .3-.1.5-.5.7-.6.3-1.6.4-3-.4-1.5-.8-2.6-2-3.3-3.3-.5-1.1-.2-2 .2-2.4Z" fill="currentColor"/></svg>
-</a>
-<a href="mailto:ana.dev2026@gmail.com" aria-label="E-mail">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 7.5A2.5 2.5 0 0 1 7 5h10a2.5 2.5 0 0 1 2.5 2.5v9A2.5 2.5 0 0 1 17 19H7a2.5 2.5 0 0 1-2.5-2.5v-9Z" stroke="currentColor" stroke-width="1.7"/><path d="m5.5 8 6.5 5 6.5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-</a>
+<p class="foot-title">Contato</p>
+<ul class="foot-list foot-contact">
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:ana.dev2026@gmail.com">ana.dev2026@gmail.com</a></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg><a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer">(92) 99257-5734</a></li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>Manaus, AM · {{ clock }}</span></li>
+</ul>
 </div>
-<div class="foot-clock">Aqui em Manaus são {{ clock }}</div>
-</div>
-</div>
-<div aria-hidden="true" class="foot-wordmark">Ana Vitória</div>
 </div>
 <div class="foot-bottom">
-<span>© 2026 Ana Vitória · Feito com intenção</span>
-<a href="#inicio" class="foot-top">Voltar ao topo</a>
+<div class="foot-social">
+<a href="https://instagram.com/anav.souzab" target="_blank" rel="noreferrer" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></a>
+<a href="mailto:ana.dev2026@gmail.com" aria-label="E-mail"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
 </div>
+<p>© 2026 Ana Vitória. Todos os direitos reservados.</p>
+</div>
+</div>
+<div aria-hidden="true" class="foot-mark" ref="{{ footerMarkRef }}"></div>
 </footer>
 </div>
 </x-dc>
@@ -600,6 +622,8 @@ class Component extends DCLogic {
   quotes = React.createRef();
   header = React.createRef();
   nav = React.createRef();
+  footerMark = React.createRef();
+  footerCanvas = React.createRef();
 
   componentDidMount() {
     this._onScroll = () => {
@@ -614,24 +638,30 @@ class Component extends DCLogic {
     this._onScroll();
     this._clock = setInterval(() => this.setState({ clock: Component.manausTime() }), 30000);
     this.setupNav();
-    if (this.props.heroConstellation !== false) {
-      let tries = 0;
-      const boot = () => {
-        if (this._dead || this._started) return;
-        if (this.canvas.current && this.canvas.current.getBoundingClientRect().height > 0) {
-          this._started = true;
-          this.startCanvas();
-          return;
-        }
-        if (tries++ < 200) requestAnimationFrame(boot);
-      };
-      boot();
-    }
+    this.setupFooterMark();
+    this._stops = [];
+    if (this.props.heroConstellation !== false) this.bootCanvas(this.canvas);
+    this.bootCanvas(this.footerCanvas);
   }
 
-  startCanvas() {
-    const canvas = this.canvas.current;
-    if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  // Espera o canvas ter tamanho real antes de iniciar a constelação nele.
+  bootCanvas(ref) {
+    let tries = 0;
+    const boot = () => {
+      if (this._dead) return;
+      const canvas = ref.current;
+      if (canvas && canvas.getBoundingClientRect().height > 0) {
+        const stop = this.startCanvas(canvas);
+        if (stop) this._stops.push(stop);
+        return;
+      }
+      if (tries++ < 200) requestAnimationFrame(boot);
+    };
+    boot();
+  }
+
+  startCanvas(canvas) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
     const hero = canvas.parentElement;
     const ctx = canvas.getContext('2d');
     const pointer = { x: -1000, y: -1000 };
@@ -649,19 +679,20 @@ class Component extends DCLogic {
         for (let y = spacing / 2; y < height + spacing; y += spacing)
           nodes.push({ x, y, hx: x, hy: y, vx: 0, vy: 0, pulse: Math.random() * Math.PI * 2 });
     };
-    this._onResize = resize;
-    this._onMove = (e) => { const b = hero.getBoundingClientRect(); pointer.x = e.clientX - b.left; pointer.y = e.clientY - b.top; };
-    this._onLeave = () => { pointer.x = -1000; pointer.y = -1000; };
-    window.addEventListener('resize', this._onResize);
-    window.addEventListener('mousemove', this._onMove);
-    hero.addEventListener('mouseleave', this._onLeave);
+    const onMove = (e) => { const b = hero.getBoundingClientRect(); pointer.x = e.clientX - b.left; pointer.y = e.clientY - b.top; };
+    const onLeave = () => { pointer.x = -1000; pointer.y = -1000; };
+    window.addEventListener('resize', resize);
+    window.addEventListener('mousemove', onMove);
+    hero.addEventListener('mouseleave', onLeave);
     resize();
+    let ro = null, io = null, raf = 0, visible = true, stopped = false;
     if (window.ResizeObserver) {
-      this._ro = new ResizeObserver(() => resize());
-      this._ro.observe(hero);
+      ro = new ResizeObserver(() => resize());
+      ro.observe(hero);
     }
     const draw = () => {
-      if (this._dead) return;
+      if (this._dead || stopped) return;
+      if (!visible) { raf = 0; return; } // pausa fora da tela
       const live = hero.getBoundingClientRect();
       if (canvas.width === 0 || Math.abs(live.height - height) > 2 || Math.abs(live.width - width) > 2) resize();
       ctx.clearRect(0, 0, width, height);
@@ -685,9 +716,25 @@ class Component extends DCLogic {
         ctx.fillStyle = active ? 'rgba(176,138,78,0.9)' : 'rgba(217,166,160,' + (0.2 + Math.sin(n.pulse) * 0.06) + ')';
         ctx.beginPath(); ctx.arc(n.x, n.y, active ? 2.6 : 1.4, 0, Math.PI * 2); ctx.fill();
       }
-      this._raf = requestAnimationFrame(draw);
+      raf = requestAnimationFrame(draw);
     };
-    this._raf = requestAnimationFrame(draw);
+    if (window.IntersectionObserver) {
+      io = new IntersectionObserver(([entry]) => {
+        visible = entry.isIntersecting;
+        if (visible && !raf) raf = requestAnimationFrame(draw);
+      });
+      io.observe(hero);
+    }
+    raf = requestAnimationFrame(draw);
+    return () => {
+      stopped = true;
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', resize);
+      window.removeEventListener('mousemove', onMove);
+      hero.removeEventListener('mouseleave', onLeave);
+      if (ro) ro.disconnect();
+      if (io) io.disconnect();
+    };
   }
 
   setupNav() {
@@ -729,22 +776,90 @@ class Component extends DCLogic {
     window.addEventListener('resize', this._onNavResize);
   }
 
+  setupFooterMark() {
+    const box = this.footerMark.current;
+    if (!box) return;
+    const word = 'Ana Vitória';
+    box.innerHTML = '<svg viewBox="0 0 1100 170" focusable="false"><defs>'
+      + '<linearGradient id="footTextGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1100" y2="0">'
+      + '<stop offset="0%" stop-color="#E8C3B6"/><stop offset="30%" stop-color="#D9A6A0"/><stop offset="55%" stop-color="#F0C9A8"/><stop offset="80%" stop-color="#B8794B"/><stop offset="100%" stop-color="#A9824B"/></linearGradient>'
+      + '<radialGradient id="footRevealMask" gradientUnits="userSpaceOnUse" cx="550" cy="85" r="220"><stop offset="0%" stop-color="white"/><stop offset="100%" stop-color="black"/></radialGradient>'
+      + '<mask id="footTextMask"><rect x="0" y="0" width="1100" height="170" fill="url(#footRevealMask)"/></mask>'
+      // Esconde a metade interna do traço: as letras ligadas ficam só com o contorno de fora, sem emendas.
+      + '<mask id="footSeamMask" maskUnits="userSpaceOnUse" x="-5000" y="-5000" width="20000" height="20000"><rect x="-5000" y="-5000" width="20000" height="20000" fill="white"/><text class="fm-cut">' + word + '</text></mask></defs>'
+      + '<g mask="url(#footSeamMask)">'
+      + '<text class="fm-base">' + word + '</text>'
+      + '<text class="fm-draw">' + word + '</text>'
+      + '<text class="fm-reveal" stroke="url(#footTextGradient)" mask="url(#footTextMask)">' + word + '</text></g></svg>';
+    const svg = box.firstElementChild;
+    const text = svg.querySelector('.fm-base');
+    const line = svg.querySelector('#footTextGradient');
+    const glow = svg.querySelector('#footRevealMask');
+    const rect = svg.querySelector('mask rect');
+    let view = [0, 0, 1100, 170];
+
+    // Ajusta o viewBox ao tamanho real do texto, que depende da fonte carregada.
+    const fit = () => {
+      let b;
+      try { b = text.getBBox(); } catch (err) { return; } // escondido no mobile
+      if (!b.width) return;
+      const pad = 24; // folga para as voltas da letra manuscrita
+      view = [b.x - pad, b.y - pad, b.width + pad * 2, b.height + pad * 2];
+      svg.setAttribute('viewBox', view.join(' '));
+      rect.setAttribute('x', view[0]); rect.setAttribute('y', view[1]);
+      rect.setAttribute('width', view[2]); rect.setAttribute('height', view[3]);
+      line.setAttribute('x1', view[0]); line.setAttribute('x2', view[0] + view[2]);
+      glow.setAttribute('r', view[2] * 0.2);
+    };
+    fit();
+    if (document.fonts) document.fonts.load('150px "Great Vibes"').then(() => !this._dead && fit(), () => {});
+    this._onMarkResize = fit;
+    window.addEventListener('resize', this._onMarkResize);
+
+    // Eventos de ponteiro: no mouse o brilho segue o cursor; no celular aparece onde o dedo toca.
+    const follow = (e) => {
+      const r = svg.getBoundingClientRect();
+      glow.setAttribute('cx', view[0] + ((e.clientX - r.left) / r.width) * view[2]);
+      glow.setAttribute('cy', view[1] + ((e.clientY - r.top) / r.height) * view[3]);
+    };
+    const show = (e) => { follow(e); box.classList.add('is-hover'); };
+    const hide = () => box.classList.remove('is-hover');
+    svg.addEventListener('pointerenter', show);
+    svg.addEventListener('pointerdown', show);
+    svg.addEventListener('pointermove', follow);
+    svg.addEventListener('pointerleave', hide);
+    svg.addEventListener('pointercancel', hide);
+
+    // O contorno se desenha toda vez que o nome entra na tela e volta ao início quando sai.
+    if (!window.IntersectionObserver) { box.classList.add('is-drawn'); return; }
+    this._markSpy = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.intersectionRatio >= 0.3) box.classList.add('is-drawn');
+        else if (!e.isIntersecting) {
+          box.classList.add('no-anim');
+          box.classList.remove('is-drawn');
+          void box.offsetWidth;
+          box.classList.remove('no-anim');
+        }
+      }
+    }, { threshold: [0, 0.3] });
+    this._markSpy.observe(box);
+  }
+
   componentWillUnmount() {
     this._dead = true;
-    cancelAnimationFrame(this._raf);
     clearInterval(this._clock);
     if (this._spy) this._spy.disconnect();
+    if (this._markSpy) this._markSpy.disconnect();
+    window.removeEventListener('resize', this._onMarkResize);
     window.removeEventListener('resize', this._onNavResize);
     const nav = this.nav.current;
     if (nav) {
       nav.removeEventListener('mouseover', this._onNavOver);
       nav.removeEventListener('mouseleave', this._onNavLeave);
-    }    if (this._ro) this._ro.disconnect();
+    }
+    (this._stops || []).forEach((stop) => stop());
     window.removeEventListener('scroll', this._onScroll);
-    window.removeEventListener('resize', this._onResize);
-    window.removeEventListener('mousemove', this._onMove);
-    const hero = this.canvas.current?.parentElement;
-    if (hero) hero.removeEventListener('mouseleave', this._onLeave);
   }
 
   slide(ref, dir) {
@@ -778,6 +893,8 @@ class Component extends DCLogic {
       clock: this.state.clock,
       headerRef: this.header,
       navRef: this.nav,
+      footerMarkRef: this.footerMark,
+      footerCanvasRef: this.footerCanvas,
       canvasRef: this.canvas,
       progressRef: this.progress,
       quoteRail: this.quotes,
