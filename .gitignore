@@ -5,3 +5,6 @@ assets/RF4_*.jpg
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Arquivos locais do impeccable (criticas e servidor de teste)
+.impeccable/
