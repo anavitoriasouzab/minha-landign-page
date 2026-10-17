@@ -1,0 +1,22 @@
+# Arquivos do projeto que não vão para o site no ar
+
+# Git, configuração e notas
+.git
+.gitignore
+.assetsignore
+.impeccable
+.wrangler
+.thumbnail
+wrangler.jsonc
+CLAUDE.md
+node_modules
+
+# Imagens de referência e capturas que a página não usa
+uploads
+assets/Captura de tela*
+assets/RF4_*
+
+# Notas internas do design system
+_ds/**/readme.md
+_ds/**/_adherence.oxlintrc.json
+_ds/**/_ds_manifest.json

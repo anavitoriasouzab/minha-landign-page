@@ -9,5 +9,6 @@ desktop.ini
 # Arquivos locais do impeccable (criticas e servidor de teste)
 .impeccable/
 
-.vercel
-.env*
+# Arquivos locais da Cloudflare (wrangler)
+.wrangler/
+.dev.vars*
