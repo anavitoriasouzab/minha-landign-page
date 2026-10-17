@@ -3,6 +3,7 @@
 # Git, configuração e notas
 .git
 .gitignore
+.gitattributes
 .assetsignore
 .impeccable
 .wrangler
