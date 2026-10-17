@@ -1,7 +1,7 @@
 {
   // Site estático publicado na Cloudflare (Workers com arquivos estáticos).
   // O que não deve ir para o ar fica listado em .assetsignore.
-  "name": "ana-vitoria-souza",
+  "name": "minha-landign-page",
   "compatibility_date": "2026-09-01",
   "assets": {
     "directory": "."
