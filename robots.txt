@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anavitoriaweb.com.br/sitemap.xml
