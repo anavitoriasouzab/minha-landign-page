@@ -9,6 +9,7 @@
 .wrangler
 .thumbnail
 wrangler.jsonc
+worker
 CLAUDE.md
 node_modules
 
