@@ -12,3 +12,7 @@ desktop.ini
 # Arquivos locais da Cloudflare (wrangler)
 .wrangler/
 .dev.vars*
+
+# Arquivos de trabalho do design system (exports e zips), não vão para o site
+atualização/
+*.zip

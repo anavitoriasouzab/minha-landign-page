@@ -1,12 +1,12 @@
 :root {
-  /* Shadows — warm, low-contrast, tinted with ink rather than pure black */
+  /* Shadows — low-contrast, tinted with noite rather than pure black */
   --shadow-none: none;
-  --shadow-xs: 0 1px 2px rgba(35, 24, 27, 0.05);
-  --shadow-sm: 0 2px 8px rgba(35, 24, 27, 0.06);
-  --shadow-md: 0 8px 24px rgba(35, 24, 27, 0.07);
-  --shadow-lg: 0 20px 48px rgba(35, 24, 27, 0.10);
+  --shadow-xs: 0 1px 2px rgba(18, 6, 42, 0.05);
+  --shadow-sm: 0 2px 8px rgba(18, 6, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(18, 6, 42, 0.08);
+  --shadow-lg: 0 20px 48px rgba(18, 6, 42, 0.12);
   --shadow-inset-line: inset 0 0 0 1px var(--border-subtle);
-  --ring-focus: 0 0 0 3px rgba(122, 36, 56, 0.22);
+  --ring-focus: 0 0 0 3px rgba(106, 43, 176, 0.24);
 
   /* Motion — quiet, no bounce */
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
@@ -17,9 +17,11 @@
   --transition-base: all var(--duration-base) var(--ease-standard);
 
   /* Transparency & blur */
-  --scrim: rgba(35, 24, 27, 0.44);
+  --scrim: rgba(18, 6, 42, 0.48);
   --blur-veil: saturate(140%) blur(14px); /* @kind other */
-  --veil-light: rgba(250, 246, 244, 0.72);
-  --veil-dark: rgba(35, 24, 27, 0.60);
-  --protect-bottom: linear-gradient(to top, rgba(35,24,27,0.72), rgba(35,24,27,0)); /* @kind other */
+  --veil-light: rgba(248, 245, 252, 0.72);
+  --veil-dark: rgba(18, 6, 42, 0.62);
+  --protect-bottom: linear-gradient(to top, rgba(18,6,42,0.78), rgba(18,6,42,0)); /* @kind other */
+  /* Story/post ground where no photo exists: violeta → noite */
+  --ground-violet: linear-gradient(170deg, #6A2BB0 0%, #3A1468 55%, #12062A 100%); /* @kind other */
 }

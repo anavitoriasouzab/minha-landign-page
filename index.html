@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://anavitoriaweb.com.br/">
 <meta property="og:title" content="Ana Vitória · Landing pages e front-end">
 <meta property="og:description" content="Landing pages claras e cuidadosas, do design ao código. Ana Vitória, UX/UI e front-end em Manaus.">
-<meta property="og:image" content="https://anavitoriaweb.com.br/assets/og/compartilhar.jpg">
+<meta property="og:image" content="https://anavitoriaweb.com.br/assets/og/compartilhar-v2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Ana Vitória ao lado do título: Sites que transmitem confiança antes da primeira palavra.">
@@ -21,7 +21,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="favicon-180.png">
-<meta name="theme-color" content="#0D0A0B">
+<!-- theme-color não aceita var(): é o --ink-0 (noite 50% preto) calculado. Atualizar junto com a paleta. -->
+<meta name="theme-color" content="#090315">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 <script type="application/ld+json">
@@ -72,7 +73,7 @@
    "@id": "https://anavitoriaweb.com.br/#servico",
    "name": "Ana Vitória · Landing pages para pequenos negócios",
    "url": "https://anavitoriaweb.com.br/",
-   "image": "https://anavitoriaweb.com.br/assets/og/compartilhar.jpg",
+   "image": "https://anavitoriaweb.com.br/assets/og/compartilhar-v2.jpg",
    "logo": "https://anavitoriaweb.com.br/favicon-180.png",
    "description": "Criação de landing pages para pequenos negócios: página clara, conteúdo organizado e o próximo passo do cliente óbvio, como chamar no WhatsApp. Inclui domínio e hospedagem. Atendimento online para negócios de qualquer lugar do Brasil, a partir de Manaus.",
    "founder": {
@@ -183,68 +184,68 @@
  ]
 }
 </script>
+<link rel="stylesheet" href="site-colors.css">
 <script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet><script src="./ds-base.js"></script><style>
-:root{--ink-0:#070606;--ink-1:#0E0B0C;--ink-2:#151012;--line:rgba(217,166,160,.14);--line-strong:rgba(217,166,160,.28);--bordeaux:var(--color-primary,#7A2438);--bordeaux-dark:var(--color-primary-dark,#5E1B2B);--nude:var(--color-secondary,#D9A6A0);--gold:var(--color-accent,#B08A4E);--porcelain:var(--color-base,#FAF6F4);--tx-body:#D3C1C2;--tx-soft:#C0AEB2;--tx-muted:#A99A9D}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--ink-0)!important}
-a{color:var(--nude);text-decoration:none}
-a:hover{color:var(--gold)}
-::selection{background:var(--bordeaux);color:var(--porcelain)}
-:where(a,button):focus-visible{outline:2px solid var(--nude);outline-offset:3px}
+a{color:var(--lavender);text-decoration:none}
+a:hover{color:var(--highlight)}
+::selection{background:var(--brand);color:var(--mist)}
+:where(a,button):focus-visible{outline:2px solid var(--lavender);outline-offset:3px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 section[id]{scroll-margin-top:92px}
 .site-header{position:sticky;top:0;z-index:60;box-sizing:border-box;height:76px;margin-bottom:-76px;padding:12px 24px 0;pointer-events:none}
 .site-header .nav-shell{pointer-events:auto;position:relative;box-sizing:border-box;max-width:1240px;height:60px;margin:0 auto;padding:0 8px 0 10px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;border-radius:999px;border:1px solid transparent;background:transparent;transition:max-width 480ms cubic-bezier(.16,1,.3,1),background 300ms ease,border-color 300ms ease,box-shadow 300ms ease}
-.site-header[data-scrolled] .nav-shell{max-width:1080px;background:rgba(10,8,9,.8);border-color:var(--line);backdrop-filter:saturate(140%) blur(18px);-webkit-backdrop-filter:saturate(140%) blur(18px);box-shadow:0 18px 40px rgba(0,0,0,.4),inset 0 1px 0 rgba(250,246,244,.05)}
-.site-header .nav-brand{justify-self:start;display:inline-flex;align-items:center;gap:11px;min-width:0;color:var(--porcelain)}
-.site-header .nav-brand:hover{color:var(--porcelain)}
-.site-header .nav-mark{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border-radius:11px;background:#23181B;border:1px solid rgba(217,166,160,.24);transition:transform 380ms cubic-bezier(.16,1,.3,1)}
+.site-header[data-scrolled] .nav-shell{max-width:1080px;background:color-mix(in srgb,var(--ink-0) 80%,transparent);border-color:var(--line);backdrop-filter:saturate(140%) blur(18px);-webkit-backdrop-filter:saturate(140%) blur(18px);box-shadow:0 18px 40px color-mix(in srgb,var(--ink-0) 40%,transparent),inset 0 1px 0 color-mix(in srgb,var(--mist) 5%,transparent)}
+.site-header .nav-brand{justify-self:start;display:inline-flex;align-items:center;gap:11px;min-width:0;color:var(--mist)}
+.site-header .nav-brand:hover{color:var(--mist)}
+.site-header .nav-mark{display:grid;place-items:center;flex:0 0 auto;width:40px;height:40px;border-radius:11px;background:var(--color-ink);border:1px solid color-mix(in srgb,var(--lavender) 24%,transparent);transition:transform 380ms cubic-bezier(.16,1,.3,1)}
 .site-header .nav-brand:hover .nav-mark{transform:rotate(-8deg)}
 .site-header .nav-name{font-family:var(--font-display);font-size:23px;letter-spacing:-.02em;white-space:nowrap}
-.site-header .nav-links{position:relative;display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:rgba(250,246,244,.03);border:1px solid rgba(217,166,160,.1)}
+.site-header .nav-links{position:relative;display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:color-mix(in srgb,var(--mist) 3%,transparent);border:1px solid color-mix(in srgb,var(--lavender) 10%,transparent)}
 .site-header .nav-links a{position:relative;z-index:1;padding:9px 16px;border-radius:999px;font-size:14px;color:var(--tx-body);white-space:nowrap;transition:color 180ms ease}
-.site-header .nav-links a:hover,.site-header .nav-links a[aria-current]{color:var(--porcelain)}
-.site-header .nav-links a:focus-visible{outline:none;color:var(--porcelain);box-shadow:0 0 0 2px rgba(217,166,160,.5)}
-.site-header .nav-indicator{position:absolute;top:4px;bottom:4px;left:0;width:0;box-sizing:border-box;border-radius:999px;background:rgba(122,36,56,.55);border:1px solid rgba(217,166,160,.2);opacity:0;pointer-events:none;transition:transform 420ms cubic-bezier(.16,1,.3,1),width 420ms cubic-bezier(.16,1,.3,1),opacity 200ms ease}
-.site-header .nav-cta{justify-self:end;display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;background:var(--bordeaux);border:1px solid rgba(217,166,160,.3);color:var(--porcelain);font-size:13px;font-weight:500;white-space:nowrap;box-shadow:0 10px 24px rgba(0,0,0,.35);transition:background 220ms ease,border-color 220ms ease,transform 220ms ease}
-.site-header .nav-cta:hover,.site-header .nav-cta:focus-visible{color:var(--porcelain);background:var(--bordeaux-dark);border-color:var(--nude);transform:translateY(-1px)}
+.site-header .nav-links a:hover,.site-header .nav-links a[aria-current]{color:var(--mist)}
+.site-header .nav-links a:focus-visible{outline:none;color:var(--mist);box-shadow:0 0 0 2px color-mix(in srgb,var(--lavender) 50%,transparent)}
+.site-header .nav-indicator{position:absolute;top:4px;bottom:4px;left:0;width:0;box-sizing:border-box;border-radius:999px;background:color-mix(in srgb,var(--brand) 55%,transparent);border:1px solid color-mix(in srgb,var(--lavender) 20%,transparent);opacity:0;pointer-events:none;transition:transform 420ms cubic-bezier(.16,1,.3,1),width 420ms cubic-bezier(.16,1,.3,1),opacity 200ms ease}
+.site-header .nav-cta{justify-self:end;display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;background:var(--brand);border:1px solid color-mix(in srgb,var(--lavender) 30%,transparent);color:var(--mist);font-size:13px;font-weight:500;white-space:nowrap;box-shadow:0 10px 24px color-mix(in srgb,var(--ink-0) 35%,transparent);transition:background 220ms ease,border-color 220ms ease,transform 220ms ease}
+.site-header .nav-cta:hover,.site-header .nav-cta:focus-visible{color:var(--mist);background:var(--brand-dark);border-color:var(--lavender);transform:translateY(-1px)}
 #inicio{background:var(--ink-0)!important}
-#inicio>div[aria-hidden="true"]{background:radial-gradient(ellipse 48% 58% at 74% 30%,rgba(122,36,56,.26),transparent 68%),radial-gradient(ellipse 42% 48% at 8% 84%,rgba(35,24,27,.55),transparent 70%)!important}
-#inicio [data-hero-copy]>div:first-child{border-color:var(--line-strong)!important;background:rgba(217,166,160,.05)!important;color:#E4CBC8!important}
-#inicio [data-hero-copy]>div:first-child span{background:var(--gold)!important}
-#inicio [data-hero-art]>div:first-child{background:radial-gradient(circle,rgba(122,36,56,.24),rgba(35,24,27,.2) 48%,transparent 72%)!important}
-#inicio [data-hero-art]>div:nth-child(2){border-color:rgba(217,166,160,.18)!important}
+#inicio>div[aria-hidden="true"]{background:radial-gradient(ellipse 48% 58% at 74% 30%,color-mix(in srgb,var(--brand) 26%,transparent),transparent 68%),radial-gradient(ellipse 42% 48% at 8% 84%,color-mix(in srgb,var(--color-ink) 55%,transparent),transparent 70%)!important}
+#inicio [data-hero-copy]>div:first-child{border-color:var(--line-strong)!important;background:color-mix(in srgb,var(--lavender) 5%,transparent)!important;color:var(--lavender-soft)!important}
+#inicio [data-hero-copy]>div:first-child span{background:var(--highlight)!important}
+#inicio [data-hero-art]>div:first-child{background:radial-gradient(circle,color-mix(in srgb,var(--brand) 24%,transparent),color-mix(in srgb,var(--color-ink) 20%,transparent) 48%,transparent 72%)!important}
+#inicio [data-hero-art]>div:nth-child(2){border-color:color-mix(in srgb,var(--lavender) 18%,transparent)!important}
 #inicio [data-hero-art] img{filter:saturate(1.02) contrast(1.05)!important}
-#inicio [data-hero-art]>div:last-child{box-shadow:0 34px 80px rgba(0,0,0,.6)!important}
-#inicio [data-float]{border-color:var(--line-strong)!important;background:rgba(14,11,12,.82)!important;box-shadow:0 18px 40px rgba(0,0,0,.5)!important}
-#inicio [data-float]>span:first-child{background:rgba(176,138,78,.14)!important;color:var(--gold)!important}
+#inicio [data-hero-art]>div:last-child{box-shadow:0 34px 80px color-mix(in srgb,var(--ink-0) 60%,transparent)!important}
+#inicio [data-float]{border-color:var(--line-strong)!important;background:color-mix(in srgb,var(--ink-0) 82%,transparent)!important;box-shadow:0 18px 40px color-mix(in srgb,var(--ink-0) 50%,transparent)!important}
+#inicio [data-float]>span:first-child{background:color-mix(in srgb,var(--highlight) 14%,transparent)!important;color:var(--highlight)!important}
 #servicos [data-reveal]:first-child{align-items:flex-start!important}
 #servicos [data-reveal]:first-child>p{margin-top:8px!important}
-#servicos article{position:relative;min-height:0!important;padding:30px!important;background:linear-gradient(160deg,var(--ink-2),var(--ink-1))!important;border-color:var(--line)!important;box-shadow:0 18px 42px rgba(0,0,0,.3)!important;transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease!important}
-#servicos article:nth-child(2){background:linear-gradient(160deg,#5E1B2B,#23181B 72%)!important;border-color:rgba(217,166,160,.24)!important}
-#servicos article:hover{transform:translateY(-5px)!important;border-color:rgba(176,138,78,.42)!important;box-shadow:0 26px 52px rgba(0,0,0,.45)!important}
+#servicos article{position:relative;min-height:0!important;padding:30px!important;background:linear-gradient(160deg,var(--ink-2),var(--ink-1))!important;border-color:var(--line)!important;box-shadow:0 18px 42px color-mix(in srgb,var(--ink-0) 30%,transparent)!important;transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease!important}
+#servicos article:nth-child(2){background:linear-gradient(160deg,var(--brand-dark),var(--color-ink) 72%)!important;border-color:color-mix(in srgb,var(--lavender) 24%,transparent)!important}
+#servicos article:hover{transform:translateY(-5px)!important;border-color:color-mix(in srgb,var(--highlight) 42%,transparent)!important;box-shadow:0 26px 52px color-mix(in srgb,var(--ink-0) 45%,transparent)!important}
 #servicos article>h3{margin:0 0 10px!important;font-size:27px!important}
 #servicos article>p{color:var(--tx-body)!important}
-#projetos [data-g3]>a{--c:217,166,160;background:var(--ink-1)!important;border:1px solid rgba(var(--c),.42)!important;box-shadow:0 18px 42px -18px rgba(0,0,0,.7)!important;transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease!important}
-#projetos [data-g3]>a[href*="barbearia"]{--c:176,138,78}
-#projetos [data-g3]>a[href*="cetap"]{--c:168,71,94}
-#projetos [data-g3]>a:hover{transform:translateY(-4px)!important;border-color:rgba(var(--c),.8)!important;box-shadow:0 24px 54px -14px rgba(0,0,0,.8)!important}
-#projetos [data-g3]>a>div:first-child::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(7,6,6,0) 40%,rgba(7,6,6,.5))}
-#projetos [data-g3]>a>div:first-child>span{z-index:1;backdrop-filter:none!important;background:rgb(var(--c))!important;color:var(--ink-0)!important;font-weight:500}
-#projetos [data-g3]>a[href*="cetap"]>div:first-child>span{background:var(--bordeaux)!important;color:var(--porcelain)!important}
+#projetos [data-g3]>a{--c:var(--lavender);background:var(--ink-1)!important;border:1px solid color-mix(in srgb,var(--c) 42%,transparent)!important;box-shadow:0 18px 42px -18px color-mix(in srgb,var(--ink-0) 70%,transparent)!important;transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease!important}
+#projetos [data-g3]>a[href*="barbearia"]{--c:var(--highlight)}
+#projetos [data-g3]>a[href*="cetap"]{--c:var(--proj-cetap)}
+#projetos [data-g3]>a:hover{transform:translateY(-4px)!important;border-color:color-mix(in srgb,var(--c) 80%,transparent)!important;box-shadow:0 24px 54px -14px color-mix(in srgb,var(--ink-0) 80%,transparent)!important}
+#projetos [data-g3]>a>div:first-child::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,color-mix(in srgb,var(--ink-0) 0%,transparent) 40%,color-mix(in srgb,var(--ink-0) 50%,transparent))}
+#projetos [data-g3]>a>div:first-child>span{z-index:1;backdrop-filter:none!important;background:var(--c)!important;color:var(--ink-0)!important;font-weight:500}
+#projetos [data-g3]>a[href*="cetap"]>div:first-child>span{background:var(--brand)!important;color:var(--mist)!important}
 #projetos [data-g3] .proj-goal{margin:12px 0 0;font-size:15px;line-height:1.6;color:var(--tx-body)}
 #projetos [data-g3] .proj-meta{margin:14px 0 0;padding-top:14px;border-top:1px solid var(--line);font-family:var(--font-mono);font-size:12px;line-height:1.6;color:var(--tx-muted)}
-#projetos [data-g3] .proj-meta b{font-weight:500;color:rgb(var(--c))}
-#projetos [data-g3]>a[href*="cetap"] .proj-meta b{color:#D98A9C}
-#inicio .promessas{list-style:none;margin:44px 0 0;padding:0;display:grid;border-top:1px solid rgba(217,166,160,.18)}
-#inicio .promessas li{display:grid;gap:4px;padding:16px 0;border-bottom:1px solid rgba(217,166,160,.12)}
-#inicio .promessa-titulo{font-family:var(--font-display);font-size:22px;line-height:1.15;color:var(--porcelain)}
+#projetos [data-g3] .proj-meta b{font-weight:500;color:var(--c)}
+#projetos [data-g3]>a[href*="cetap"] .proj-meta b{color:var(--proj-cetap-soft)}
+#inicio .promessas{list-style:none;margin:44px 0 0;padding:0;display:grid;border-top:1px solid color-mix(in srgb,var(--lavender) 18%,transparent)}
+#inicio .promessas li{display:grid;gap:4px;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--lavender) 12%,transparent)}
+#inicio .promessa-titulo{font-family:var(--font-display);font-size:22px;line-height:1.15;color:var(--mist)}
 #inicio .promessa-texto{font-size:14px;line-height:1.55;color:var(--tx-soft)}
-#processo{max-width:none!important;margin:112px 0 0!important;padding:0!important;background:radial-gradient(ellipse 50% 120% at 0% 0%,rgba(122,36,56,.2),transparent 60%),var(--ink-1);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+#processo{max-width:none!important;margin:112px 0 0!important;padding:0!important;background:radial-gradient(ellipse 50% 120% at 0% 0%,color-mix(in srgb,var(--brand) 20%,transparent),transparent 60%),var(--ink-1);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 #processo>div{position:relative;max-width:1228px;margin:0 auto;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important}
 #processo>div>div:first-child{padding:80px 24px 32px!important}
 #processo [data-process-rail]{border-top:0!important;padding-bottom:64px!important}
@@ -254,42 +255,42 @@ section[id]{scroll-margin-top:92px}
 .sobre-skills>div:first-child{margin-top:0!important}
 .foto-legenda{white-space:nowrap}
 #processo>div>*{position:relative;z-index:1}
-#processo [data-process-rail]>div:hover{background:rgba(122,36,56,.08)!important}
+#processo [data-process-rail]>div:hover{background:color-mix(in srgb,var(--brand) 8%,transparent)!important}
 #contato{position:relative}
-#contato>div{position:relative;background:radial-gradient(ellipse 70% 90% at 12% 0%,rgba(122,36,56,.6),transparent 65%),linear-gradient(150deg,#3A121D,#1A1214 55%,var(--ink-1))!important;border-color:rgba(217,166,160,.2)!important;box-shadow:0 30px 70px rgba(0,0,0,.6)!important}
+#contato>div{position:relative;background:radial-gradient(ellipse 70% 90% at 12% 0%,color-mix(in srgb,var(--brand) 60%,transparent),transparent 65%),linear-gradient(150deg,var(--brand-deep),var(--ink-1) 55%,var(--ink-1))!important;border-color:color-mix(in srgb,var(--lavender) 20%,transparent)!important;box-shadow:0 30px 70px color-mix(in srgb,var(--ink-0) 60%,transparent)!important}
 #contato [data-cta]{z-index:1}
 #contato [data-cta]>div:last-child{gap:16px!important}
-#contato [data-cta]>div:last-child>a{position:relative;background:rgba(7,6,6,.4)!important;border-color:rgba(250,246,244,.18)!important;transition:transform 220ms ease,background 220ms ease,border-color 220ms ease!important}
-#contato [data-cta]>div:last-child>a:hover{background:rgba(7,6,6,.6)!important;border-color:rgba(217,166,160,.5)!important;transform:translateY(-4px)!important}
-#contato [data-cta]>div:first-child>div:first-child{color:#F1CFCB!important}
-#contato [data-cta]>div:first-child h2 em{color:var(--nude)!important}
-#contato [data-cta]>div:first-child>a{background:var(--porcelain)!important;color:#23181B!important;box-shadow:0 14px 32px rgba(0,0,0,.3)!important}
-#contato [data-cta]>div:first-child>a:hover{background:var(--nude)!important;transform:translateY(-3px)!important}
+#contato [data-cta]>div:last-child>a{position:relative;background:color-mix(in srgb,var(--ink-0) 40%,transparent)!important;border-color:color-mix(in srgb,var(--mist) 18%,transparent)!important;transition:transform 220ms ease,background 220ms ease,border-color 220ms ease!important}
+#contato [data-cta]>div:last-child>a:hover{background:color-mix(in srgb,var(--ink-0) 60%,transparent)!important;border-color:color-mix(in srgb,var(--lavender) 50%,transparent)!important;transform:translateY(-4px)!important}
+#contato [data-cta]>div:first-child>div:first-child{color:var(--lavender-soft)!important}
+#contato [data-cta]>div:first-child h2 em{color:var(--lavender)!important}
+#contato [data-cta]>div:first-child>a{background:var(--mist)!important;color:var(--color-ink)!important;box-shadow:0 14px 32px color-mix(in srgb,var(--ink-0) 30%,transparent)!important}
+#contato [data-cta]>div:first-child>a:hover{background:var(--lavender)!important;transform:translateY(-3px)!important}
 #sobre .skills{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;max-width:560px}
-#sobre .skills li{display:grid;align-content:start;gap:3px;padding:13px 0;border-top:1px solid rgba(200,161,155,.14)}
-#sobre .skill-nome{font-family:var(--font-display);font-size:20px;line-height:1.15;color:#EFE3DF}
+#sobre .skills li{display:grid;align-content:start;gap:3px;padding:13px 0;border-top:1px solid color-mix(in srgb,var(--lavender) 14%,transparent)}
+#sobre .skill-nome{font-family:var(--font-display);font-size:20px;line-height:1.15;color:var(--lavender-soft)}
 #sobre .skill-desc{font-size:14px;line-height:1.5;color:var(--tx-muted)}
 #faq>[data-g2]{grid-template-columns:1fr!important;gap:12px!important;max-width:760px;margin:0 auto}
 #faq>[data-g2]>div{display:contents}
 #faq [data-g2] p{max-width:none!important;padding-right:clamp(0px,6vw,64px)}
-.site-footer{position:relative;overflow:hidden;margin:0 24px 24px;border-radius:28px;border:1px solid rgba(217,166,160,.14);background:#0F0B0C;color:var(--tx-soft)}
-.site-footer .foot-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(125% 125% at 50% 10%,rgba(15,11,12,.4) 50%,rgba(122,36,56,.32) 100%);pointer-events:none}
+.site-footer{position:relative;overflow:hidden;margin:0 24px 24px;border-radius:28px;border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);background:var(--ink-1);color:var(--tx-soft)}
+.site-footer .foot-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(125% 125% at 50% 10%,color-mix(in srgb,var(--ink-1) 40%,transparent) 50%,color-mix(in srgb,var(--brand) 32%,transparent) 100%);pointer-events:none}
 .site-footer .foot-canvas{position:absolute;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;opacity:.42}
 .site-footer .foot-inner{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:64px 32px 0}
 .site-footer .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:48px;padding-bottom:48px}
-.site-footer .foot-brand{display:inline-flex;align-items:center;gap:12px;color:var(--porcelain)}
-.site-footer .foot-brand:hover{color:var(--porcelain)}
-.site-footer .foot-logo{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:#23181B;border:1px solid rgba(217,166,160,.24)}
+.site-footer .foot-brand{display:inline-flex;align-items:center;gap:12px;color:var(--mist)}
+.site-footer .foot-brand:hover{color:var(--mist)}
+.site-footer .foot-logo{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--color-ink);border:1px solid color-mix(in srgb,var(--lavender) 24%,transparent)}
 .site-footer .foot-name{font-family:var(--font-display);font-size:26px;letter-spacing:-.02em}
 .site-footer .foot-tagline{margin:16px 0 0;max-width:32ch;font-size:15px;line-height:1.7;color:var(--tx-muted)}
-.site-footer .foot-title{margin:0 0 20px;font-family:var(--font-display);font-size:20px;line-height:1.2;color:var(--porcelain)}
+.site-footer .foot-title{margin:0 0 20px;font-family:var(--font-display);font-size:20px;line-height:1.2;color:var(--mist)}
 .site-footer .foot-list{margin:0;padding:0;list-style:none;display:grid;gap:12px;font-size:15px}
 .site-footer .foot-list a,.site-footer .foot-social a{color:var(--tx-body);transition:color 180ms ease}
-.site-footer .foot-list a:hover,.site-footer .foot-list a:focus-visible,.site-footer .foot-social a:hover,.site-footer .foot-social a:focus-visible{color:#F0C9A8}
+.site-footer .foot-list a:hover,.site-footer .foot-list a:focus-visible,.site-footer .foot-social a:hover,.site-footer .foot-social a:focus-visible{color:var(--highlight)}
 .site-footer .foot-contact li{display:flex;align-items:center;gap:12px;min-width:0}
-.site-footer .foot-contact svg{flex:0 0 auto;color:var(--nude)}
+.site-footer .foot-contact svg{flex:0 0 auto;color:var(--lavender)}
 .site-footer .foot-contact a{overflow-wrap:anywhere}
-.site-footer .foot-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;flex-wrap:wrap;padding:24px 0 28px;border-top:1px solid rgba(200,161,155,.12);font-size:13px;color:var(--tx-muted)}
+.site-footer .foot-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;flex-wrap:wrap;padding:24px 0 28px;border-top:1px solid color-mix(in srgb,var(--lavender) 12%,transparent);font-size:13px;color:var(--tx-muted)}
 .site-footer .foot-bottom p{margin:0}
 .site-footer .foot-social{display:flex;gap:20px}
 .site-footer .foot-social a{display:grid;place-items:center}
@@ -297,8 +298,8 @@ section[id]{scroll-margin-top:92px}
 .site-footer .foot-mark svg{display:block;width:78%;height:auto;margin:0 auto;overflow:visible}
 .site-footer .foot-mark text{font-family:"Great Vibes",cursive;font-weight:400;font-size:150px;fill:transparent;stroke-width:2.4;stroke-linejoin:round}
 .site-footer .foot-mark .fm-cut{fill:#000;stroke:none}
-.site-footer .fm-base{stroke:rgba(217,166,160,.22);opacity:0;transition:opacity 300ms ease}
-.site-footer .fm-draw{stroke:rgba(217,166,160,.5);stroke-dasharray:3000;stroke-dashoffset:3000;transition:stroke-dashoffset 4s ease-in-out}
+.site-footer .fm-base{stroke:color-mix(in srgb,var(--lavender) 22%,transparent);opacity:0;transition:opacity 300ms ease}
+.site-footer .fm-draw{stroke:color-mix(in srgb,var(--lavender) 50%,transparent);stroke-dasharray:3000;stroke-dashoffset:3000;transition:stroke-dashoffset 4s ease-in-out}
 .site-footer .fm-reveal{opacity:0;transition:opacity 200ms ease}
 .site-footer .foot-mark.is-drawn .fm-draw{stroke-dashoffset:0}
 .site-footer .foot-mark.no-anim .fm-draw{transition:none}
@@ -312,10 +313,10 @@ section[id]{scroll-margin-top:92px}
 [data-rail]{scrollbar-width:none}
 [data-rail]::-webkit-scrollbar{display:none}
 [data-process-rail]{position:relative;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible!important;border-top:0!important;padding-top:28px}
-[data-process-rail]::before{content:"";position:absolute;top:42px;left:24px;right:24px;height:1px;background:linear-gradient(90deg,rgba(176,138,78,.55),rgba(217,166,160,.7),rgba(176,138,78,.55));z-index:0}
+[data-process-rail]::before{content:"";position:absolute;top:42px;left:24px;right:24px;height:1px;background:linear-gradient(90deg,color-mix(in srgb,var(--highlight) 55%,transparent),color-mix(in srgb,var(--lavender) 70%,transparent),color-mix(in srgb,var(--highlight) 55%,transparent));z-index:0}
 [data-process-rail]>div{position:relative;z-index:1;min-width:0!important;min-height:190px!important;padding:0 24px 38px!important;border-right:0!important;border-left:0!important}
-[data-process-rail]>div>span:first-child{position:relative;display:block;width:auto;height:auto;margin:0 0 26px;padding-top:28px;border:0;border-radius:0;background:transparent;color:var(--gold)!important;font-family:var(--font-mono);font-size:11px!important;letter-spacing:.04em!important;z-index:2}
-[data-process-rail]>div>span:first-child::before{content:"";position:absolute;top:10px;left:0;width:8px;height:8px;border:1px solid var(--gold);border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(176,138,78,.12)}
+[data-process-rail]>div>span:first-child{position:relative;display:block;width:auto;height:auto;margin:0 0 26px;padding-top:28px;border:0;border-radius:0;background:transparent;color:var(--highlight)!important;font-family:var(--font-mono);font-size:11px!important;letter-spacing:.04em!important;z-index:2}
+[data-process-rail]>div>span:first-child::before{content:"";position:absolute;top:10px;left:0;width:8px;height:8px;border:1px solid var(--highlight);border-radius:50%;background:var(--highlight);box-shadow:0 0 0 5px color-mix(in srgb,var(--highlight) 12%,transparent)}
 [data-process-rail]>div>span:first-child::after{display:none}
 [data-process-rail] h3{margin:0 0 8px!important;font-size:clamp(1.25rem,1.8vw,1.55rem)!important;line-height:1.05!important}
 [data-process-rail] p{min-height:4.95em!important;margin-bottom:0!important}
@@ -356,7 +357,7 @@ section[id]{scroll-margin-top:92px}
 [data-process-rail]{display:grid!important;grid-template-columns:1fr!important;overflow:visible!important;padding:8px 24px 30px!important}
 [data-process-rail]::before{display:none}
 [data-process-rail]>div{min-height:0!important;padding:0 0 26px 30px!important}
-[data-process-rail]>div:not(:last-child)::after{content:"";position:absolute;left:4.5px;top:16px;bottom:1.5px;width:1px;background:linear-gradient(180deg,rgba(176,138,78,.55),rgba(200,161,155,.18))}
+[data-process-rail]>div:not(:last-child)::after{content:"";position:absolute;left:4.5px;top:16px;bottom:1.5px;width:1px;background:linear-gradient(180deg,color-mix(in srgb,var(--highlight) 55%,transparent),color-mix(in srgb,var(--lavender) 18%,transparent))}
 [data-process-rail]>div>span:first-child{margin:0 0 6px!important;padding-top:0!important}
 [data-process-rail]>div>span:first-child::before{top:2.5px;left:-30px}
 [data-process-rail] h3{margin-bottom:6px!important}
@@ -380,13 +381,13 @@ section[id]{scroll-margin-top:92px}
 #sobre .skill-nome{font-size:18px}
 }
 </style></helmet>
-<div style="font-family:var(--font-body);background:var(--ink-0);color:var(--porcelain);overflow-x:clip">
-<div ref="{{ progressRef }}" aria-hidden="true" style="position:fixed;top:0;left:0;z-index:100;height:2px;width:0%;background:linear-gradient(90deg,#7A2438,#B08A4E);pointer-events:none"></div>
+<div style="font-family:var(--font-body);background:var(--ink-0);color:var(--mist);overflow-x:clip">
+<div ref="{{ progressRef }}" aria-hidden="true" style="position:fixed;top:0;left:0;z-index:100;height:2px;width:0%;background:linear-gradient(90deg,var(--brand),var(--highlight));pointer-events:none"></div>
 
 <header ref="{{ headerRef }}" class="site-header">
 <div class="nav-shell">
 <a href="#inicio" class="nav-brand" aria-label="Ana Vitória, voltar ao início">
-<span class="nav-mark" aria-hidden="true"><svg viewBox="41 30 78 64" width="27" height="22"><path d="M41,94 L76.5,30 L81.5,30 L101,94 L89,94 L79,46 L48.5,94 Z" fill="#D9A6A0"/><circle cx="113" cy="88" r="6.8" fill="#B08A4E"/></svg></span>
+<span class="nav-mark" aria-hidden="true"><svg viewBox="41 30 78 64" width="27" height="22"><path d="M41,94 L76.5,30 L81.5,30 L101,94 L89,94 L79,46 L48.5,94 Z" style="fill:var(--lavender)"/><circle cx="113" cy="88" r="6.8" style="fill:var(--highlight)"/></svg></span>
 <span class="nav-name">Ana Vitória</span>
 </a>
 <nav ref="{{ navRef }}" aria-label="Menu principal" class="nav-links">
@@ -402,19 +403,19 @@ section[id]{scroll-margin-top:92px}
 </header>
 
 <main id="conteudo">
-<section id="inicio" style="position:relative;isolation:isolate;overflow:hidden;background:#0D0A0B">
+<section id="inicio" style="position:relative;isolation:isolate;overflow:hidden;background:var(--ink-0)">
 <canvas ref="{{ canvasRef }}" aria-hidden="true" style="position:absolute;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;opacity:0.42"></canvas>
-<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 55% at 72% 34%,rgba(122,36,56,0.42),transparent 70%),radial-gradient(ellipse 45% 45% at 6% 92%,rgba(118,85,68,0.32),transparent 70%)"></div>
+<div aria-hidden="true" style="position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 60% 55% at 72% 34%,color-mix(in srgb,var(--brand) 42%,transparent),transparent 70%),radial-gradient(ellipse 45% 45% at 6% 92%,color-mix(in srgb,var(--lavender) 32%,transparent),transparent 70%)"></div>
 <div data-hero style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:148px 24px 104px;display:grid;grid-template-columns:1.06fr 0.94fr;gap:clamp(44px,6vw,88px);align-items:center">
 <div data-hero-copy style="animation:rise 1s cubic-bezier(.16,1,.3,1) .08s both">
-<div style="display:inline-flex;align-items:center;gap:9px;padding:8px 16px 8px 12px;border-radius:999px;border:1px solid rgba(217,166,160,0.28);background:rgba(217,166,160,0.07);font-family:var(--font-mono);font-size:12px;letter-spacing:0.02em;color:#E4CBC8">
-<span style="width:6px;height:6px;border-radius:999px;background:#B08A4E"></span>Landing pages para pequenos negócios
+<div style="display:inline-flex;align-items:center;gap:9px;padding:8px 16px 8px 12px;border-radius:999px;border:1px solid color-mix(in srgb,var(--lavender) 28%,transparent);background:color-mix(in srgb,var(--lavender) 7%,transparent);font-family:var(--font-mono);font-size:12px;letter-spacing:0.02em;color:var(--lavender-soft)">
+<span style="width:6px;height:6px;border-radius:999px;background:var(--highlight)"></span>Landing pages para pequenos negócios
 </div>
-<h1 style="margin:26px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(3rem,6.2vw,5.2rem);line-height:1.0;letter-spacing:-0.015em;text-wrap:pretty">Sites que transmitem <em style="color:var(--nude)">confiança</em> antes da primeira palavra.</h1>
+<h1 style="margin:26px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(3rem,6.2vw,5.2rem);line-height:1.0;letter-spacing:-0.015em;text-wrap:pretty">Sites que transmitem <em style="color:var(--lavender)">confiança</em> antes da primeira palavra.</h1>
 <p style="margin:26px 0 0;max-width:50ch;font-size:17px;line-height:1.7;color:var(--tx-body)">Sou Ana Vitória, estudante de tecnologia e crio landing pages para pequenos negócios. Páginas claras e bem cuidadas, feitas para aproximar você das pessoas certas.</p>
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:34px">
-<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" data-whatsapp style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;background:var(--bordeaux);border:1px solid rgba(217,166,160,0.3);color:var(--porcelain);font-size:15px;font-weight:500;text-decoration:none;box-shadow:0 12px 28px rgba(0,0,0,0.35);transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:var(--bordeaux-dark);border-color:var(--nude);transform:translateY(-2px)">Me conte seu projeto</a>
-<a href="#projetos" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;border:1px solid rgba(217,166,160,0.28);color:var(--porcelain);font-size:15px;font-weight:500;text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:rgba(217,166,160,0.08);border-color:var(--nude);transform:translateY(-2px)">Ver projetos</a>
+<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" data-whatsapp style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;background:var(--brand);border:1px solid color-mix(in srgb,var(--lavender) 30%,transparent);color:var(--mist);font-size:15px;font-weight:500;text-decoration:none;box-shadow:0 12px 28px color-mix(in srgb,var(--ink-0) 35%,transparent);transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:var(--brand-dark);border-color:var(--lavender);transform:translateY(-2px)">Me conte seu projeto</a>
+<a href="#projetos" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;border:1px solid color-mix(in srgb,var(--lavender) 28%,transparent);color:var(--mist);font-size:15px;font-weight:500;text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:color-mix(in srgb,var(--lavender) 8%,transparent);border-color:var(--lavender);transform:translateY(-2px)">Ver projetos</a>
 </div>
 <ul data-pilares class="promessas">
 <li><span class="promessa-titulo">Você fala direto comigo</span><span class="promessa-texto">Sem intermediário, do começo ao fim.</span></li>
@@ -423,16 +424,16 @@ section[id]{scroll-margin-top:92px}
 </ul>
 </div>
 <div data-hero-art style="position:relative;animation:rise 1s cubic-bezier(.16,1,.3,1) .26s both">
-<div aria-hidden="true" style="position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:104%;aspect-ratio:1;border-radius:999px;background:radial-gradient(circle,rgba(176,138,78,0.32),rgba(122,36,56,0.18) 52%,transparent 72%);animation:halo 7s ease-in-out infinite;z-index:0"></div>
-<div aria-hidden="true" style="position:absolute;left:-6%;top:8%;width:118%;aspect-ratio:1;border:1px solid rgba(217,166,160,0.16);border-radius:999px;z-index:0"></div>
-<div style="position:relative;z-index:1;border-radius:28px 28px 28px 6px;overflow:hidden;aspect-ratio:4/5;border:1px solid rgba(217,166,160,0.26);box-shadow:0 34px 80px rgba(0,0,0,0.6)">
+<div aria-hidden="true" style="position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:104%;aspect-ratio:1;border-radius:999px;background:radial-gradient(circle,color-mix(in srgb,var(--highlight) 32%,transparent),color-mix(in srgb,var(--brand) 18%,transparent) 52%,transparent 72%);animation:halo 7s ease-in-out infinite;z-index:0"></div>
+<div aria-hidden="true" style="position:absolute;left:-6%;top:8%;width:118%;aspect-ratio:1;border:1px solid color-mix(in srgb,var(--lavender) 16%,transparent);border-radius:999px;z-index:0"></div>
+<div style="position:relative;z-index:1;border-radius:28px 28px 28px 6px;overflow:hidden;aspect-ratio:4/5;border:1px solid color-mix(in srgb,var(--lavender) 26%,transparent);box-shadow:0 34px 80px color-mix(in srgb,var(--ink-0) 60%,transparent)">
 <img src="assets/photos/ana-hero-4x5.jpg" alt="Ana Vitória, designer de interfaces e desenvolvedora front-end" style="width:100%;height:100%;object-fit:cover;filter:saturate(0.88) contrast(1.05)">
-<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,10,11,0.78),rgba(13,10,11,0.05) 52%)"></div>
-<div class="foto-legenda" style="position:absolute;left:22px;right:22px;bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#E4CBC8"><span>Manaus · AM</span><span style="color:var(--gold)">disponível para projetos</span></div>
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,color-mix(in srgb,var(--ink-0) 78%,transparent),color-mix(in srgb,var(--ink-0) 5%,transparent) 52%)"></div>
+<div class="foto-legenda" style="position:absolute;left:22px;right:22px;bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--lavender-soft)"><span>Manaus · AM</span><span style="color:var(--highlight)">disponível para projetos</span></div>
 </div>
-<div data-float aria-hidden="true" style="position:absolute;z-index:2;left:-44px;top:16%;display:flex;align-items:center;gap:12px;padding:13px 17px;border-radius:14px;background:rgba(20,14,16,0.72);backdrop-filter:saturate(140%) blur(14px);border:1px solid rgba(217,166,160,0.22);box-shadow:0 18px 40px rgba(0,0,0,0.45);animation:drift 6s ease-in-out infinite">
-<span style="display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:rgba(176,138,78,0.16);color:var(--gold);font-size:15px">✦</span>
-<span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--tx-muted);line-height:1.6">design<br><span style="color:var(--porcelain)">e código</span></span>
+<div data-float aria-hidden="true" style="position:absolute;z-index:2;left:-44px;top:16%;display:flex;align-items:center;gap:12px;padding:13px 17px;border-radius:14px;background:color-mix(in srgb,var(--ink-1) 72%,transparent);backdrop-filter:saturate(140%) blur(14px);border:1px solid color-mix(in srgb,var(--lavender) 22%,transparent);box-shadow:0 18px 40px color-mix(in srgb,var(--ink-0) 45%,transparent);animation:drift 6s ease-in-out infinite">
+<span style="display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:color-mix(in srgb,var(--highlight) 16%,transparent);color:var(--highlight);font-size:15px">✦</span>
+<span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--tx-muted);line-height:1.6">design<br><span style="color:var(--mist)">e código</span></span>
 </div>
 </div>
 </div>
@@ -442,19 +443,19 @@ section[id]{scroll-margin-top:92px}
 <section id="servicos" style="max-width:1180px;margin:0 auto;padding:112px 24px 0">
 <div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:52px">
 <div>
-<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--nude)">serviços</div>
+<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--lavender)">serviços</div>
 <h2 style="margin:14px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(2.4rem,4.6vw,3.5rem);line-height:1.04;letter-spacing:-0.01em">O que você recebe.</h2>
 </div>
 <p style="margin:0;max-width:42ch;font-size:15px;line-height:1.7;color:var(--tx-soft)">Primeiro eu entendo o seu negócio. Depois entrego uma página pronta para receber os seus clientes.</p>
 </div>
 <div data-g3 data-reveal style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px">
-<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(165deg,#1A1215,#221719);border:1px solid rgba(217,166,160,0.14);transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-2px);border-color:rgba(176,138,78,0.45);box-shadow:0 22px 52px rgba(0,0,0,0.5)">
+<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(165deg,var(--ink-1),var(--ink-2));border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-2px);border-color:color-mix(in srgb,var(--highlight) 45%,transparent);box-shadow:0 22px 52px color-mix(in srgb,var(--ink-0) 50%,transparent)">
 <h3 style="margin:auto 0 12px;font-family:var(--font-display);font-weight:400;font-size:30px;line-height:1.05">Uma página para o seu negócio</h3>
 <p style="margin:0;font-size:15px;line-height:1.65;color:var(--tx-soft)">Apresenta o seu serviço com clareza e deixa óbvio o próximo passo do cliente, como chamar você no WhatsApp.</p></article>
-<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(160deg,#7A2438,#4A1A26);border:1px solid rgba(217,166,160,0.3);box-shadow:0 26px 60px rgba(0,0,0,0.4);transition:transform 200ms cubic-bezier(.4,0,.2,1),box-shadow 200ms" style-hover="transform:translateY(-2px);box-shadow:0 30px 70px rgba(0,0,0,0.5)">
+<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(160deg,var(--brand),var(--brand-deep));border:1px solid color-mix(in srgb,var(--lavender) 30%,transparent);box-shadow:0 26px 60px color-mix(in srgb,var(--ink-0) 40%,transparent);transition:transform 200ms cubic-bezier(.4,0,.2,1),box-shadow 200ms" style-hover="transform:translateY(-2px);box-shadow:0 30px 70px color-mix(in srgb,var(--ink-0) 50%,transparent)">
 <h3 style="margin:auto 0 12px;font-family:var(--font-display);font-weight:400;font-size:30px;line-height:1.05">Conteúdo organizado</h3>
-<p style="margin:0;font-size:15px;line-height:1.65;color:#F3DCD9">Organizo as suas fotos e informações para que quem chega entenda o que você faz e por que escolher você.</p></article>
-<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(165deg,#1A1215,#221719);border:1px solid rgba(217,166,160,0.14);transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-2px);border-color:rgba(176,138,78,0.45);box-shadow:0 22px 52px rgba(0,0,0,0.5)">
+<p style="margin:0;font-size:15px;line-height:1.65;color:var(--lavender-soft)">Organizo as suas fotos e informações para que quem chega entenda o que você faz e por que escolher você.</p></article>
+<article style="display:flex;flex-direction:column;min-height:310px;padding:34px;border-radius:28px;background:linear-gradient(165deg,var(--ink-1),var(--ink-2));border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-2px);border-color:color-mix(in srgb,var(--highlight) 45%,transparent);box-shadow:0 22px 52px color-mix(in srgb,var(--ink-0) 50%,transparent)">
 <h3 style="margin:auto 0 12px;font-family:var(--font-display);font-weight:400;font-size:30px;line-height:1.05">Endereço próprio e tudo funcionando</h3>
 <p style="margin:0;font-size:15px;line-height:1.65;color:var(--tx-soft)">Cuido do domínio e da hospedagem e entrego a página funcionando no celular e no computador.</p></article>
 </div>
@@ -463,7 +464,7 @@ section[id]{scroll-margin-top:92px}
 <section id="projetos" style="max-width:1180px;margin:0 auto;padding:112px 24px 0">
 <div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:44px">
 <div>
-<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--nude)">portfólio</div>
+<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--lavender)">portfólio</div>
 <h2 style="margin:14px 0 0;max-width:20ch;font-family:var(--font-display);font-weight:400;font-size:clamp(2.4rem,4.6vw,3.5rem);line-height:1.04;letter-spacing:-0.01em">Principais projetos, cada um com identidade própria.</h2>
 </div>
 <div style="display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap">
@@ -471,24 +472,24 @@ section[id]{scroll-margin-top:92px}
 </div>
 </div>
 <div data-g3 style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px">
-<a href="https://laisconsuelobiomed.com.br/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:#181114;border:1px solid rgba(217,166,160,0.14);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:rgba(176,138,78,0.45);box-shadow:0 24px 56px rgba(0,0,0,0.55)">
-<div style="position:relative;height:262px;overflow:hidden;background:#241A1C"><img src="assets/projects/laisconsuelo-desktop.png" alt="Landing page da Laís Consuelo" style="width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:rgba(13,10,11,0.66);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#E4CBC8">estética</span></div>
+<a href="https://laisconsuelobiomed.com.br/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:var(--ink-1);border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:color-mix(in srgb,var(--highlight) 45%,transparent);box-shadow:0 24px 56px color-mix(in srgb,var(--ink-0) 55%,transparent)">
+<div style="position:relative;height:262px;overflow:hidden;background:var(--ink-2)"><img src="assets/projects/laisconsuelo-desktop.png" alt="Landing page da Laís Consuelo" style="width:100%;height:100%;object-fit:cover;object-position:top;transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:color-mix(in srgb,var(--ink-0) 66%,transparent);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--lavender-soft)">estética</span></div>
 <div style="padding:24px">
-<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Laís Consuelo Biomed</h3><span style="color:var(--gold);font-size:16px" aria-hidden="true">↗</span><span class="sr-only">, abre em nova aba</span></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Laís Consuelo Biomed</h3><span style="color:var(--highlight);font-size:16px" aria-hidden="true">↗</span><span class="sr-only">, abre em nova aba</span></div>
 <p class="proj-goal">Uma página suave e acolhedora para apresentar os atendimentos de biomedicina estética.</p><p class="proj-meta"><b>Cliente</b> · design e código · Manaus</p>
 </div>
 </a>
-<a href="https://cetapcursos.com.br/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:#181114;border:1px solid rgba(217,166,160,0.14);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:rgba(176,138,78,0.45);box-shadow:0 24px 56px rgba(0,0,0,0.55)">
-<div style="position:relative;height:262px;overflow:hidden;background:#241A17"><img src="assets/cetap.jpg" alt="Landing page do Polo educacional CETAP" style="width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.84) contrast(1.03);transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,10,11,.62),rgba(13,10,11,.04) 62%)"></div><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:rgba(13,10,11,0.62);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#E4CBC8">educação</span></div>
+<a href="https://cetapcursos.com.br/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:var(--ink-1);border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:color-mix(in srgb,var(--highlight) 45%,transparent);box-shadow:0 24px 56px color-mix(in srgb,var(--ink-0) 55%,transparent)">
+<div style="position:relative;height:262px;overflow:hidden;background:var(--ink-2)"><img src="assets/cetap.jpg" alt="Landing page do Polo educacional CETAP" style="width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.84) contrast(1.03);transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,color-mix(in srgb,var(--ink-0) 62%,transparent),color-mix(in srgb,var(--ink-0) 4%,transparent) 62%)"></div><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:color-mix(in srgb,var(--ink-0) 62%,transparent);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--lavender-soft)">educação</span></div>
 <div style="padding:24px">
-<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Polo educacional CETAP</h3><span style="color:var(--gold);font-size:16px" aria-hidden="true">↗</span><span class="sr-only">, abre em nova aba</span></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Polo educacional CETAP</h3><span style="color:var(--highlight);font-size:16px" aria-hidden="true">↗</span><span class="sr-only">, abre em nova aba</span></div>
 <p class="proj-goal">Site institucional para apresentar os cursos do polo.</p><p class="proj-meta"><b>Cliente</b> · design e código · Tapauá e Manaus</p>
 </div>
 </a>
-<a href="https://anavitoriasouzab.github.io/barbearia-study/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:#181114;border:1px solid rgba(217,166,160,0.14);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:rgba(176,138,78,0.45);box-shadow:0 24px 56px rgba(0,0,0,0.55)">
-<div style="position:relative;height:262px;overflow:hidden;background:#241A17"><img src="assets/barba%20brava.jpg" alt="Landing page da Barbearia Barba Brava" style="width:100%;height:100%;object-fit:cover;object-position:34% center;filter:saturate(.82) contrast(1.04);transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,10,11,.65),rgba(13,10,11,.04) 62%)"></div><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:rgba(13,10,11,0.62);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#E4CBC8">barbearia</span></div>
+<a href="https://anavitoriasouzab.github.io/barbearia-study/" target="_blank" rel="noreferrer" style="display:block;overflow:hidden;border-radius:28px;background:var(--ink-1);border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);color:inherit;text-decoration:none;transition:transform 200ms cubic-bezier(.4,0,.2,1),border-color 200ms,box-shadow 200ms" style-hover="transform:translateY(-3px);border-color:color-mix(in srgb,var(--highlight) 45%,transparent);box-shadow:0 24px 56px color-mix(in srgb,var(--ink-0) 55%,transparent)">
+<div style="position:relative;height:262px;overflow:hidden;background:var(--ink-2)"><img src="assets/barba%20brava.jpg" alt="Landing page da Barbearia Barba Brava" style="width:100%;height:100%;object-fit:cover;object-position:34% center;filter:saturate(.82) contrast(1.04);transition:transform 550ms cubic-bezier(.16,1,.3,1)" style-hover="transform:scale(1.05)"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,color-mix(in srgb,var(--ink-0) 65%,transparent),color-mix(in srgb,var(--ink-0) 4%,transparent) 62%)"></div><span style="position:absolute;top:16px;left:16px;padding:6px 12px;border-radius:999px;background:color-mix(in srgb,var(--ink-0) 62%,transparent);backdrop-filter:blur(10px);font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--lavender-soft)">barbearia</span></div>
 <div style="padding:24px">
-<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Barbearia Barba Brava</h3><span style="color:var(--gold);font-size:16px" aria-hidden="true">↗</span><span class="sr-only">, abre em nova aba</span></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px"><h3 style="margin:0;font-family:var(--font-display);font-weight:400;font-size:26px;line-height:1.05">Barbearia Barba Brava</h3><span style="color:var(--highlight);font-size:16px" aria-hidden="true">↗</span><span class="sr-only">, abre em nova aba</span></div>
 <p class="proj-goal">Identidade forte em preto e dourado, pensada para uma barbearia.</p><p class="proj-meta"><b>Projeto de estudo</b> · design e código</p>
 </div>
 </a>
@@ -496,17 +497,17 @@ section[id]{scroll-margin-top:92px}
 </section>
 
 <section id="processo" style="max-width:1180px;margin:104px auto 0;padding:0 24px">
-<div data-reveal style="overflow:hidden;border-radius:30px;background:linear-gradient(155deg,#231813,#171013);border:1px solid rgba(217,166,160,0.16);box-shadow:0 24px 64px rgba(0,0,0,0.22)">
+<div data-reveal style="overflow:hidden;border-radius:30px;background:linear-gradient(155deg,var(--ink-2),var(--ink-1));border:1px solid color-mix(in srgb,var(--lavender) 16%,transparent);box-shadow:0 24px 64px color-mix(in srgb,var(--ink-0) 22%,transparent)">
 <div style="padding:54px 40px 44px">
-<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--nude)">processo</div>
+<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--lavender)">processo</div>
 <h2 style="margin:14px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(2.2rem,4.2vw,3.1rem);line-height:1.04">Como eu trabalho.</h2>
 <p style="margin:16px 0 0;max-width:48ch;font-size:15px;line-height:1.7;color:var(--tx-soft)">Quatro etapas, da primeira conversa até a página no ar.</p>
 </div>
-<div data-process-rail data-rail style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-top:1px solid rgba(217,166,160,0.13)">
-<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid rgba(217,166,160,0.13);transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--gold)">01</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Conversa</h3><p style="margin:0;font-size:15px;line-height:1.6;color:var(--tx-soft)">Entendo o seu negócio e o que a página precisa fazer.</p></div>
-<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid rgba(217,166,160,0.13);transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--gold)">02</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Estrutura</h3><p style="margin:0;font-size:15px;line-height:1.6;color:var(--tx-soft)">Organizo o conteúdo e o caminho até o contato.</p></div>
-<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid rgba(217,166,160,0.13);transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--gold)">03</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Visual</h3><p style="margin:0;font-size:15px;line-height:1.6;color:var(--tx-soft)">Crio o visual com a cara do seu negócio.</p></div>
-<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;transition:background 200ms" style-hover="background:rgba(217,166,160,0.05)"><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--gold)">04</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Página no ar</h3><p style="margin:0;font-size:15px;line-height:1.6;color:var(--tx-soft)">Construo, reviso com você e publico.</p></div>
+<div data-process-rail data-rail style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-top:1px solid color-mix(in srgb,var(--lavender) 13%,transparent)">
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid color-mix(in srgb,var(--lavender) 13%,transparent);transition:background 200ms" style-hover="background:color-mix(in srgb,var(--lavender) 5%,transparent)"><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--highlight)">01</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Conversa</h3><p style="margin:0;font-size:15px;line-height:1.6;color:var(--tx-soft)">Entendo o seu negócio e o que a página precisa fazer.</p></div>
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid color-mix(in srgb,var(--lavender) 13%,transparent);transition:background 200ms" style-hover="background:color-mix(in srgb,var(--lavender) 5%,transparent)"><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--highlight)">02</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Estrutura</h3><p style="margin:0;font-size:15px;line-height:1.6;color:var(--tx-soft)">Organizo o conteúdo e o caminho até o contato.</p></div>
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;border-right:1px solid color-mix(in srgb,var(--lavender) 13%,transparent);transition:background 200ms" style-hover="background:color-mix(in srgb,var(--lavender) 5%,transparent)"><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--highlight)">03</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Visual</h3><p style="margin:0;font-size:15px;line-height:1.6;color:var(--tx-soft)">Crio o visual com a cara do seu negócio.</p></div>
+<div style="flex:1 0 200px;scroll-snap-align:start;padding:30px 26px;min-height:168px;transition:background 200ms" style-hover="background:color-mix(in srgb,var(--lavender) 5%,transparent)"><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--highlight)">04</span><h3 style="margin:26px 0 8px;font-family:var(--font-display);font-weight:400;font-size:24px;line-height:1">Página no ar</h3><p style="margin:0;font-size:15px;line-height:1.6;color:var(--tx-soft)">Construo, reviso com você e publico.</p></div>
 </div>
 </div></section>
 
@@ -514,9 +515,9 @@ section[id]{scroll-margin-top:92px}
 <section id="sobre" style="max-width:1180px;margin:0 auto;padding:112px 24px 0">
 <div data-reveal class="sobre-texto">
 <div>
-<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--nude)">sobre mim</div>
+<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--lavender)">sobre mim</div>
 <h2 style="margin:14px 0 0;font-family:var(--font-display);font-weight:400;font-size:clamp(2.4rem,4.6vw,3.5rem);line-height:1.04;text-wrap:pretty">Estudo o que eu entrego.</h2>
-<p style="margin:22px 0 0;max-width:56ch;font-size:16px;line-height:1.8;color:var(--tx-body)">Estou cursando Análise e Desenvolvimento de Sistemas, com foco em front-end, e compartilho essa jornada no <a href="https://www.instagram.com/anav_web/" target="_blank" rel="noreferrer" style="color:var(--nude);text-decoration:underline;text-decoration-color:rgba(217,166,160,0.45);text-underline-offset:4px">Instagram</a>. Moro em Manaus e atendo negócios de qualquer lugar, tudo online.</p>
+<p style="margin:22px 0 0;max-width:56ch;font-size:16px;line-height:1.8;color:var(--tx-body)">Estou cursando Análise e Desenvolvimento de Sistemas, com foco em front-end, e compartilho essa jornada no <a href="https://www.instagram.com/anav_web/" target="_blank" rel="noreferrer" style="color:var(--lavender);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--lavender) 45%,transparent);text-underline-offset:4px">Instagram</a>. Moro em Manaus e atendo negócios de qualquer lugar, tudo online.</p>
 </div>
 <div class="sobre-skills">
 <div style="margin-top:30px;font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--tx-muted)">com o que eu trabalho</div>
@@ -534,59 +535,59 @@ section[id]{scroll-margin-top:92px}
 
 <section id="faq" style="max-width:1180px;margin:0 auto;padding:112px 24px 0">
 <div data-reveal style="text-align:center;margin-bottom:52px">
-<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--nude)">dúvidas</div>
+<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--lavender)">dúvidas</div>
 <h2 style="margin:14px auto 0;max-width:22ch;font-family:var(--font-display);font-weight:400;font-size:clamp(2.2rem,4.4vw,3.3rem);line-height:1.04;letter-spacing:-0.01em">Antes de começarmos.</h2>
 <p style="margin:16px auto 0;max-width:52ch;font-size:15px;line-height:1.7;color:var(--tx-soft)">As perguntas que mais aparecem na primeira conversa.</p>
 </div>
 <div data-g2 data-reveal style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start">
 <div style="display:grid;gap:12px">
-<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
-<button type="button" onClick="{{ t1 }}" aria-expanded="{{ o1 }}" aria-controls="faq-r1" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--porcelain);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">O que você precisa de mim para começar?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:var(--gold);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s1 }}</span></button>
-<p id="faq-r1" hidden="{{ h1 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:var(--tx-body)">Uma conversa sobre o negócio, as fotos que você já tem e o contato que quer receber. O resto da estrutura eu monto e trago pronta para você revisar.</p>
+<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:color-mix(in srgb,var(--highlight) 42%,transparent);box-shadow:0 16px 40px color-mix(in srgb,var(--ink-0) 40%,transparent)">
+<button type="button" onClick="{{ t1 }}" aria-expanded="{{ o1 }}" aria-controls="faq-r1" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--mist);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:var(--lavender-soft)">O que você precisa de mim para começar?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid color-mix(in srgb,var(--highlight) 50%,transparent);background:color-mix(in srgb,var(--highlight) 12%,transparent);color:var(--highlight);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s1 }}</span></button>
+<p id="faq-r1" hidden="{{ h1 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);font-size:15px;line-height:1.8;color:var(--tx-body)">Uma conversa sobre o negócio, as fotos que você já tem e o contato que quer receber. O resto da estrutura eu monto e trago pronta para você revisar.</p>
 </div>
-<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
-<button type="button" onClick="{{ t4 }}" aria-expanded="{{ o4 }}" aria-controls="faq-r4" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--porcelain);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">Quanto custa?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:var(--gold);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s4 }}</span></button>
-<p id="faq-r4" hidden="{{ h4 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:var(--tx-body)">Depende do tamanho da página e do que ela precisa ter. Por isso eu passo o valor depois de uma conversa rápida sobre o seu projeto, com o orçamento certo para o que você precisa.</p>
+<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:color-mix(in srgb,var(--highlight) 42%,transparent);box-shadow:0 16px 40px color-mix(in srgb,var(--ink-0) 40%,transparent)">
+<button type="button" onClick="{{ t4 }}" aria-expanded="{{ o4 }}" aria-controls="faq-r4" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--mist);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:var(--lavender-soft)">Quanto custa?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid color-mix(in srgb,var(--highlight) 50%,transparent);background:color-mix(in srgb,var(--highlight) 12%,transparent);color:var(--highlight);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s4 }}</span></button>
+<p id="faq-r4" hidden="{{ h4 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);font-size:15px;line-height:1.8;color:var(--tx-body)">Depende do tamanho da página e do que ela precisa ter. Por isso eu passo o valor depois de uma conversa rápida sobre o seu projeto, com o orçamento certo para o que você precisa.</p>
 </div>
-<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
-<button type="button" onClick="{{ t2 }}" aria-expanded="{{ o2 }}" aria-controls="faq-r2" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--porcelain);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">Em quanto tempo a página fica no ar?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:var(--gold);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s2 }}</span></button>
-<p id="faq-r2" hidden="{{ h2 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:var(--tx-body)">Depende do escopo e do material que você já tem em mãos. Uma página enxuta pode ficar pronta em poucos dias, e eu combino a data com você já na primeira conversa, antes de começar.</p>
+<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:color-mix(in srgb,var(--highlight) 42%,transparent);box-shadow:0 16px 40px color-mix(in srgb,var(--ink-0) 40%,transparent)">
+<button type="button" onClick="{{ t2 }}" aria-expanded="{{ o2 }}" aria-controls="faq-r2" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--mist);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:var(--lavender-soft)">Em quanto tempo a página fica no ar?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid color-mix(in srgb,var(--highlight) 50%,transparent);background:color-mix(in srgb,var(--highlight) 12%,transparent);color:var(--highlight);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s2 }}</span></button>
+<p id="faq-r2" hidden="{{ h2 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);font-size:15px;line-height:1.8;color:var(--tx-body)">Depende do escopo e do material que você já tem em mãos. Uma página enxuta pode ficar pronta em poucos dias, e eu combino a data com você já na primeira conversa, antes de começar.</p>
 </div>
 </div>
 <div style="display:grid;gap:12px">
-<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
-<button type="button" onClick="{{ t6 }}" aria-expanded="{{ o6 }}" aria-controls="faq-r6" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--porcelain);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">Preciso ter domínio e hospedagem?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:var(--gold);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s6 }}</span></button>
-<p id="faq-r6" hidden="{{ h6 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:var(--tx-body)">Não. Na landing page, eu cuido do domínio e da hospedagem para você. Em sites maiores, isso entra na conversa e a gente combina junto.</p>
+<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:color-mix(in srgb,var(--highlight) 42%,transparent);box-shadow:0 16px 40px color-mix(in srgb,var(--ink-0) 40%,transparent)">
+<button type="button" onClick="{{ t6 }}" aria-expanded="{{ o6 }}" aria-controls="faq-r6" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--mist);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:var(--lavender-soft)">Preciso ter domínio e hospedagem?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid color-mix(in srgb,var(--highlight) 50%,transparent);background:color-mix(in srgb,var(--highlight) 12%,transparent);color:var(--highlight);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s6 }}</span></button>
+<p id="faq-r6" hidden="{{ h6 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);font-size:15px;line-height:1.8;color:var(--tx-body)">Não. Na landing page, eu cuido do domínio e da hospedagem para você. Em sites maiores, isso entra na conversa e a gente combina junto.</p>
 </div>
-<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
-<button type="button" onClick="{{ t7 }}" aria-expanded="{{ o7 }}" aria-controls="faq-r7" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--porcelain);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">Como funciona o pagamento?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:var(--gold);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s7 }}</span></button>
-<p id="faq-r7" hidden="{{ h7 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:var(--tx-body)">Você pode pagar por Pix ou cartão, que pode ser parcelado. No Pix, são 50% para começar e 50% na entrega.</p>
+<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:color-mix(in srgb,var(--highlight) 42%,transparent);box-shadow:0 16px 40px color-mix(in srgb,var(--ink-0) 40%,transparent)">
+<button type="button" onClick="{{ t7 }}" aria-expanded="{{ o7 }}" aria-controls="faq-r7" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--mist);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:var(--lavender-soft)">Como funciona o pagamento?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid color-mix(in srgb,var(--highlight) 50%,transparent);background:color-mix(in srgb,var(--highlight) 12%,transparent);color:var(--highlight);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s7 }}</span></button>
+<p id="faq-r7" hidden="{{ h7 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);font-size:15px;line-height:1.8;color:var(--tx-body)">Você pode pagar por Pix ou cartão, que pode ser parcelado. No Pix, são 50% para começar e 50% na entrega.</p>
 </div>
-<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid rgba(217,166,160,0.14);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:rgba(176,138,78,0.42);box-shadow:0 16px 40px rgba(0,0,0,0.4)">
-<button type="button" onClick="{{ t5 }}" aria-expanded="{{ o5 }}" aria-controls="faq-r5" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--porcelain);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:#F0DCD8">E se eu precisar mudar algo depois?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid rgba(176,138,78,0.5);background:rgba(176,138,78,0.12);color:var(--gold);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s5 }}</span></button>
-<p id="faq-r5" hidden="{{ h5 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid rgba(217,166,160,0.14);font-size:15px;line-height:1.8;color:var(--tx-body)">Depois da entrega, eu acompanho a página por 7 dias. Se quiser continuar com esse cuidado, tem o acompanhamento mensal, com valor combinado na conversa. Se preferir, também faço ajustes avulsos, com valor combinado.</p>
+<div style="border-radius:20px;background:linear-gradient(160deg,var(--ink-2),var(--ink-1));border:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);overflow:hidden;transition:border-color 200ms,box-shadow 200ms" style-hover="border-color:color-mix(in srgb,var(--highlight) 42%,transparent);box-shadow:0 16px 40px color-mix(in srgb,var(--ink-0) 40%,transparent)">
+<button type="button" onClick="{{ t5 }}" aria-expanded="{{ o5 }}" aria-controls="faq-r5" style="display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;padding:24px;background:transparent;border:0;color:var(--mist);font-family:var(--font-display);font-size:22px;font-weight:400;line-height:1.2;letter-spacing:-0.01em;text-align:left;cursor:pointer;transition:color 120ms" style-hover="color:var(--lavender-soft)">E se eu precisar mudar algo depois?<span aria-hidden="true" style="display:grid;place-items:center;flex:0 0 auto;width:30px;height:30px;border-radius:999px;border:1px solid color-mix(in srgb,var(--highlight) 50%,transparent);background:color-mix(in srgb,var(--highlight) 12%,transparent);color:var(--highlight);font-family:var(--font-mono);font-size:15px;line-height:1">{{ s5 }}</span></button>
+<p id="faq-r5" hidden="{{ h5 }}" style="margin:0 24px 24px;padding-top:18px;max-width:56ch;border-top:1px solid color-mix(in srgb,var(--lavender) 14%,transparent);font-size:15px;line-height:1.8;color:var(--tx-body)">Depois da entrega, eu acompanho a página por 7 dias. Se quiser continuar com esse cuidado, tem o acompanhamento mensal, com valor combinado na conversa. Se preferir, também faço ajustes avulsos, com valor combinado.</p>
 </div>
 </div>
 </div>
-<div style="margin-top:36px;text-align:center"><p style="margin:0 0 16px;font-size:15px;line-height:1.7;color:var(--tx-soft)">Se a sua não estiver aqui, é só me chamar.</p><a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Tenho%20uma%20d%C3%BAvida%20sobre%20como%20voc%C3%AA%20trabalha." target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:999px;border:1px solid rgba(217,166,160,0.34);color:var(--porcelain);font-size:14px;font-weight:500;text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:rgba(217,166,160,0.1);border-color:var(--nude);transform:translateY(-2px)">Tenho outra dúvida</a></div>
+<div style="margin-top:36px;text-align:center"><p style="margin:0 0 16px;font-size:15px;line-height:1.7;color:var(--tx-soft)">Se a sua não estiver aqui, é só me chamar.</p><a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Tenho%20uma%20d%C3%BAvida%20sobre%20como%20voc%C3%AA%20trabalha." target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:999px;border:1px solid color-mix(in srgb,var(--lavender) 34%,transparent);color:var(--mist);font-size:14px;font-weight:500;text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:color-mix(in srgb,var(--lavender) 10%,transparent);border-color:var(--lavender);transform:translateY(-2px)">Tenho outra dúvida</a></div>
 </section>
 
 <section id="contato" style="max-width:1180px;margin:0 auto;padding:112px 24px">
-<div data-reveal style="position:relative;overflow:hidden;border-radius:28px;background:linear-gradient(150deg,#7A2438,#3A171F 72%);border:1px solid rgba(217,166,160,0.22);box-shadow:0 30px 70px rgba(0,0,0,0.5)">
+<div data-reveal style="position:relative;overflow:hidden;border-radius:28px;background:linear-gradient(150deg,var(--brand),var(--brand-deep) 72%);border:1px solid color-mix(in srgb,var(--lavender) 22%,transparent);box-shadow:0 30px 70px color-mix(in srgb,var(--ink-0) 50%,transparent)">
 <div data-cta style="position:relative;display:grid;grid-template-columns:1.1fr 0.9fr;gap:clamp(36px,5vw,72px);align-items:center;padding:clamp(40px,5vw,64px)">
 <div>
-<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F1CFCB">contato</div>
-<h2 style="margin:14px 0 18px;font-family:var(--font-display);font-weight:400;font-size:clamp(2.3rem,4.4vw,3.4rem);line-height:1.04;text-wrap:pretty">Vamos criar uma página com a <em style="color:#F0C9A8">sua cara?</em></h2>
-<p style="margin:0 0 30px;max-width:46ch;font-size:16px;line-height:1.8;color:#F3DCD9">Me conte o que o seu negócio precisa. A gente conversa pelo WhatsApp e, a partir disso, eu te passo prazo e orçamento.</p>
-<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;background:#FAF6F4;color:#23181B;font-size:15px;font-weight:500;text-decoration:none;transition:background 200ms,transform 200ms,box-shadow 200ms" style-hover="background:#F0C9A8;transform:translateY(-2px);box-shadow:0 16px 38px rgba(0,0,0,0.35)">Me conte seu projeto</a>
+<div style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--lavender-soft)">contato</div>
+<h2 style="margin:14px 0 18px;font-family:var(--font-display);font-weight:400;font-size:clamp(2.3rem,4.4vw,3.4rem);line-height:1.04;text-wrap:pretty">Vamos criar uma página com a <em style="color:var(--highlight)">sua cara?</em></h2>
+<p style="margin:0 0 30px;max-width:46ch;font-size:16px;line-height:1.8;color:var(--lavender-soft)">Me conte o que o seu negócio precisa. A gente conversa pelo WhatsApp e, a partir disso, eu te passo prazo e orçamento.</p>
+<a href="https://wa.me/5592992575734?text=Oi%2C%20Ana!%20Vi%20seu%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:999px;background:var(--mist);color:var(--color-ink);font-size:15px;font-weight:500;text-decoration:none;transition:background 200ms,transform 200ms,box-shadow 200ms" style-hover="background:var(--highlight);transform:translateY(-2px);box-shadow:0 16px 38px color-mix(in srgb,var(--ink-0) 35%,transparent)">Me conte seu projeto</a>
 </div>
 <div style="display:grid;gap:14px">
-<a href="https://www.instagram.com/anav_web/" target="_blank" rel="noreferrer" style="display:block;padding:24px;border-radius:20px;background:rgba(13,10,11,0.3);border:1px solid rgba(250,246,244,0.2);color:var(--porcelain);text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:rgba(13,10,11,0.45);border-color:rgba(250,246,244,0.4);transform:translateY(-2px)">
-<small style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#F1CFCB">Bastidores no Instagram</small>
+<a href="https://www.instagram.com/anav_web/" target="_blank" rel="noreferrer" style="display:block;padding:24px;border-radius:20px;background:color-mix(in srgb,var(--ink-0) 30%,transparent);border:1px solid color-mix(in srgb,var(--mist) 20%,transparent);color:var(--mist);text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:color-mix(in srgb,var(--ink-0) 45%,transparent);border-color:color-mix(in srgb,var(--mist) 40%,transparent);transform:translateY(-2px)">
+<small style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--lavender-soft)">Bastidores no Instagram</small>
 <div style="margin-top:8px;font-family:var(--font-display);font-size:clamp(21px,2.6vw,28px);line-height:1.1;overflow-wrap:anywhere">@anav_web</div>
 </a>
-<a href="mailto:ana.dev2026@gmail.com" style="display:block;padding:24px;border-radius:20px;background:rgba(13,10,11,0.3);border:1px solid rgba(250,246,244,0.2);color:var(--porcelain);text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:rgba(13,10,11,0.45);border-color:rgba(250,246,244,0.4);transform:translateY(-2px)">
-<small style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#F1CFCB">Prefere e-mail?</small>
+<a href="mailto:ana.dev2026@gmail.com" style="display:block;padding:24px;border-radius:20px;background:color-mix(in srgb,var(--ink-0) 30%,transparent);border:1px solid color-mix(in srgb,var(--mist) 20%,transparent);color:var(--mist);text-decoration:none;transition:background 200ms,border-color 200ms,transform 200ms" style-hover="background:color-mix(in srgb,var(--ink-0) 45%,transparent);border-color:color-mix(in srgb,var(--mist) 40%,transparent);transform:translateY(-2px)">
+<small style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--lavender-soft)">Prefere e-mail?</small>
 <div style="margin-top:8px;font-size:16px;overflow-wrap:anywhere">ana.dev2026@gmail.com</div>
 </a>
 </div>
@@ -602,7 +603,7 @@ section[id]{scroll-margin-top:92px}
 <div class="foot-grid">
 <div>
 <a href="#inicio" class="foot-brand">
-<span aria-hidden="true" class="foot-logo"><svg viewBox="41 30 78 64" width="26" height="21"><path d="M41,94 L76.5,30 L81.5,30 L101,94 L89,94 L79,46 L48.5,94 Z" fill="#D9A6A0"/><circle cx="113" cy="88" r="6.8" fill="#B08A4E"/></svg></span>
+<span aria-hidden="true" class="foot-logo"><svg viewBox="41 30 78 64" width="26" height="21"><path d="M41,94 L76.5,30 L81.5,30 L101,94 L89,94 L79,46 L48.5,94 Z" style="fill:var(--lavender)"/><circle cx="113" cy="88" r="6.8" style="fill:var(--highlight)"/></svg></span>
 <span class="foot-name">Ana Vitória</span>
 </a>
 <p class="foot-tagline">Landing pages claras e cuidadosas, do design ao código.</p>
@@ -726,6 +727,8 @@ class Component extends DCLogic {
       ro = new ResizeObserver(() => resize());
       ro.observe(hero);
     }
+    const tokenRgb = (name) => { const p = document.createElement('i'); p.style.color = 'var(' + name + ')'; document.body.appendChild(p); const m = getComputedStyle(p).color.match(/[d.]+/g) || [195, 166, 240]; p.remove(); return m.slice(0, 3).join(','); };
+    const lavRgb = tokenRgb('--lavender'), hiRgb = tokenRgb('--highlight');
     const draw = () => {
       if (this._dead || stopped) return;
       if (!visible) { raf = 0; return; } // pausa fora da tela
@@ -743,13 +746,13 @@ class Component extends DCLogic {
         for (let j = i + 1; j < nodes.length; j++) {
           const a = nodes[i], b = nodes[j], d = Math.hypot(a.x - b.x, a.y - b.y);
           if (d < 98) {
-            ctx.strokeStyle = 'rgba(217,166,160,' + ((1 - d / 98) * 0.18) + ')';
+            ctx.strokeStyle = 'rgba(' + lavRgb + ',' + ((1 - d / 98) * 0.18) + ')';
             ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
           }
         }
       for (const n of nodes) {
         const active = Math.hypot(pointer.x - n.x, pointer.y - n.y) < 175;
-        ctx.fillStyle = active ? 'rgba(176,138,78,0.9)' : 'rgba(217,166,160,' + (0.2 + Math.sin(n.pulse) * 0.06) + ')';
+        ctx.fillStyle = active ? 'rgba(' + hiRgb + ',.9)' : 'rgba(' + lavRgb + ',' + (0.2 + Math.sin(n.pulse) * 0.06) + ')';
         ctx.beginPath(); ctx.arc(n.x, n.y, active ? 2.6 : 1.4, 0, Math.PI * 2); ctx.fill();
       }
       raf = requestAnimationFrame(draw);
@@ -818,7 +821,7 @@ class Component extends DCLogic {
     const word = 'Ana Vitória';
     box.innerHTML = '<svg viewBox="0 0 1100 170" focusable="false"><defs>'
       + '<linearGradient id="footTextGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1100" y2="0">'
-      + '<stop offset="0%" stop-color="#E8C3B6"/><stop offset="30%" stop-color="#D9A6A0"/><stop offset="55%" stop-color="#F0C9A8"/><stop offset="80%" stop-color="#B8794B"/><stop offset="100%" stop-color="#A9824B"/></linearGradient>'
+      + '<stop offset="0%" style="stop-color:var(--lavender-soft)"/><stop offset="35%" style="stop-color:var(--lavender)"/><stop offset="70%" style="stop-color:var(--brand)"/><stop offset="100%" style="stop-color:var(--highlight)"/></linearGradient>'
       + '<radialGradient id="footRevealMask" gradientUnits="userSpaceOnUse" cx="550" cy="85" r="220"><stop offset="0%" stop-color="white"/><stop offset="100%" stop-color="black"/></radialGradient>'
       + '<mask id="footTextMask"><rect x="0" y="0" width="1100" height="170" fill="url(#footRevealMask)"/></mask>'
       // Esconde a metade interna do traço: as letras ligadas ficam só com o contorno de fora, sem emendas.

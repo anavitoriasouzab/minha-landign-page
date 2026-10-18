@@ -22,3 +22,7 @@ assets/RF4_*
 _ds/**/readme.md
 _ds/**/_adherence.oxlintrc.json
 _ds/**/_ds_manifest.json
+
+# Arquivos de trabalho do design system
+atualização
+*.zip

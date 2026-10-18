@@ -1,0 +1,29 @@
+/* Cores do site, derivadas dos tokens do design system (_ds/.../tokens/colors.css).
+   Para trocar a paleta, altere só os seis hex base nesse arquivo de tokens:
+   nada aqui nem no index.html/404.html tem cor fixa. */
+:root{
+  /* papéis da paleta */
+  --brand:var(--color-primary);
+  --brand-dark:var(--color-primary-dark);
+  --brand-deep:color-mix(in srgb,var(--color-primary) 55%,var(--color-ink));
+  --lavender:var(--color-secondary);
+  --lavender-soft:color-mix(in srgb,var(--color-secondary) 45%,var(--color-base));
+  --highlight:var(--color-accent);
+  --mist:var(--color-base);
+
+  /* fundos escuros, em degraus a partir do ink */
+  --ink-0:color-mix(in srgb,var(--color-ink) 50%,#000);
+  --ink-1:color-mix(in srgb,var(--color-ink) 72%,#000);
+  --ink-2:var(--color-ink);
+
+  /* linhas e textos sobre o escuro */
+  --line:color-mix(in srgb,var(--color-secondary) 14%,transparent);
+  --line-strong:color-mix(in srgb,var(--color-secondary) 28%,transparent);
+  --tx-body:color-mix(in srgb,var(--color-base) 82%,var(--color-ink));
+  --tx-soft:color-mix(in srgb,var(--color-base) 72%,var(--color-ink));
+  --tx-muted:color-mix(in srgb,var(--color-base) 64%,var(--color-ink));
+
+  /* cor própria do projeto CETAP no portfólio (identidade do cliente, não da marca) */
+  --proj-cetap:#A8475E;
+  --proj-cetap-soft:color-mix(in srgb,var(--proj-cetap) 70%,#fff);
+}
