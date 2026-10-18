@@ -1,0 +1,49 @@
+# Ana Vitória · Landing pages para pequenos negócios
+
+> Ana Vitória cria landing pages para pequenos negócios, do design ao código. Mora em Manaus (AM) e atende negócios de qualquer lugar do Brasil, tudo online. O contato é direto com ela, do começo ao fim.
+
+Site: https://anavitoriaweb.com.br/
+
+## O que ela faz
+
+- Uma página para o seu negócio: apresenta o serviço com clareza e deixa óbvio o próximo passo do cliente, como chamar no WhatsApp.
+- Conteúdo organizado: organiza fotos e informações para que quem chega entenda o que o negócio faz e por que escolher ele.
+- Endereço próprio e tudo funcionando: cuida do domínio e da hospedagem e entrega a página funcionando no celular e no computador.
+
+## Para quem é
+
+Pequenos negócios e profissionais que precisam de uma página clara para apresentar o serviço e receber contatos, principalmente pelo WhatsApp. Exemplos de áreas já atendidas: estética, educação e barbearia.
+
+## Como ela trabalha
+
+1. Conversa: entende o negócio e o que a página precisa fazer.
+2. Estrutura: organiza o conteúdo e o caminho até o contato.
+3. Visual: cria o visual com a cara do negócio.
+4. Página no ar: constrói, revisa com o cliente e publica.
+
+Cada seção é testada no celular antes do computador. Depois da entrega, ela acompanha a página por 7 dias.
+
+## Principais projetos
+
+- [Laís Consuelo Biomed](https://laisconsuelobiomed.com.br/): página suave e acolhedora para apresentar atendimentos de biomedicina estética, em Manaus.
+- [Polo educacional CETAP](https://cetapcursos.com.br/): site institucional para apresentar os cursos do polo, em Tapauá e Manaus.
+- [Barbearia Barba Brava](https://anavitoriasouzab.github.io/barbearia-study/): projeto de estudo com identidade forte em preto e dourado.
+
+## Dúvidas frequentes
+
+- O que é preciso para começar? Uma conversa sobre o negócio, as fotos que já existem e o contato que o cliente quer receber. O resto da estrutura ela monta e traz pronta para revisão.
+- Quanto custa? Depende do tamanho da página e do que ela precisa ter. O valor é passado depois de uma conversa rápida sobre o projeto.
+- Em quanto tempo fica no ar? Depende do escopo e do material disponível. Uma página enxuta pode ficar pronta em poucos dias, e a data é combinada na primeira conversa.
+- Preciso ter domínio e hospedagem? Não. Na landing page, ela cuida do domínio e da hospedagem. Em sites maiores, isso é combinado na conversa.
+- Como funciona o pagamento? Pix ou cartão, que pode ser parcelado. No Pix, 50% para começar e 50% na entrega.
+- E se precisar mudar algo depois? Ela acompanha a página por 7 dias após a entrega. Depois, há acompanhamento mensal ou ajustes avulsos, com valor combinado.
+
+## Ferramentas
+
+Figma, HTML e CSS, JavaScript (em estudo), textos para interface, domínio e hospedagem, e IA generativa como apoio em textos e imagens, sempre com revisão.
+
+## Contato
+
+- WhatsApp: (92) 99257-5734, https://wa.me/5592992575734
+- E-mail: ana.dev2026@gmail.com
+- Instagram: https://www.instagram.com/anav_web/
