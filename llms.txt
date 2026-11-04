@@ -1,6 +1,6 @@
-# Ana Vitória · Landing pages para pequenos negócios
+# Ana Vitória · Sites, landing pages e packs de artes
 
-> Ana Vitória cria landing pages para pequenos negócios, do design ao código. Mora em Manaus (AM) e atende negócios de qualquer lugar do Brasil, tudo online. O contato é direto com ela, do começo ao fim.
+> Ana Vitória é designer e cria sites, landing pages e packs de artes, do começo ao fim. Mora em Manaus (AM) e atende negócios de qualquer lugar do Brasil, tudo online. O contato é direto com ela, do começo ao fim.
 
 Site: https://anavitoriaweb.com.br/
 
@@ -17,9 +17,9 @@ Pequenos negócios e profissionais que precisam de uma página clara para aprese
 ## Como ela trabalha
 
 1. Conversa: entende o negócio e o que a página precisa fazer.
-2. Estrutura: organiza o conteúdo e o caminho até o contato.
-3. Visual: cria o visual com a cara do negócio.
-4. Página no ar: constrói, revisa com o cliente e publica.
+2. Organização: organiza textos, fotos e o caminho até o contato.
+3. Design: cria o visual com a cara do negócio e mostra ao cliente para ajustar.
+4. Entrega: revisa tudo com o cliente, entrega pronto e acompanha por 7 dias.
 
 Cada seção é testada no celular antes do computador. Depois da entrega, ela acompanha a página por 7 dias.
 
@@ -27,7 +27,8 @@ Cada seção é testada no celular antes do computador. Depois da entrega, ela a
 
 - [Laís Consuelo Biomed](https://laisconsuelobiomed.com.br/): página suave e acolhedora para apresentar atendimentos de biomedicina estética, em Manaus.
 - [Polo educacional CETAP](https://cetapcursos.com.br/): site institucional para apresentar os cursos do polo, em Tapauá e Manaus.
-- [Barbearia Barba Brava](https://anavitoriasouzab.github.io/barbearia-study/): projeto de estudo com identidade forte em preto e dourado.
+- [Nobre Navalha](https://nobre-navalha-barbearia.vercel.app/): barbearia por assinatura em Curitiba, com planos claros e o WhatsApp à mão.
+- [Roberto Vilas](https://salaorobertovilas.com.br/): salão e barbearia em Manaus, com pedido de orçamento pelo WhatsApp.
 
 ## Dúvidas frequentes
 
@@ -38,9 +39,9 @@ Cada seção é testada no celular antes do computador. Depois da entrega, ela a
 - Como funciona o pagamento? Pix ou cartão, que pode ser parcelado. No Pix, 50% para começar e 50% na entrega.
 - E se precisar mudar algo depois? Ela acompanha a página por 7 dias após a entrega. Depois, há acompanhamento mensal ou ajustes avulsos, com valor combinado.
 
-## Ferramentas
+## Serviços
 
-Figma, HTML e CSS, JavaScript (em estudo), textos para interface, domínio e hospedagem, e IA generativa como apoio em textos e imagens, sempre com revisão.
+Sites e landing pages, design de interfaces (UI/UX), design para redes sociais e identidade visual para projetos digitais.
 
 ## Contato
 
